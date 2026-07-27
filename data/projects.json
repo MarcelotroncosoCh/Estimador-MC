@@ -1,0 +1,5718 @@
+{
+  "source": "C:\\01. IA\\BBDD_Proyectos.xlsx",
+  "generated_at": "2026-07-09",
+  "rentability_threshold": 18,
+  "projects": [
+    {
+      "ID_Proyecto": 23,
+      "Proyecto": "Villa Renku II y III",
+      "Año": 2025,
+      "Region": "Region de Ohiggins",
+      "Comuna": "Rengo",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 273,
+      "Departamentos": 0,
+      "Total_Viv": 273,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 163055,
+      "Urbanizacion_UF": 53299,
+      "Gastos_Generales_UF": 30064,
+      "Costo_Total_UF": 422683,
+      "Gastos_Financieros_UF": 27166,
+      "Valor_Terreno_UF": 47318,
+      "Terreno_m2": 83843,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 115918,
+      "Margen_Porc": 21.51,
+      "Margen_UF_VIV": 422,
+      "Ingresos_Total_UF_Estimado": 538902.84,
+      "Costo_Construccion_UF_por_viv": 597.2711,
+      "Urbanizacion_UF_por_viv": 195.2344,
+      "Gastos_Generales_UF_por_viv": 110.1245,
+      "Costo_Total_UF_por_viv": 1548.2894,
+      "Gastos_Financieros_UF_por_viv": 99.5092,
+      "Valor_Terreno_UF_por_viv": 173.326,
+      "Margen_UF_por_viv": 424.6081,
+      "Ingresos_Total_UF_Estimado_por_viv": 1974.0031,
+      "Terreno_m2_por_viv": 307.1172,
+      "Valor_Terreno_UF_m2": 0.564364,
+      "_region_key": "region de ohiggins",
+      "_comuna_key": "rengo",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 9,
+      "Proyecto": "Alto San Clemente",
+      "Año": 2025,
+      "Region": "Maule",
+      "Comuna": "San Clemente",
+      "Tipo_Proyecto": "DS49",
+      "Casas": 299,
+      "Departamentos": 0,
+      "Total_Viv": 299,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 111309,
+      "Urbanizacion_UF": 57867,
+      "Gastos_Generales_UF": 27045,
+      "Costo_Total_UF": 285628,
+      "Gastos_Financieros_UF": 25772,
+      "Valor_Terreno_UF": 21450,
+      "Terreno_m2": 67786,
+      "Presupuesto_Financiado": 488052,
+      "Margen_UF": 174792,
+      "Margen_Porc": 34.79,
+      "Margen_UF_VIV": 585,
+      "Ingresos_Total_UF_Estimado": 502420.24,
+      "Costo_Construccion_UF_por_viv": 372.2709,
+      "Urbanizacion_UF_por_viv": 193.5351,
+      "Gastos_Generales_UF_por_viv": 90.4515,
+      "Costo_Total_UF_por_viv": 955.2776,
+      "Gastos_Financieros_UF_por_viv": 86.194,
+      "Valor_Terreno_UF_por_viv": 71.7391,
+      "Margen_UF_por_viv": 584.5886,
+      "Ingresos_Total_UF_Estimado_por_viv": 1680.3353,
+      "Terreno_m2_por_viv": 226.709,
+      "Valor_Terreno_UF_m2": 0.316437,
+      "_region_key": "maule",
+      "_comuna_key": "san clemente",
+      "_tipo_proyecto_key": "ds49",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 2,
+      "Proyecto": "Los Castaños",
+      "Año": 2020,
+      "Region": "Region de Ohiggins",
+      "Comuna": "San Fernando",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 215,
+      "Departamentos": 0,
+      "Total_Viv": 215,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 110177,
+      "Urbanizacion_UF": 26882,
+      "Gastos_Generales_UF": 28824,
+      "Costo_Total_UF": 329208,
+      "Gastos_Financieros_UF": 12096,
+      "Valor_Terreno_UF": 48094,
+      "Terreno_m2": 59620,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 88592,
+      "Margen_Porc": 26.47,
+      "Margen_UF_VIV": 412,
+      "Ingresos_Total_UF_Estimado": 334688.33,
+      "Costo_Construccion_UF_por_viv": 512.4512,
+      "Urbanizacion_UF_por_viv": 125.0326,
+      "Gastos_Generales_UF_por_viv": 134.0651,
+      "Costo_Total_UF_por_viv": 1531.2,
+      "Gastos_Financieros_UF_por_viv": 56.2605,
+      "Valor_Terreno_UF_por_viv": 223.693,
+      "Margen_UF_por_viv": 412.0558,
+      "Ingresos_Total_UF_Estimado_por_viv": 1556.6899,
+      "Terreno_m2_por_viv": 277.3023,
+      "Valor_Terreno_UF_m2": 0.806676,
+      "_region_key": "region de ohiggins",
+      "_comuna_key": "san fernando",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 8,
+      "Proyecto": "Villa la Florida III y IV",
+      "Año": 2025,
+      "Region": "Maule",
+      "Comuna": "Linares",
+      "Tipo_Proyecto": "DS49",
+      "Casas": 266,
+      "Departamentos": 0,
+      "Total_Viv": 266,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 102343,
+      "Urbanizacion_UF": 54234,
+      "Gastos_Generales_UF": 27835,
+      "Costo_Total_UF": 258705,
+      "Gastos_Financieros_UF": 8052,
+      "Valor_Terreno_UF": 17058,
+      "Terreno_m2": 55021,
+      "Presupuesto_Financiado": 417115,
+      "Margen_UF": 141841,
+      "Margen_Porc": 32.1,
+      "Margen_UF_VIV": 533,
+      "Ingresos_Total_UF_Estimado": 441872.27,
+      "Costo_Construccion_UF_por_viv": 384.7481,
+      "Urbanizacion_UF_por_viv": 203.8872,
+      "Gastos_Generales_UF_por_viv": 104.6429,
+      "Costo_Total_UF_por_viv": 972.5752,
+      "Gastos_Financieros_UF_por_viv": 30.2707,
+      "Valor_Terreno_UF_por_viv": 64.1278,
+      "Margen_UF_por_viv": 533.2368,
+      "Ingresos_Total_UF_Estimado_por_viv": 1661.1739,
+      "Terreno_m2_por_viv": 206.8459,
+      "Valor_Terreno_UF_m2": 0.310027,
+      "_region_key": "maule",
+      "_comuna_key": "linares",
+      "_tipo_proyecto_key": "ds49",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 24,
+      "Proyecto": "Doña Ignacia IX 1A. Et II",
+      "Año": 2025,
+      "Region": "Maule",
+      "Comuna": "Maule",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 154,
+      "Departamentos": 0,
+      "Total_Viv": 154,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 97382,
+      "Urbanizacion_UF": 25742,
+      "Gastos_Generales_UF": 20123,
+      "Costo_Total_UF": 233205,
+      "Gastos_Financieros_UF": 18008,
+      "Valor_Terreno_UF": 39485,
+      "Terreno_m2": 53195,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 72585,
+      "Margen_Porc": 21.45,
+      "Margen_UF_VIV": 465,
+      "Ingresos_Total_UF_Estimado": 338391.61,
+      "Costo_Construccion_UF_por_viv": 632.3506,
+      "Urbanizacion_UF_por_viv": 167.1558,
+      "Gastos_Generales_UF_por_viv": 130.6688,
+      "Costo_Total_UF_por_viv": 1514.3182,
+      "Gastos_Financieros_UF_por_viv": 116.9351,
+      "Valor_Terreno_UF_por_viv": 256.3961,
+      "Margen_UF_por_viv": 471.3312,
+      "Ingresos_Total_UF_Estimado_por_viv": 2197.3481,
+      "Terreno_m2_por_viv": 345.4221,
+      "Valor_Terreno_UF_m2": 0.742269,
+      "_region_key": "maule",
+      "_comuna_key": "maule",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 43,
+      "Proyecto": "Proyecto Puerta Norte - Etapa 1",
+      "Año": 2021,
+      "Region": "Maule",
+      "Comuna": "Curico",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 85,
+      "Departamentos": 96,
+      "Total_Viv": 181,
+      "Tipo_Viv": "Mixto",
+      "Costo_Construccion_UF": 139475,
+      "Urbanizacion_UF": 33945,
+      "Gastos_Generales_UF": 29616,
+      "Costo_Total_UF": 282161,
+      "Gastos_Financieros_UF": 19890,
+      "Valor_Terreno_UF": 38841,
+      "Terreno_m2": 52164,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 56506,
+      "Margen_Porc": 17.6,
+      "Margen_UF_VIV": 312,
+      "Ingresos_Total_UF_Estimado": 321056.82,
+      "Costo_Construccion_UF_por_viv": 770.5801,
+      "Urbanizacion_UF_por_viv": 187.5414,
+      "Gastos_Generales_UF_por_viv": 163.6243,
+      "Costo_Total_UF_por_viv": 1558.9006,
+      "Gastos_Financieros_UF_por_viv": 109.8895,
+      "Valor_Terreno_UF_por_viv": 214.5912,
+      "Margen_UF_por_viv": 312.1878,
+      "Ingresos_Total_UF_Estimado_por_viv": 1773.7946,
+      "Terreno_m2_por_viv": 288.1989,
+      "Valor_Terreno_UF_m2": 0.744594,
+      "_region_key": "maule",
+      "_comuna_key": "curico",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "mixto"
+    },
+    {
+      "ID_Proyecto": 27,
+      "Proyecto": "Parque Rosario",
+      "Año": 2025,
+      "Region": "Region de Ohiggins",
+      "Comuna": "Rengo",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 171,
+      "Departamentos": 0,
+      "Total_Viv": 171,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 106897,
+      "Urbanizacion_UF": 30092,
+      "Gastos_Generales_UF": 22319,
+      "Costo_Total_UF": 281964,
+      "Gastos_Financieros_UF": 20554,
+      "Valor_Terreno_UF": 33249,
+      "Terreno_m2": 52086,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 67038,
+      "Margen_Porc": 19.2,
+      "Margen_UF_VIV": 390,
+      "Ingresos_Total_UF_Estimado": 349156.25,
+      "Costo_Construccion_UF_por_viv": 625.1287,
+      "Urbanizacion_UF_por_viv": 175.9766,
+      "Gastos_Generales_UF_por_viv": 130.5205,
+      "Costo_Total_UF_por_viv": 1648.9123,
+      "Gastos_Financieros_UF_por_viv": 120.1988,
+      "Valor_Terreno_UF_por_viv": 194.4386,
+      "Margen_UF_por_viv": 392.0351,
+      "Ingresos_Total_UF_Estimado_por_viv": 2041.8494,
+      "Terreno_m2_por_viv": 304.5965,
+      "Valor_Terreno_UF_m2": 0.638348,
+      "_region_key": "region de ohiggins",
+      "_comuna_key": "rengo",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 16,
+      "Proyecto": "Brisas san Javier I",
+      "Año": 2021,
+      "Region": "Maule",
+      "Comuna": "San Javier",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 213,
+      "Departamentos": 0,
+      "Total_Viv": 213,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 117317,
+      "Urbanizacion_UF": 26619,
+      "Gastos_Generales_UF": 26080,
+      "Costo_Total_UF": 291451,
+      "Gastos_Financieros_UF": 13315,
+      "Valor_Terreno_UF": 44458,
+      "Terreno_m2": 50019,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 77681,
+      "Margen_Porc": 21.03,
+      "Margen_UF_VIV": 363,
+      "Ingresos_Total_UF_Estimado": 369381.84,
+      "Costo_Construccion_UF_por_viv": 550.784,
+      "Urbanizacion_UF_por_viv": 124.9718,
+      "Gastos_Generales_UF_por_viv": 122.4413,
+      "Costo_Total_UF_por_viv": 1368.3146,
+      "Gastos_Financieros_UF_por_viv": 62.5117,
+      "Valor_Terreno_UF_por_viv": 208.723,
+      "Margen_UF_por_viv": 364.6995,
+      "Ingresos_Total_UF_Estimado_por_viv": 1734.187,
+      "Terreno_m2_por_viv": 234.831,
+      "Valor_Terreno_UF_m2": 0.888822,
+      "_region_key": "maule",
+      "_comuna_key": "san javier",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 22,
+      "Proyecto": "Doña Agustina IV A",
+      "Año": 2024,
+      "Region": "Maule",
+      "Comuna": "Linares",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 199,
+      "Departamentos": 0,
+      "Total_Viv": 199,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 125381,
+      "Urbanizacion_UF": 32127,
+      "Gastos_Generales_UF": 24657,
+      "Costo_Total_UF": 314101,
+      "Gastos_Financieros_UF": 17880,
+      "Valor_Terreno_UF": 46115,
+      "Terreno_m2": 48451,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 89963,
+      "Margen_Porc": 22.25,
+      "Margen_UF_VIV": 445,
+      "Ingresos_Total_UF_Estimado": 404328.09,
+      "Costo_Construccion_UF_por_viv": 630.0553,
+      "Urbanizacion_UF_por_viv": 161.4422,
+      "Gastos_Generales_UF_por_viv": 123.9045,
+      "Costo_Total_UF_por_viv": 1578.397,
+      "Gastos_Financieros_UF_por_viv": 89.8492,
+      "Valor_Terreno_UF_por_viv": 231.7337,
+      "Margen_UF_por_viv": 452.0754,
+      "Ingresos_Total_UF_Estimado_por_viv": 2031.7994,
+      "Terreno_m2_por_viv": 243.4724,
+      "Valor_Terreno_UF_m2": 0.951786,
+      "_region_key": "maule",
+      "_comuna_key": "linares",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 12,
+      "Proyecto": "Altos del Maiten Et. V y VI",
+      "Año": 2020,
+      "Region": "Region Metropolitana",
+      "Comuna": "Melipilla",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 182,
+      "Departamentos": 0,
+      "Total_Viv": 182,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 115587,
+      "Urbanizacion_UF": 31712,
+      "Gastos_Generales_UF": 26857,
+      "Costo_Total_UF": 240977,
+      "Gastos_Financieros_UF": 13802,
+      "Valor_Terreno_UF": 46543,
+      "Terreno_m2": 47663,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 66207,
+      "Margen_Porc": 19.65,
+      "Margen_UF_VIV": 362,
+      "Ingresos_Total_UF_Estimado": 336931.3,
+      "Costo_Construccion_UF_por_viv": 635.0934,
+      "Urbanizacion_UF_por_viv": 174.2418,
+      "Gastos_Generales_UF_por_viv": 147.5659,
+      "Costo_Total_UF_por_viv": 1324.0495,
+      "Gastos_Financieros_UF_por_viv": 75.8352,
+      "Valor_Terreno_UF_por_viv": 255.7308,
+      "Margen_UF_por_viv": 363.7747,
+      "Ingresos_Total_UF_Estimado_por_viv": 1851.2709,
+      "Terreno_m2_por_viv": 261.8846,
+      "Valor_Terreno_UF_m2": 0.976502,
+      "_region_key": "region metropolitana",
+      "_comuna_key": "melipilla",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 10,
+      "Proyecto": "Lomas del Valle",
+      "Año": 2020,
+      "Region": "Ñuble",
+      "Comuna": "Chillan",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 160,
+      "Departamentos": 0,
+      "Total_Viv": 160,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 111760,
+      "Urbanizacion_UF": 26839,
+      "Gastos_Generales_UF": 21477,
+      "Costo_Total_UF": 224532,
+      "Gastos_Financieros_UF": 11073,
+      "Valor_Terreno_UF": 38142,
+      "Terreno_m2": 47464,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 57158,
+      "Margen_Porc": 19.62,
+      "Margen_UF_VIV": 357,
+      "Ingresos_Total_UF_Estimado": 291325.18,
+      "Costo_Construccion_UF_por_viv": 698.5,
+      "Urbanizacion_UF_por_viv": 167.7438,
+      "Gastos_Generales_UF_por_viv": 134.2312,
+      "Costo_Total_UF_por_viv": 1403.325,
+      "Gastos_Financieros_UF_por_viv": 69.2062,
+      "Valor_Terreno_UF_por_viv": 238.3875,
+      "Margen_UF_por_viv": 357.2375,
+      "Ingresos_Total_UF_Estimado_por_viv": 1820.7824,
+      "Terreno_m2_por_viv": 296.65,
+      "Valor_Terreno_UF_m2": 0.803599,
+      "_region_key": "nuble",
+      "_comuna_key": "chillan",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 19,
+      "Proyecto": "Brisas san Javier II",
+      "Año": 2023,
+      "Region": "Maule",
+      "Comuna": "San Javier",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 194,
+      "Departamentos": 0,
+      "Total_Viv": 194,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 137373,
+      "Urbanizacion_UF": 47888,
+      "Gastos_Generales_UF": 23534,
+      "Costo_Total_UF": 339388,
+      "Gastos_Financieros_UF": 21867,
+      "Valor_Terreno_UF": 42353,
+      "Terreno_m2": 47161,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 85944,
+      "Margen_Porc": 21.88,
+      "Margen_UF_VIV": 436,
+      "Ingresos_Total_UF_Estimado": 392797.07,
+      "Costo_Construccion_UF_por_viv": 708.1082,
+      "Urbanizacion_UF_por_viv": 246.8454,
+      "Gastos_Generales_UF_por_viv": 121.3093,
+      "Costo_Total_UF_por_viv": 1749.4227,
+      "Gastos_Financieros_UF_por_viv": 112.7165,
+      "Valor_Terreno_UF_por_viv": 218.3144,
+      "Margen_UF_por_viv": 443.0103,
+      "Ingresos_Total_UF_Estimado_por_viv": 2024.7272,
+      "Terreno_m2_por_viv": 243.0979,
+      "Valor_Terreno_UF_m2": 0.898051,
+      "_region_key": "maule",
+      "_comuna_key": "san javier",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 18,
+      "Proyecto": "Manso Velasco III",
+      "Año": 2023,
+      "Region": "Region de Ohiggins",
+      "Comuna": "San Fernando",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 152,
+      "Departamentos": 0,
+      "Total_Viv": 152,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 104259,
+      "Urbanizacion_UF": 23086,
+      "Gastos_Generales_UF": 24602,
+      "Costo_Total_UF": 262762,
+      "Gastos_Financieros_UF": 23771,
+      "Valor_Terreno_UF": 35232,
+      "Terreno_m2": 45625,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 65486,
+      "Margen_Porc": 21.84,
+      "Margen_UF_VIV": 425,
+      "Ingresos_Total_UF_Estimado": 299844.32,
+      "Costo_Construccion_UF_por_viv": 685.9145,
+      "Urbanizacion_UF_por_viv": 151.8816,
+      "Gastos_Generales_UF_por_viv": 161.8553,
+      "Costo_Total_UF_por_viv": 1728.6974,
+      "Gastos_Financieros_UF_por_viv": 156.3882,
+      "Valor_Terreno_UF_por_viv": 231.7895,
+      "Margen_UF_por_viv": 430.8289,
+      "Ingresos_Total_UF_Estimado_por_viv": 1972.66,
+      "Terreno_m2_por_viv": 300.1645,
+      "Valor_Terreno_UF_m2": 0.772208,
+      "_region_key": "region de ohiggins",
+      "_comuna_key": "san fernando",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 21,
+      "Proyecto": "Villa Renku I",
+      "Año": 2023,
+      "Region": "Region de Ohiggins",
+      "Comuna": "Rengo",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 167,
+      "Departamentos": 0,
+      "Total_Viv": 167,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 115694,
+      "Urbanizacion_UF": 34399,
+      "Gastos_Generales_UF": 24966,
+      "Costo_Total_UF": 278406,
+      "Gastos_Financieros_UF": 17857,
+      "Valor_Terreno_UF": 21411,
+      "Terreno_m2": 45466,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 71802,
+      "Margen_Porc": 20.5,
+      "Margen_UF_VIV": 430,
+      "Ingresos_Total_UF_Estimado": 350253.66,
+      "Costo_Construccion_UF_por_viv": 692.7784,
+      "Urbanizacion_UF_por_viv": 205.982,
+      "Gastos_Generales_UF_por_viv": 149.497,
+      "Costo_Total_UF_por_viv": 1667.1018,
+      "Gastos_Financieros_UF_por_viv": 106.9281,
+      "Valor_Terreno_UF_por_viv": 128.2096,
+      "Margen_UF_por_viv": 429.9521,
+      "Ingresos_Total_UF_Estimado_por_viv": 2097.3273,
+      "Terreno_m2_por_viv": 272.2515,
+      "Valor_Terreno_UF_m2": 0.470923,
+      "_region_key": "region de ohiggins",
+      "_comuna_key": "rengo",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 5,
+      "Proyecto": "Luis Cadegan II",
+      "Año": 2023,
+      "Region": "Maule",
+      "Comuna": "Yerbas Buenas",
+      "Tipo_Proyecto": "DS49",
+      "Casas": 173,
+      "Departamentos": 0,
+      "Total_Viv": 173,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 67154,
+      "Urbanizacion_UF": 41057,
+      "Gastos_Generales_UF": 229689,
+      "Costo_Total_UF": 160380,
+      "Gastos_Financieros_UF": 3383,
+      "Valor_Terreno_UF": 6304,
+      "Terreno_m2": 44729,
+      "Presupuesto_Financiado": 191656,
+      "Margen_UF": 28953,
+      "Margen_Porc": 15.11,
+      "Margen_UF_VIV": 167,
+      "Ingresos_Total_UF_Estimado": 191614.82,
+      "Costo_Construccion_UF_por_viv": 388.1734,
+      "Urbanizacion_UF_por_viv": 237.3237,
+      "Gastos_Generales_UF_por_viv": 1327.6821,
+      "Costo_Total_UF_por_viv": 927.052,
+      "Gastos_Financieros_UF_por_viv": 19.5549,
+      "Valor_Terreno_UF_por_viv": 36.4393,
+      "Margen_UF_por_viv": 167.3584,
+      "Ingresos_Total_UF_Estimado_por_viv": 1107.6001,
+      "Terreno_m2_por_viv": 258.5491,
+      "Valor_Terreno_UF_m2": 0.140938,
+      "_region_key": "maule",
+      "_comuna_key": "yerbas buenas",
+      "_tipo_proyecto_key": "ds49",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 6,
+      "Proyecto": "Villa la Florida I y II",
+      "Año": 2023,
+      "Region": "Maule",
+      "Comuna": "Linares",
+      "Tipo_Proyecto": "DS49",
+      "Casas": 209,
+      "Departamentos": 0,
+      "Total_Viv": 209,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 85250,
+      "Urbanizacion_UF": 40555,
+      "Gastos_Generales_UF": 22910,
+      "Costo_Total_UF": 190418,
+      "Gastos_Financieros_UF": 7354,
+      "Valor_Terreno_UF": 9738,
+      "Terreno_m2": 44729,
+      "Presupuesto_Financiado": 235658,
+      "Margen_UF": 42816,
+      "Margen_Porc": 20.42,
+      "Margen_UF_VIV": 205,
+      "Ingresos_Total_UF_Estimado": 209676.79,
+      "Costo_Construccion_UF_por_viv": 407.8947,
+      "Urbanizacion_UF_por_viv": 194.0431,
+      "Gastos_Generales_UF_por_viv": 109.6172,
+      "Costo_Total_UF_por_viv": 911.0909,
+      "Gastos_Financieros_UF_por_viv": 35.1866,
+      "Valor_Terreno_UF_por_viv": 46.5933,
+      "Margen_UF_por_viv": 204.8612,
+      "Ingresos_Total_UF_Estimado_por_viv": 1003.2382,
+      "Terreno_m2_por_viv": 214.0144,
+      "Valor_Terreno_UF_m2": 0.217711,
+      "_region_key": "maule",
+      "_comuna_key": "linares",
+      "_tipo_proyecto_key": "ds49",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 4,
+      "Proyecto": "Don Matias",
+      "Año": 2021,
+      "Region": "Maule",
+      "Comuna": "San Clemente",
+      "Tipo_Proyecto": "DS49",
+      "Casas": 247,
+      "Departamentos": 0,
+      "Total_Viv": 247,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 77517,
+      "Urbanizacion_UF": 24825,
+      "Gastos_Generales_UF": 21320,
+      "Costo_Total_UF": 153031,
+      "Gastos_Financieros_UF": 2166,
+      "Valor_Terreno_UF": 9748,
+      "Terreno_m2": 44681,
+      "Presupuesto_Financiado": 201869,
+      "Margen_UF": 49143,
+      "Margen_Porc": 24.34,
+      "Margen_UF_VIV": 199,
+      "Ingresos_Total_UF_Estimado": 201902.22,
+      "Costo_Construccion_UF_por_viv": 313.834,
+      "Urbanizacion_UF_por_viv": 100.5061,
+      "Gastos_Generales_UF_por_viv": 86.3158,
+      "Costo_Total_UF_por_viv": 619.5587,
+      "Gastos_Financieros_UF_por_viv": 8.7692,
+      "Valor_Terreno_UF_por_viv": 39.4656,
+      "Margen_UF_por_viv": 198.9595,
+      "Ingresos_Total_UF_Estimado_por_viv": 817.4179,
+      "Terreno_m2_por_viv": 180.8947,
+      "Valor_Terreno_UF_m2": 0.218169,
+      "_region_key": "maule",
+      "_comuna_key": "san clemente",
+      "_tipo_proyecto_key": "ds49",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 49,
+      "Proyecto": "Altos del Maiten B7-B8",
+      "Año": 2023,
+      "Region": "Region Metropolitana",
+      "Comuna": "Melipilla",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 111,
+      "Departamentos": 0,
+      "Total_Viv": 111,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 131863,
+      "Urbanizacion_UF": 28889,
+      "Gastos_Generales_UF": 24558,
+      "Costo_Total_UF": 273659,
+      "Gastos_Financieros_UF": 10023,
+      "Valor_Terreno_UF": 44211,
+      "Terreno_m2": 44288,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 103399,
+      "Margen_Porc": 28.25,
+      "Margen_UF_VIV": 931,
+      "Ingresos_Total_UF_Estimado": 366014.16,
+      "Costo_Construccion_UF_por_viv": 1187.955,
+      "Urbanizacion_UF_por_viv": 260.2613,
+      "Gastos_Generales_UF_por_viv": 221.2432,
+      "Costo_Total_UF_por_viv": 2465.3964,
+      "Gastos_Financieros_UF_por_viv": 90.2973,
+      "Valor_Terreno_UF_por_viv": 398.2973,
+      "Margen_UF_por_viv": 931.5225,
+      "Ingresos_Total_UF_Estimado_por_viv": 3297.4249,
+      "Terreno_m2_por_viv": 398.991,
+      "Valor_Terreno_UF_m2": 0.998261,
+      "_region_key": "region metropolitana",
+      "_comuna_key": "melipilla",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 14,
+      "Proyecto": "Doña Agustina II Et. II",
+      "Año": 2021,
+      "Region": "Maule",
+      "Comuna": "Linares",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 176,
+      "Departamentos": 0,
+      "Total_Viv": 176,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 108086,
+      "Urbanizacion_UF": 14656,
+      "Gastos_Generales_UF": 18966,
+      "Costo_Total_UF": 212934,
+      "Gastos_Financieros_UF": 11408,
+      "Valor_Terreno_UF": 36551,
+      "Terreno_m2": 43694,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 73339,
+      "Margen_Porc": 25.4,
+      "Margen_UF_VIV": 414,
+      "Ingresos_Total_UF_Estimado": 288736.22,
+      "Costo_Construccion_UF_por_viv": 614.125,
+      "Urbanizacion_UF_por_viv": 83.2727,
+      "Gastos_Generales_UF_por_viv": 107.7614,
+      "Costo_Total_UF_por_viv": 1209.8523,
+      "Gastos_Financieros_UF_por_viv": 64.8182,
+      "Valor_Terreno_UF_por_viv": 207.6761,
+      "Margen_UF_por_viv": 416.6989,
+      "Ingresos_Total_UF_Estimado_por_viv": 1640.5467,
+      "Terreno_m2_por_viv": 248.2614,
+      "Valor_Terreno_UF_m2": 0.836522,
+      "_region_key": "maule",
+      "_comuna_key": "linares",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 17,
+      "Proyecto": "Villa la Florida II",
+      "Año": 2022,
+      "Region": "Region de Ohiggins",
+      "Comuna": "San Fernando",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 155,
+      "Departamentos": 0,
+      "Total_Viv": 155,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 105155,
+      "Urbanizacion_UF": 19393,
+      "Gastos_Generales_UF": 23776,
+      "Costo_Total_UF": 261087,
+      "Gastos_Financieros_UF": 20345,
+      "Valor_Terreno_UF": 31796,
+      "Terreno_m2": 42380,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 61528,
+      "Margen_Porc": 21.33,
+      "Margen_UF_VIV": 389,
+      "Ingresos_Total_UF_Estimado": 288457.57,
+      "Costo_Construccion_UF_por_viv": 678.4194,
+      "Urbanizacion_UF_por_viv": 125.1161,
+      "Gastos_Generales_UF_por_viv": 153.3935,
+      "Costo_Total_UF_por_viv": 1684.4323,
+      "Gastos_Financieros_UF_por_viv": 131.2581,
+      "Valor_Terreno_UF_por_viv": 205.1355,
+      "Margen_UF_por_viv": 396.9548,
+      "Ingresos_Total_UF_Estimado_por_viv": 1861.0166,
+      "Terreno_m2_por_viv": 273.4194,
+      "Valor_Terreno_UF_m2": 0.75026,
+      "_region_key": "region de ohiggins",
+      "_comuna_key": "san fernando",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 45,
+      "Proyecto": "Villa la Florida II (Relentizada)",
+      "Año": 2022,
+      "Region": "Region de Ohiggins",
+      "Comuna": "San Fernando",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 155,
+      "Departamentos": 0,
+      "Total_Viv": 155,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 105155,
+      "Urbanizacion_UF": 19392,
+      "Gastos_Generales_UF": 23775,
+      "Costo_Total_UF": 199543,
+      "Gastos_Financieros_UF": 20345,
+      "Valor_Terreno_UF": 31796,
+      "Terreno_m2": 42380,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 61528,
+      "Margen_Porc": 21.33,
+      "Margen_UF_VIV": 389,
+      "Ingresos_Total_UF_Estimado": 288457.57,
+      "Costo_Construccion_UF_por_viv": 678.4194,
+      "Urbanizacion_UF_por_viv": 125.1097,
+      "Gastos_Generales_UF_por_viv": 153.3871,
+      "Costo_Total_UF_por_viv": 1287.3742,
+      "Gastos_Financieros_UF_por_viv": 131.2581,
+      "Valor_Terreno_UF_por_viv": 205.1355,
+      "Margen_UF_por_viv": 396.9548,
+      "Ingresos_Total_UF_Estimado_por_viv": 1861.0166,
+      "Terreno_m2_por_viv": 273.4194,
+      "Valor_Terreno_UF_m2": 0.75026,
+      "_region_key": "region de ohiggins",
+      "_comuna_key": "san fernando",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 7,
+      "Proyecto": "Villa Parque San Martin",
+      "Año": 2024,
+      "Region": "Region de Ohiggins",
+      "Comuna": "Rengo",
+      "Tipo_Proyecto": "DS49",
+      "Casas": 202,
+      "Departamentos": 0,
+      "Total_Viv": 202,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 99048,
+      "Urbanizacion_UF": 40721,
+      "Gastos_Generales_UF": 24219,
+      "Costo_Total_UF": 204881,
+      "Gastos_Financieros_UF": 8540,
+      "Valor_Terreno_UF": 0,
+      "Terreno_m2": 41299,
+      "Presupuesto_Financiado": 314553,
+      "Margen_UF": 94561,
+      "Margen_Porc": 28.31,
+      "Margen_UF_VIV": 468,
+      "Ingresos_Total_UF_Estimado": 334019.78,
+      "Costo_Construccion_UF_por_viv": 490.3366,
+      "Urbanizacion_UF_por_viv": 201.5891,
+      "Gastos_Generales_UF_por_viv": 119.896,
+      "Costo_Total_UF_por_viv": 1014.2624,
+      "Gastos_Financieros_UF_por_viv": 42.2772,
+      "Valor_Terreno_UF_por_viv": 0.0,
+      "Margen_UF_por_viv": 468.1238,
+      "Ingresos_Total_UF_Estimado_por_viv": 1653.5633,
+      "Terreno_m2_por_viv": 204.4505,
+      "Valor_Terreno_UF_m2": 0.0,
+      "_region_key": "region de ohiggins",
+      "_comuna_key": "rengo",
+      "_tipo_proyecto_key": "ds49",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 28,
+      "Proyecto": "Valles del Alba II",
+      "Año": 2025,
+      "Region": "Maule",
+      "Comuna": "San Clemente",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 126,
+      "Departamentos": 0,
+      "Total_Viv": 126,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 73779,
+      "Urbanizacion_UF": 16759,
+      "Gastos_Generales_UF": 20392,
+      "Costo_Total_UF": 194647,
+      "Gastos_Financieros_UF": 14861,
+      "Valor_Terreno_UF": 23634,
+      "Terreno_m2": 40364,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 50865,
+      "Margen_Porc": 20.69,
+      "Margen_UF_VIV": 397,
+      "Ingresos_Total_UF_Estimado": 245843.4,
+      "Costo_Construccion_UF_por_viv": 585.5476,
+      "Urbanizacion_UF_por_viv": 133.0079,
+      "Gastos_Generales_UF_por_viv": 161.8413,
+      "Costo_Total_UF_por_viv": 1544.8175,
+      "Gastos_Financieros_UF_por_viv": 117.9444,
+      "Valor_Terreno_UF_por_viv": 187.5714,
+      "Margen_UF_por_viv": 403.6905,
+      "Ingresos_Total_UF_Estimado_por_viv": 1951.1381,
+      "Terreno_m2_por_viv": 320.3492,
+      "Valor_Terreno_UF_m2": 0.585522,
+      "_region_key": "maule",
+      "_comuna_key": "san clemente",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 20,
+      "Proyecto": "Valles del Alba I",
+      "Año": 2023,
+      "Region": "Maule",
+      "Comuna": "San Clemente",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 148,
+      "Departamentos": 0,
+      "Total_Viv": 148,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 101509,
+      "Urbanizacion_UF": 24810,
+      "Gastos_Generales_UF": 21639,
+      "Costo_Total_UF": 237865,
+      "Gastos_Financieros_UF": 11382,
+      "Valor_Terreno_UF": 21411,
+      "Terreno_m2": 39422,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 66530,
+      "Margen_Porc": 21.84,
+      "Margen_UF_VIV": 444,
+      "Ingresos_Total_UF_Estimado": 304624.54,
+      "Costo_Construccion_UF_por_viv": 685.8716,
+      "Urbanizacion_UF_por_viv": 167.6351,
+      "Gastos_Generales_UF_por_viv": 146.2095,
+      "Costo_Total_UF_por_viv": 1607.1959,
+      "Gastos_Financieros_UF_por_viv": 76.9054,
+      "Valor_Terreno_UF_por_viv": 144.6689,
+      "Margen_UF_por_viv": 449.527,
+      "Ingresos_Total_UF_Estimado_por_viv": 2058.2739,
+      "Terreno_m2_por_viv": 266.3649,
+      "Valor_Terreno_UF_m2": 0.543123,
+      "_region_key": "maule",
+      "_comuna_key": "san clemente",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 15,
+      "Proyecto": "Altos del Maiten Et. IV",
+      "Año": 2021,
+      "Region": "Region Metropolitana",
+      "Comuna": "Melipilla",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 95,
+      "Departamentos": 0,
+      "Total_Viv": 95,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 69867,
+      "Urbanizacion_UF": 10153,
+      "Gastos_Generales_UF": 20062,
+      "Costo_Total_UF": 176300,
+      "Gastos_Financieros_UF": 9072,
+      "Valor_Terreno_UF": 17718,
+      "Terreno_m2": 39048,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 29801,
+      "Margen_Porc": 16.9,
+      "Margen_UF_VIV": 310,
+      "Ingresos_Total_UF_Estimado": 176337.28,
+      "Costo_Construccion_UF_por_viv": 735.4421,
+      "Urbanizacion_UF_por_viv": 106.8737,
+      "Gastos_Generales_UF_por_viv": 211.1789,
+      "Costo_Total_UF_por_viv": 1855.7895,
+      "Gastos_Financieros_UF_por_viv": 95.4947,
+      "Valor_Terreno_UF_por_viv": 186.5053,
+      "Margen_UF_por_viv": 313.6947,
+      "Ingresos_Total_UF_Estimado_por_viv": 1856.1819,
+      "Terreno_m2_por_viv": 411.0316,
+      "Valor_Terreno_UF_m2": 0.453749,
+      "_region_key": "region metropolitana",
+      "_comuna_key": "melipilla",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 38,
+      "Proyecto": "Altos del Maiten",
+      "Año": 2020,
+      "Region": "Region Metropolitana",
+      "Comuna": "Melipilla",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 95,
+      "Departamentos": 0,
+      "Total_Viv": 95,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 69866,
+      "Urbanizacion_UF": 10153,
+      "Gastos_Generales_UF": 20062,
+      "Costo_Total_UF": 144028,
+      "Gastos_Financieros_UF": 9270,
+      "Valor_Terreno_UF": 17718,
+      "Terreno_m2": 39048,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 29801,
+      "Margen_Porc": 16.9,
+      "Margen_UF_VIV": 310,
+      "Ingresos_Total_UF_Estimado": 176337.28,
+      "Costo_Construccion_UF_por_viv": 735.4316,
+      "Urbanizacion_UF_por_viv": 106.8737,
+      "Gastos_Generales_UF_por_viv": 211.1789,
+      "Costo_Total_UF_por_viv": 1516.0842,
+      "Gastos_Financieros_UF_por_viv": 97.5789,
+      "Valor_Terreno_UF_por_viv": 186.5053,
+      "Margen_UF_por_viv": 313.6947,
+      "Ingresos_Total_UF_Estimado_por_viv": 1856.1819,
+      "Terreno_m2_por_viv": 411.0316,
+      "Valor_Terreno_UF_m2": 0.453749,
+      "_region_key": "region metropolitana",
+      "_comuna_key": "melipilla",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 53,
+      "Proyecto": "Alto Manque",
+      "Año": 2024,
+      "Region": "Maule",
+      "Comuna": "Talca",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 59,
+      "Departamentos": 0,
+      "Total_Viv": 59,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 100017,
+      "Urbanizacion_UF": 9104,
+      "Gastos_Generales_UF": 18892,
+      "Costo_Total_UF": 154030,
+      "Gastos_Financieros_UF": 15696,
+      "Valor_Terreno_UF": 53773,
+      "Terreno_m2": 37670,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 52679,
+      "Margen_Porc": 19.86,
+      "Margen_UF_VIV": 810,
+      "Ingresos_Total_UF_Estimado": 265251.76,
+      "Costo_Construccion_UF_por_viv": 1695.2034,
+      "Urbanizacion_UF_por_viv": 154.3051,
+      "Gastos_Generales_UF_por_viv": 320.2034,
+      "Costo_Total_UF_por_viv": 2610.678,
+      "Gastos_Financieros_UF_por_viv": 266.0339,
+      "Valor_Terreno_UF_por_viv": 911.4068,
+      "Margen_UF_por_viv": 892.8644,
+      "Ingresos_Total_UF_Estimado_por_viv": 4495.7925,
+      "Terreno_m2_por_viv": 638.4746,
+      "Valor_Terreno_UF_m2": 1.427475,
+      "_region_key": "maule",
+      "_comuna_key": "talca",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 13,
+      "Proyecto": "Hacienda las Palmas II",
+      "Año": 2021,
+      "Region": "Region de Ohiggins",
+      "Comuna": "Rengo",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 145,
+      "Departamentos": 32,
+      "Total_Viv": 177,
+      "Tipo_Viv": "Mixto",
+      "Costo_Construccion_UF": 106355,
+      "Urbanizacion_UF": 22978,
+      "Gastos_Generales_UF": 25907,
+      "Costo_Total_UF": 253342,
+      "Gastos_Financieros_UF": 11935,
+      "Valor_Terreno_UF": 32130,
+      "Terreno_m2": 36876,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 74718,
+      "Margen_Porc": 25.22,
+      "Margen_UF_VIV": 420,
+      "Ingresos_Total_UF_Estimado": 296264.87,
+      "Costo_Construccion_UF_por_viv": 600.8757,
+      "Urbanizacion_UF_por_viv": 129.8192,
+      "Gastos_Generales_UF_por_viv": 146.3672,
+      "Costo_Total_UF_por_viv": 1431.3107,
+      "Gastos_Financieros_UF_por_viv": 67.4294,
+      "Valor_Terreno_UF_por_viv": 181.5254,
+      "Margen_UF_por_viv": 422.1356,
+      "Ingresos_Total_UF_Estimado_por_viv": 1673.8128,
+      "Terreno_m2_por_viv": 208.339,
+      "Valor_Terreno_UF_m2": 0.871298,
+      "_region_key": "region de ohiggins",
+      "_comuna_key": "rengo",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "mixto"
+    },
+    {
+      "ID_Proyecto": 41,
+      "Proyecto": "Doña Ignacia IX - Etapa 3",
+      "Año": 2021,
+      "Region": "Maule",
+      "Comuna": "Maule",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 116,
+      "Departamentos": 0,
+      "Total_Viv": 116,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 86297,
+      "Urbanizacion_UF": 12862,
+      "Gastos_Generales_UF": 18445,
+      "Costo_Total_UF": 157217,
+      "Gastos_Financieros_UF": 8505,
+      "Valor_Terreno_UF": 29463,
+      "Terreno_m2": 36369,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 53322,
+      "Margen_Porc": 25.06,
+      "Margen_UF_VIV": 459,
+      "Ingresos_Total_UF_Estimado": 212777.33,
+      "Costo_Construccion_UF_por_viv": 743.9397,
+      "Urbanizacion_UF_por_viv": 110.8793,
+      "Gastos_Generales_UF_por_viv": 159.0086,
+      "Costo_Total_UF_por_viv": 1355.319,
+      "Gastos_Financieros_UF_por_viv": 73.319,
+      "Valor_Terreno_UF_por_viv": 253.9914,
+      "Margen_UF_por_viv": 459.6724,
+      "Ingresos_Total_UF_Estimado_por_viv": 1834.2873,
+      "Terreno_m2_por_viv": 313.5259,
+      "Valor_Terreno_UF_m2": 0.810113,
+      "_region_key": "maule",
+      "_comuna_key": "maule",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 55,
+      "Proyecto": "Parque los Coihues",
+      "Año": 2025,
+      "Region": "Biobío",
+      "Comuna": "Los Angeles",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 83,
+      "Departamentos": 0,
+      "Total_Viv": 83,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 85701,
+      "Urbanizacion_UF": 29443,
+      "Gastos_Generales_UF": 23086,
+      "Costo_Total_UF": 193316,
+      "Gastos_Financieros_UF": 15762,
+      "Valor_Terreno_UF": 32902,
+      "Terreno_m2": 35808,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 50766,
+      "Margen_Porc": 19.81,
+      "Margen_UF_VIV": 612,
+      "Ingresos_Total_UF_Estimado": 256264.51,
+      "Costo_Construccion_UF_por_viv": 1032.5422,
+      "Urbanizacion_UF_por_viv": 354.7349,
+      "Gastos_Generales_UF_por_viv": 278.1446,
+      "Costo_Total_UF_por_viv": 2329.1084,
+      "Gastos_Financieros_UF_por_viv": 189.9036,
+      "Valor_Terreno_UF_por_viv": 396.4096,
+      "Margen_UF_por_viv": 611.6386,
+      "Ingresos_Total_UF_Estimado_por_viv": 3087.5242,
+      "Terreno_m2_por_viv": 431.4217,
+      "Valor_Terreno_UF_m2": 0.918845,
+      "_region_key": "biobio",
+      "_comuna_key": "los angeles",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 51,
+      "Proyecto": "Doña Ignacia IX 1A. Et. IV",
+      "Año": 2023,
+      "Region": "Maule",
+      "Comuna": "Maule",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 136,
+      "Departamentos": 0,
+      "Total_Viv": 136,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 111868,
+      "Urbanizacion_UF": 21039,
+      "Gastos_Generales_UF": 18994,
+      "Costo_Total_UF": 211002,
+      "Gastos_Financieros_UF": 13182,
+      "Valor_Terreno_UF": 25398,
+      "Terreno_m2": 33691,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 55264,
+      "Margen_Porc": 21.85,
+      "Margen_UF_VIV": 406,
+      "Ingresos_Total_UF_Estimado": 252924.49,
+      "Costo_Construccion_UF_por_viv": 822.5588,
+      "Urbanizacion_UF_por_viv": 154.6985,
+      "Gastos_Generales_UF_por_viv": 139.6618,
+      "Costo_Total_UF_por_viv": 1551.4853,
+      "Gastos_Financieros_UF_por_viv": 96.9265,
+      "Valor_Terreno_UF_por_viv": 186.75,
+      "Margen_UF_por_viv": 406.3529,
+      "Ingresos_Total_UF_Estimado_por_viv": 1859.7389,
+      "Terreno_m2_por_viv": 247.7279,
+      "Valor_Terreno_UF_m2": 0.753851,
+      "_region_key": "maule",
+      "_comuna_key": "maule",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 52,
+      "Proyecto": "San Pedro V",
+      "Año": 2024,
+      "Region": "Maule",
+      "Comuna": "Parral",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 100,
+      "Departamentos": 0,
+      "Total_Viv": 100,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 72981,
+      "Urbanizacion_UF": 18634,
+      "Gastos_Generales_UF": 20059,
+      "Costo_Total_UF": 161074,
+      "Gastos_Financieros_UF": 9898,
+      "Valor_Terreno_UF": 23617,
+      "Terreno_m2": 33605,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 35806,
+      "Margen_Porc": 19.24,
+      "Margen_UF_VIV": 358,
+      "Ingresos_Total_UF_Estimado": 186101.87,
+      "Costo_Construccion_UF_por_viv": 729.81,
+      "Urbanizacion_UF_por_viv": 186.34,
+      "Gastos_Generales_UF_por_viv": 200.59,
+      "Costo_Total_UF_por_viv": 1610.74,
+      "Gastos_Financieros_UF_por_viv": 98.98,
+      "Valor_Terreno_UF_por_viv": 236.17,
+      "Margen_UF_por_viv": 358.06,
+      "Ingresos_Total_UF_Estimado_por_viv": 1861.0187,
+      "Terreno_m2_por_viv": 336.05,
+      "Valor_Terreno_UF_m2": 0.702782,
+      "_region_key": "maule",
+      "_comuna_key": "parral",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 50,
+      "Proyecto": "Doña Josefa III B",
+      "Año": 2023,
+      "Region": "Maule",
+      "Comuna": "Talca",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 63,
+      "Departamentos": 40,
+      "Total_Viv": 103,
+      "Tipo_Viv": "Mixto",
+      "Costo_Construccion_UF": 89662,
+      "Urbanizacion_UF": 20177,
+      "Gastos_Generales_UF": 22771,
+      "Costo_Total_UF": 196624,
+      "Gastos_Financieros_UF": 8605,
+      "Valor_Terreno_UF": 19543,
+      "Terreno_m2": 32298,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 44422,
+      "Margen_Porc": 21,
+      "Margen_UF_VIV": 431,
+      "Ingresos_Total_UF_Estimado": 211533.33,
+      "Costo_Construccion_UF_por_viv": 870.5049,
+      "Urbanizacion_UF_por_viv": 195.8932,
+      "Gastos_Generales_UF_por_viv": 221.0777,
+      "Costo_Total_UF_por_viv": 1908.9709,
+      "Gastos_Financieros_UF_por_viv": 83.5437,
+      "Valor_Terreno_UF_por_viv": 189.7379,
+      "Margen_UF_por_viv": 431.2816,
+      "Ingresos_Total_UF_Estimado_por_viv": 2053.7217,
+      "Terreno_m2_por_viv": 313.5728,
+      "Valor_Terreno_UF_m2": 0.605084,
+      "_region_key": "maule",
+      "_comuna_key": "talca",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "mixto"
+    },
+    {
+      "ID_Proyecto": 58,
+      "Proyecto": "Altos del Maiten IX",
+      "Año": 2026,
+      "Region": "Region Metropolitana",
+      "Comuna": "Melipilla",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 107,
+      "Departamentos": 0,
+      "Total_Viv": 107,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 95304,
+      "Urbanizacion_UF": 25524,
+      "Gastos_Generales_UF": 23277,
+      "Costo_Total_UF": 248879,
+      "Gastos_Financieros_UF": 19632,
+      "Valor_Terreno_UF": 37802,
+      "Terreno_m2": 31453,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 62265,
+      "Margen_Porc": 20.38,
+      "Margen_UF_VIV": 582,
+      "Ingresos_Total_UF_Estimado": 305520.12,
+      "Costo_Construccion_UF_por_viv": 890.6916,
+      "Urbanizacion_UF_por_viv": 238.5421,
+      "Gastos_Generales_UF_por_viv": 217.5421,
+      "Costo_Total_UF_por_viv": 2325.972,
+      "Gastos_Financieros_UF_por_viv": 183.4766,
+      "Valor_Terreno_UF_por_viv": 353.2897,
+      "Margen_UF_por_viv": 581.9159,
+      "Ingresos_Total_UF_Estimado_por_viv": 2855.3282,
+      "Terreno_m2_por_viv": 293.9533,
+      "Valor_Terreno_UF_m2": 1.201857,
+      "_region_key": "region metropolitana",
+      "_comuna_key": "melipilla",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 26,
+      "Proyecto": "Puertas del Sur IV et. II",
+      "Año": 2025,
+      "Region": "Maule",
+      "Comuna": "Talca",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 102,
+      "Departamentos": 0,
+      "Total_Viv": 102,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 61156,
+      "Urbanizacion_UF": 17566,
+      "Gastos_Generales_UF": 19120,
+      "Costo_Total_UF": 153249,
+      "Gastos_Financieros_UF": 14149,
+      "Valor_Terreno_UF": 22523,
+      "Terreno_m2": 30312,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 47125,
+      "Margen_Porc": 21.01,
+      "Margen_UF_VIV": 453,
+      "Ingresos_Total_UF_Estimado": 224297.95,
+      "Costo_Construccion_UF_por_viv": 599.5686,
+      "Urbanizacion_UF_por_viv": 172.2157,
+      "Gastos_Generales_UF_por_viv": 187.451,
+      "Costo_Total_UF_por_viv": 1502.4412,
+      "Gastos_Financieros_UF_por_viv": 138.7157,
+      "Valor_Terreno_UF_por_viv": 220.8137,
+      "Margen_UF_por_viv": 462.0098,
+      "Ingresos_Total_UF_Estimado_por_viv": 2198.9995,
+      "Terreno_m2_por_viv": 297.1765,
+      "Valor_Terreno_UF_m2": 0.743039,
+      "_region_key": "maule",
+      "_comuna_key": "talca",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 35,
+      "Proyecto": "Doña Agustinas II",
+      "Año": 2020,
+      "Region": "Maule",
+      "Comuna": "Linares",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 106,
+      "Departamentos": 0,
+      "Total_Viv": 106,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 71479,
+      "Urbanizacion_UF": 12102,
+      "Gastos_Generales_UF": 17416,
+      "Costo_Total_UF": 145508,
+      "Gastos_Financieros_UF": 8025,
+      "Valor_Terreno_UF": 24724,
+      "Terreno_m2": 29468,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 39320,
+      "Margen_Porc": 22.82,
+      "Margen_UF_VIV": 370,
+      "Ingresos_Total_UF_Estimado": 172305.0,
+      "Costo_Construccion_UF_por_viv": 674.3302,
+      "Urbanizacion_UF_por_viv": 114.1698,
+      "Gastos_Generales_UF_por_viv": 164.3019,
+      "Costo_Total_UF_por_viv": 1372.717,
+      "Gastos_Financieros_UF_por_viv": 75.7075,
+      "Valor_Terreno_UF_por_viv": 233.2453,
+      "Margen_UF_por_viv": 370.9434,
+      "Ingresos_Total_UF_Estimado_por_viv": 1625.5189,
+      "Terreno_m2_por_viv": 278.0,
+      "Valor_Terreno_UF_m2": 0.839012,
+      "_region_key": "maule",
+      "_comuna_key": "linares",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 46,
+      "Proyecto": "Puertas del Sur (Relentizado)",
+      "Año": 2022,
+      "Region": "Maule",
+      "Comuna": "Maule",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 81,
+      "Departamentos": 0,
+      "Total_Viv": 81,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 80614,
+      "Urbanizacion_UF": 15120,
+      "Gastos_Generales_UF": 19082,
+      "Costo_Total_UF": 149885,
+      "Gastos_Financieros_UF": 16031,
+      "Valor_Terreno_UF": 16529,
+      "Terreno_m2": 28961,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 39314,
+      "Margen_Porc": 20.6,
+      "Margen_UF_VIV": 462,
+      "Ingresos_Total_UF_Estimado": 190844.66,
+      "Costo_Construccion_UF_por_viv": 995.2346,
+      "Urbanizacion_UF_por_viv": 186.6667,
+      "Gastos_Generales_UF_por_viv": 235.5802,
+      "Costo_Total_UF_por_viv": 1850.4321,
+      "Gastos_Financieros_UF_por_viv": 197.9136,
+      "Valor_Terreno_UF_por_viv": 204.0617,
+      "Margen_UF_por_viv": 485.358,
+      "Ingresos_Total_UF_Estimado_por_viv": 2356.1069,
+      "Terreno_m2_por_viv": 357.5432,
+      "Valor_Terreno_UF_m2": 0.570733,
+      "_region_key": "maule",
+      "_comuna_key": "maule",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 34,
+      "Proyecto": "Alto Neyen I",
+      "Año": 2019,
+      "Region": "Maule",
+      "Comuna": "Talca",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 89,
+      "Departamentos": 0,
+      "Total_Viv": 89,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 81088,
+      "Urbanizacion_UF": 17775,
+      "Gastos_Generales_UF": 17597,
+      "Costo_Total_UF": 159609,
+      "Gastos_Financieros_UF": 7674,
+      "Valor_Terreno_UF": 37629,
+      "Terreno_m2": 26985,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 52427,
+      "Margen_Porc": 24.59,
+      "Margen_UF_VIV": 589,
+      "Ingresos_Total_UF_Estimado": 213204.55,
+      "Costo_Construccion_UF_por_viv": 911.1011,
+      "Urbanizacion_UF_por_viv": 199.7191,
+      "Gastos_Generales_UF_por_viv": 197.7191,
+      "Costo_Total_UF_por_viv": 1793.3596,
+      "Gastos_Financieros_UF_por_viv": 86.2247,
+      "Valor_Terreno_UF_por_viv": 422.7978,
+      "Margen_UF_por_viv": 589.0674,
+      "Ingresos_Total_UF_Estimado_por_viv": 2395.5567,
+      "Terreno_m2_por_viv": 303.2022,
+      "Valor_Terreno_UF_m2": 1.394441,
+      "_region_key": "maule",
+      "_comuna_key": "talca",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 36,
+      "Proyecto": "San Pedro de Parral IV",
+      "Año": 2020,
+      "Region": "Maule",
+      "Comuna": "Parral",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 84,
+      "Departamentos": 0,
+      "Total_Viv": 84,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 52235,
+      "Urbanizacion_UF": 9828,
+      "Gastos_Generales_UF": 14580,
+      "Costo_Total_UF": 112364,
+      "Gastos_Financieros_UF": 5863,
+      "Valor_Terreno_UF": 12291,
+      "Terreno_m2": 26135,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 26520,
+      "Margen_Porc": 21.48,
+      "Margen_UF_VIV": 315,
+      "Ingresos_Total_UF_Estimado": 123463.69,
+      "Costo_Construccion_UF_por_viv": 621.8452,
+      "Urbanizacion_UF_por_viv": 117.0,
+      "Gastos_Generales_UF_por_viv": 173.5714,
+      "Costo_Total_UF_por_viv": 1337.6667,
+      "Gastos_Financieros_UF_por_viv": 69.7976,
+      "Valor_Terreno_UF_por_viv": 146.3214,
+      "Margen_UF_por_viv": 315.7143,
+      "Ingresos_Total_UF_Estimado_por_viv": 1469.8058,
+      "Terreno_m2_por_viv": 311.131,
+      "Valor_Terreno_UF_m2": 0.470289,
+      "_region_key": "maule",
+      "_comuna_key": "parral",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 48,
+      "Proyecto": "Jardines de Van Gogh",
+      "Año": 2023,
+      "Region": "Ñuble",
+      "Comuna": "Chillan",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 99,
+      "Departamentos": 0,
+      "Total_Viv": 99,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 86821,
+      "Urbanizacion_UF": 19543,
+      "Gastos_Generales_UF": 22700,
+      "Costo_Total_UF": 158115,
+      "Gastos_Financieros_UF": 24319,
+      "Valor_Terreno_UF": 26785,
+      "Terreno_m2": 25885,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 49057,
+      "Margen_Porc": 21.21,
+      "Margen_UF_VIV": 495,
+      "Ingresos_Total_UF_Estimado": 231291.84,
+      "Costo_Construccion_UF_por_viv": 876.9798,
+      "Urbanizacion_UF_por_viv": 197.404,
+      "Gastos_Generales_UF_por_viv": 229.2929,
+      "Costo_Total_UF_por_viv": 1597.1212,
+      "Gastos_Financieros_UF_por_viv": 245.6465,
+      "Valor_Terreno_UF_por_viv": 270.5556,
+      "Margen_UF_por_viv": 495.5253,
+      "Ingresos_Total_UF_Estimado_por_viv": 2336.2812,
+      "Terreno_m2_por_viv": 261.4646,
+      "Valor_Terreno_UF_m2": 1.034769,
+      "_region_key": "nuble",
+      "_comuna_key": "chillan",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 37,
+      "Proyecto": "Doña Ignacia IX",
+      "Año": 2020,
+      "Region": "Maule",
+      "Comuna": "Maule",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 93,
+      "Departamentos": 0,
+      "Total_Viv": 93,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 56634,
+      "Urbanizacion_UF": 8340,
+      "Gastos_Generales_UF": 15690,
+      "Costo_Total_UF": 120626,
+      "Gastos_Financieros_UF": 6757,
+      "Valor_Terreno_UF": 20652,
+      "Terreno_m2": 25000,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 32111,
+      "Margen_Porc": 22.55,
+      "Margen_UF_VIV": 345,
+      "Ingresos_Total_UF_Estimado": 142399.11,
+      "Costo_Construccion_UF_por_viv": 608.9677,
+      "Urbanizacion_UF_por_viv": 89.6774,
+      "Gastos_Generales_UF_por_viv": 168.7097,
+      "Costo_Total_UF_por_viv": 1297.0538,
+      "Gastos_Financieros_UF_por_viv": 72.6559,
+      "Valor_Terreno_UF_por_viv": 222.0645,
+      "Margen_UF_por_viv": 345.2796,
+      "Ingresos_Total_UF_Estimado_por_viv": 1531.1732,
+      "Terreno_m2_por_viv": 268.8172,
+      "Valor_Terreno_UF_m2": 0.82608,
+      "_region_key": "maule",
+      "_comuna_key": "maule",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 1,
+      "Proyecto": "Villa Esperanza",
+      "Año": 2020,
+      "Region": "Maule",
+      "Comuna": "San Clemente",
+      "Tipo_Proyecto": "DS49",
+      "Casas": 133,
+      "Departamentos": 0,
+      "Total_Viv": 133,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 36955,
+      "Urbanizacion_UF": 13999,
+      "Gastos_Generales_UF": 12793,
+      "Costo_Total_UF": 79623,
+      "Gastos_Financieros_UF": 1296,
+      "Valor_Terreno_UF": 3990,
+      "Terreno_m2": 24941,
+      "Presupuesto_Financiado": 100377,
+      "Margen_UF": 20428,
+      "Margen_Porc": 20.35,
+      "Margen_UF_VIV": 154,
+      "Ingresos_Total_UF_Estimado": 100383.29,
+      "Costo_Construccion_UF_por_viv": 277.8571,
+      "Urbanizacion_UF_por_viv": 105.2556,
+      "Gastos_Generales_UF_por_viv": 96.188,
+      "Costo_Total_UF_por_viv": 598.6692,
+      "Gastos_Financieros_UF_por_viv": 9.7444,
+      "Valor_Terreno_UF_por_viv": 30.0,
+      "Margen_UF_por_viv": 153.594,
+      "Ingresos_Total_UF_Estimado_por_viv": 754.7616,
+      "Terreno_m2_por_viv": 187.5263,
+      "Valor_Terreno_UF_m2": 0.159978,
+      "_region_key": "maule",
+      "_comuna_key": "san clemente",
+      "_tipo_proyecto_key": "ds49",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 57,
+      "Proyecto": "Alto Manque II",
+      "Año": 2025,
+      "Region": "Maule",
+      "Comuna": "Talca",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 66,
+      "Departamentos": 0,
+      "Total_Viv": 66,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 118214,
+      "Urbanizacion_UF": 20491,
+      "Gastos_Generales_UF": 21549,
+      "Costo_Total_UF": 204973,
+      "Gastos_Financieros_UF": 16555,
+      "Valor_Terreno_UF": 40853,
+      "Terreno_m2": 24501,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 71088,
+      "Margen_Porc": 22.97,
+      "Margen_UF_VIV": 1077,
+      "Ingresos_Total_UF_Estimado": 309481.93,
+      "Costo_Construccion_UF_por_viv": 1791.1212,
+      "Urbanizacion_UF_por_viv": 310.4697,
+      "Gastos_Generales_UF_por_viv": 326.5,
+      "Costo_Total_UF_por_viv": 3105.6515,
+      "Gastos_Financieros_UF_por_viv": 250.8333,
+      "Valor_Terreno_UF_por_viv": 618.9848,
+      "Margen_UF_por_viv": 1077.0909,
+      "Ingresos_Total_UF_Estimado_por_viv": 4689.1202,
+      "Terreno_m2_por_viv": 371.2273,
+      "Valor_Terreno_UF_m2": 1.667401,
+      "_region_key": "maule",
+      "_comuna_key": "talca",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 56,
+      "Proyecto": "Jardines de Van Gogh II",
+      "Año": 2025,
+      "Region": "Ñuble",
+      "Comuna": "Chillan",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 97,
+      "Departamentos": 0,
+      "Total_Viv": 97,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 76906,
+      "Urbanizacion_UF": 21606,
+      "Gastos_Generales_UF": 21856,
+      "Costo_Total_UF": 207684,
+      "Gastos_Financieros_UF": 15664,
+      "Valor_Terreno_UF": 24589,
+      "Terreno_m2": 23743,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 54212,
+      "Margen_Porc": 22.37,
+      "Margen_UF_VIV": 526,
+      "Ingresos_Total_UF_Estimado": 242342.42,
+      "Costo_Construccion_UF_por_viv": 792.8454,
+      "Urbanizacion_UF_por_viv": 222.7423,
+      "Gastos_Generales_UF_por_viv": 225.3196,
+      "Costo_Total_UF_por_viv": 2141.0722,
+      "Gastos_Financieros_UF_por_viv": 161.4845,
+      "Valor_Terreno_UF_por_viv": 253.4948,
+      "Margen_UF_por_viv": 558.8866,
+      "Ingresos_Total_UF_Estimado_por_viv": 2498.3755,
+      "Terreno_m2_por_viv": 244.7732,
+      "Valor_Terreno_UF_m2": 1.035632,
+      "_region_key": "nuble",
+      "_comuna_key": "chillan",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 32,
+      "Proyecto": "Villa alto Rucahue Colonial Etapa IV",
+      "Año": 2019,
+      "Region": "Maule",
+      "Comuna": "Talca",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 42,
+      "Departamentos": 0,
+      "Total_Viv": 42,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 71029,
+      "Urbanizacion_UF": 19202,
+      "Gastos_Generales_UF": 17838,
+      "Costo_Total_UF": 133517,
+      "Gastos_Financieros_UF": 10501,
+      "Valor_Terreno_UF": 33879,
+      "Terreno_m2": 23444,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 48057,
+      "Margen_Porc": 23.82,
+      "Margen_UF_VIV": 1144,
+      "Ingresos_Total_UF_Estimado": 201750.63,
+      "Costo_Construccion_UF_por_viv": 1691.1667,
+      "Urbanizacion_UF_por_viv": 457.1905,
+      "Gastos_Generales_UF_por_viv": 424.7143,
+      "Costo_Total_UF_por_viv": 3178.9762,
+      "Gastos_Financieros_UF_por_viv": 250.0238,
+      "Valor_Terreno_UF_por_viv": 806.6429,
+      "Margen_UF_por_viv": 1144.2143,
+      "Ingresos_Total_UF_Estimado_por_viv": 4803.5864,
+      "Terreno_m2_por_viv": 558.1905,
+      "Valor_Terreno_UF_m2": 1.445103,
+      "_region_key": "maule",
+      "_comuna_key": "talca",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 29,
+      "Proyecto": "Lomas del Bosque",
+      "Año": 2019,
+      "Region": "Biobío",
+      "Comuna": "Los Angeles",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 79,
+      "Departamentos": 0,
+      "Total_Viv": 79,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 64666,
+      "Urbanizacion_UF": 16434,
+      "Gastos_Generales_UF": 15823,
+      "Costo_Total_UF": 118962,
+      "Gastos_Financieros_UF": 8533,
+      "Valor_Terreno_UF": 26829,
+      "Terreno_m2": 23070,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 32507,
+      "Margen_Porc": 19.66,
+      "Margen_UF_VIV": 411,
+      "Ingresos_Total_UF_Estimado": 165345.88,
+      "Costo_Construccion_UF_por_viv": 818.557,
+      "Urbanizacion_UF_por_viv": 208.0253,
+      "Gastos_Generales_UF_por_viv": 200.2911,
+      "Costo_Total_UF_por_viv": 1505.8481,
+      "Gastos_Financieros_UF_por_viv": 108.0127,
+      "Valor_Terreno_UF_por_viv": 339.6076,
+      "Margen_UF_por_viv": 411.481,
+      "Ingresos_Total_UF_Estimado_por_viv": 2092.9858,
+      "Terreno_m2_por_viv": 292.0253,
+      "Valor_Terreno_UF_m2": 1.162939,
+      "_region_key": "biobio",
+      "_comuna_key": "los angeles",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 31,
+      "Proyecto": "San Pedro de Parral III",
+      "Año": 2019,
+      "Region": "Maule",
+      "Comuna": "Parral",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 92,
+      "Departamentos": 0,
+      "Total_Viv": 92,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 49894,
+      "Urbanizacion_UF": 10801,
+      "Gastos_Generales_UF": 14428,
+      "Costo_Total_UF": 94797,
+      "Gastos_Financieros_UF": 6169,
+      "Valor_Terreno_UF": 9535,
+      "Terreno_m2": 22452,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 25624,
+      "Margen_Porc": 21.25,
+      "Margen_UF_VIV": 278,
+      "Ingresos_Total_UF_Estimado": 120583.53,
+      "Costo_Construccion_UF_por_viv": 542.3261,
+      "Urbanizacion_UF_por_viv": 117.4022,
+      "Gastos_Generales_UF_por_viv": 156.8261,
+      "Costo_Total_UF_por_viv": 1030.4022,
+      "Gastos_Financieros_UF_por_viv": 67.0543,
+      "Valor_Terreno_UF_por_viv": 103.6413,
+      "Margen_UF_por_viv": 278.5217,
+      "Ingresos_Total_UF_Estimado_por_viv": 1310.6905,
+      "Terreno_m2_por_viv": 244.0435,
+      "Valor_Terreno_UF_m2": 0.424684,
+      "_region_key": "maule",
+      "_comuna_key": "parral",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 11,
+      "Proyecto": "Manso Velasco IIB",
+      "Año": 2020,
+      "Region": "Region de Ohiggins",
+      "Comuna": "San Fernando",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 93,
+      "Departamentos": 0,
+      "Total_Viv": 93,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 46455,
+      "Urbanizacion_UF": 8537,
+      "Gastos_Generales_UF": 17178,
+      "Costo_Total_UF": 131576,
+      "Gastos_Financieros_UF": 5233,
+      "Valor_Terreno_UF": 13951,
+      "Terreno_m2": 20648,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 37285,
+      "Margen_Porc": 26.23,
+      "Margen_UF_VIV": 401,
+      "Ingresos_Total_UF_Estimado": 142146.4,
+      "Costo_Construccion_UF_por_viv": 499.5161,
+      "Urbanizacion_UF_por_viv": 91.7957,
+      "Gastos_Generales_UF_por_viv": 184.7097,
+      "Costo_Total_UF_por_viv": 1414.7957,
+      "Gastos_Financieros_UF_por_viv": 56.2688,
+      "Valor_Terreno_UF_por_viv": 150.0108,
+      "Margen_UF_por_viv": 400.914,
+      "Ingresos_Total_UF_Estimado_por_viv": 1528.4559,
+      "Terreno_m2_por_viv": 222.0215,
+      "Valor_Terreno_UF_m2": 0.675659,
+      "_region_key": "region de ohiggins",
+      "_comuna_key": "san fernando",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 42,
+      "Proyecto": "Condominio I Melipilla - 70 viv (LOTE B7)",
+      "Año": 2021,
+      "Region": "Region Metropolitana",
+      "Comuna": "Melipilla",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 70,
+      "Departamentos": 0,
+      "Total_Viv": 70,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 79780,
+      "Urbanizacion_UF": 16730,
+      "Gastos_Generales_UF": 22133,
+      "Costo_Total_UF": 154669,
+      "Gastos_Financieros_UF": 11362,
+      "Valor_Terreno_UF": 20450,
+      "Terreno_m2": 19885,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 46648,
+      "Margen_Porc": 22.86,
+      "Margen_UF_VIV": 666,
+      "Ingresos_Total_UF_Estimado": 204059.49,
+      "Costo_Construccion_UF_por_viv": 1139.7143,
+      "Urbanizacion_UF_por_viv": 239.0,
+      "Gastos_Generales_UF_por_viv": 316.1857,
+      "Costo_Total_UF_por_viv": 2209.5571,
+      "Gastos_Financieros_UF_por_viv": 162.3143,
+      "Valor_Terreno_UF_por_viv": 292.1429,
+      "Margen_UF_por_viv": 666.4,
+      "Ingresos_Total_UF_Estimado_por_viv": 2915.1356,
+      "Terreno_m2_por_viv": 284.0714,
+      "Valor_Terreno_UF_m2": 1.028413,
+      "_region_key": "region metropolitana",
+      "_comuna_key": "melipilla",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 40,
+      "Proyecto": "San Pedro de Parral IV B",
+      "Año": 2021,
+      "Region": "Maule",
+      "Comuna": "Parral",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 75,
+      "Departamentos": 0,
+      "Total_Viv": 75,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 47743,
+      "Urbanizacion_UF": 8453,
+      "Gastos_Generales_UF": 13816,
+      "Costo_Total_UF": 104792,
+      "Gastos_Financieros_UF": 4216,
+      "Valor_Terreno_UF": 8721,
+      "Terreno_m2": 18881,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 29585,
+      "Margen_Porc": 25.57,
+      "Margen_UF_VIV": 394,
+      "Ingresos_Total_UF_Estimado": 115701.99,
+      "Costo_Construccion_UF_por_viv": 636.5733,
+      "Urbanizacion_UF_por_viv": 112.7067,
+      "Gastos_Generales_UF_por_viv": 184.2133,
+      "Costo_Total_UF_por_viv": 1397.2267,
+      "Gastos_Financieros_UF_por_viv": 56.2133,
+      "Valor_Terreno_UF_por_viv": 116.28,
+      "Margen_UF_por_viv": 394.4667,
+      "Ingresos_Total_UF_Estimado_por_viv": 1542.6932,
+      "Terreno_m2_por_viv": 251.7467,
+      "Valor_Terreno_UF_m2": 0.461893,
+      "_region_key": "maule",
+      "_comuna_key": "parral",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 30,
+      "Proyecto": "Manso Velasco II A",
+      "Año": 2019,
+      "Region": "Region de Ohiggins",
+      "Comuna": "San Fernando",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 61,
+      "Departamentos": 0,
+      "Total_Viv": 61,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 33542,
+      "Urbanizacion_UF": 7728,
+      "Gastos_Generales_UF": 12204,
+      "Costo_Total_UF": 66885,
+      "Gastos_Financieros_UF": 3858,
+      "Valor_Terreno_UF": 7280,
+      "Terreno_m2": 15621,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 16328,
+      "Margen_Porc": 19.43,
+      "Margen_UF_VIV": 267,
+      "Ingresos_Total_UF_Estimado": 84035.0,
+      "Costo_Construccion_UF_por_viv": 549.8689,
+      "Urbanizacion_UF_por_viv": 126.6885,
+      "Gastos_Generales_UF_por_viv": 200.0656,
+      "Costo_Total_UF_por_viv": 1096.4754,
+      "Gastos_Financieros_UF_por_viv": 63.2459,
+      "Valor_Terreno_UF_por_viv": 119.3443,
+      "Margen_UF_por_viv": 267.6721,
+      "Ingresos_Total_UF_Estimado_por_viv": 1377.623,
+      "Terreno_m2_por_viv": 256.082,
+      "Valor_Terreno_UF_m2": 0.466039,
+      "_region_key": "region de ohiggins",
+      "_comuna_key": "san fernando",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 44,
+      "Proyecto": "Proyecto Neyen II",
+      "Año": 2021,
+      "Region": "Maule",
+      "Comuna": "Talca",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 58,
+      "Departamentos": 0,
+      "Total_Viv": 58,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 64177,
+      "Urbanizacion_UF": 18531,
+      "Gastos_Generales_UF": 17039,
+      "Costo_Total_UF": 134715,
+      "Gastos_Financieros_UF": 8343,
+      "Valor_Terreno_UF": 25291,
+      "Terreno_m2": 15498,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 40939,
+      "Margen_Porc": 23.19,
+      "Margen_UF_VIV": 705,
+      "Ingresos_Total_UF_Estimado": 176537.3,
+      "Costo_Construccion_UF_por_viv": 1106.5,
+      "Urbanizacion_UF_por_viv": 319.5,
+      "Gastos_Generales_UF_por_viv": 293.7759,
+      "Costo_Total_UF_por_viv": 2322.6724,
+      "Gastos_Financieros_UF_por_viv": 143.8448,
+      "Valor_Terreno_UF_por_viv": 436.0517,
+      "Margen_UF_por_viv": 705.8448,
+      "Ingresos_Total_UF_Estimado_por_viv": 3043.7466,
+      "Terreno_m2_por_viv": 267.2069,
+      "Valor_Terreno_UF_m2": 1.631888,
+      "_region_key": "maule",
+      "_comuna_key": "talca",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 54,
+      "Proyecto": "Condominio Camino al Agua",
+      "Año": 2024,
+      "Region": "Maule",
+      "Comuna": "Talca",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 0,
+      "Departamentos": 160,
+      "Total_Viv": 160,
+      "Tipo_Viv": "Depto",
+      "Costo_Construccion_UF": 117991,
+      "Urbanizacion_UF": 33937,
+      "Gastos_Generales_UF": 28664,
+      "Costo_Total_UF": 313944,
+      "Gastos_Financieros_UF": 19593,
+      "Valor_Terreno_UF": 51654,
+      "Terreno_m2": 15201,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 113835,
+      "Margen_Porc": 29.52,
+      "Margen_UF_VIV": 711,
+      "Ingresos_Total_UF_Estimado": 385619.92,
+      "Costo_Construccion_UF_por_viv": 737.4438,
+      "Urbanizacion_UF_por_viv": 212.1062,
+      "Gastos_Generales_UF_por_viv": 179.15,
+      "Costo_Total_UF_por_viv": 1962.15,
+      "Gastos_Financieros_UF_por_viv": 122.4562,
+      "Valor_Terreno_UF_por_viv": 322.8375,
+      "Margen_UF_por_viv": 711.4688,
+      "Ingresos_Total_UF_Estimado_por_viv": 2410.1245,
+      "Terreno_m2_por_viv": 95.0062,
+      "Valor_Terreno_UF_m2": 3.398066,
+      "_region_key": "maule",
+      "_comuna_key": "talca",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "depto"
+    },
+    {
+      "ID_Proyecto": 33,
+      "Proyecto": "Altos de Maiten",
+      "Año": 2019,
+      "Region": "Region Metropolitana",
+      "Comuna": "Melipilla",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 56,
+      "Departamentos": 0,
+      "Total_Viv": 56,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 48831,
+      "Urbanizacion_UF": 12338,
+      "Gastos_Generales_UF": 14647,
+      "Costo_Total_UF": 106354,
+      "Gastos_Financieros_UF": 6623,
+      "Valor_Terreno_UF": 18023,
+      "Terreno_m2": 14068,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 30058,
+      "Margen_Porc": 23.09,
+      "Margen_UF_VIV": 536,
+      "Ingresos_Total_UF_Estimado": 130177.57,
+      "Costo_Construccion_UF_por_viv": 871.9821,
+      "Urbanizacion_UF_por_viv": 220.3214,
+      "Gastos_Generales_UF_por_viv": 261.5536,
+      "Costo_Total_UF_por_viv": 1899.1786,
+      "Gastos_Financieros_UF_por_viv": 118.2679,
+      "Valor_Terreno_UF_por_viv": 321.8393,
+      "Margen_UF_por_viv": 536.75,
+      "Ingresos_Total_UF_Estimado_por_viv": 2324.5995,
+      "Terreno_m2_por_viv": 251.2143,
+      "Valor_Terreno_UF_m2": 1.281134,
+      "_region_key": "region metropolitana",
+      "_comuna_key": "melipilla",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 60,
+      "Proyecto": "Alto Neyen II",
+      "Año": 2026,
+      "Region": "Maule",
+      "Comuna": "Talca",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 0,
+      "Departamentos": 120,
+      "Total_Viv": 120,
+      "Tipo_Viv": "Depto",
+      "Costo_Construccion_UF": 87131,
+      "Urbanizacion_UF": 25981,
+      "Gastos_Generales_UF": 23494,
+      "Costo_Total_UF": 218258,
+      "Gastos_Financieros_UF": 18377,
+      "Valor_Terreno_UF": 21930,
+      "Terreno_m2": 12800,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 76330,
+      "Margen_Porc": 28.46,
+      "Margen_UF_VIV": 636,
+      "Ingresos_Total_UF_Estimado": 268200.98,
+      "Costo_Construccion_UF_por_viv": 726.0917,
+      "Urbanizacion_UF_por_viv": 216.5083,
+      "Gastos_Generales_UF_por_viv": 195.7833,
+      "Costo_Total_UF_por_viv": 1818.8167,
+      "Gastos_Financieros_UF_por_viv": 153.1417,
+      "Valor_Terreno_UF_por_viv": 182.75,
+      "Margen_UF_por_viv": 636.0833,
+      "Ingresos_Total_UF_Estimado_por_viv": 2235.0082,
+      "Terreno_m2_por_viv": 106.6667,
+      "Valor_Terreno_UF_m2": 1.713281,
+      "_region_key": "maule",
+      "_comuna_key": "talca",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "depto"
+    },
+    {
+      "ID_Proyecto": 39,
+      "Proyecto": "Lomas del Bosque",
+      "Año": 2021,
+      "Region": "Biobío",
+      "Comuna": "Los Angeles",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 56,
+      "Departamentos": 0,
+      "Total_Viv": 56,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 47228,
+      "Urbanizacion_UF": 16467,
+      "Gastos_Generales_UF": 14071,
+      "Costo_Total_UF": 120096,
+      "Gastos_Financieros_UF": 5216,
+      "Valor_Terreno_UF": 17820,
+      "Terreno_m2": 11891,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 33747,
+      "Margen_Porc": 24.29,
+      "Margen_UF_VIV": 602,
+      "Ingresos_Total_UF_Estimado": 138933.72,
+      "Costo_Construccion_UF_por_viv": 843.3571,
+      "Urbanizacion_UF_por_viv": 294.0536,
+      "Gastos_Generales_UF_por_viv": 251.2679,
+      "Costo_Total_UF_por_viv": 2144.5714,
+      "Gastos_Financieros_UF_por_viv": 93.1429,
+      "Valor_Terreno_UF_por_viv": 318.2143,
+      "Margen_UF_por_viv": 602.625,
+      "Ingresos_Total_UF_Estimado_por_viv": 2480.9593,
+      "Terreno_m2_por_viv": 212.3393,
+      "Valor_Terreno_UF_m2": 1.498612,
+      "_region_key": "biobio",
+      "_comuna_key": "los angeles",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa"
+    },
+    {
+      "ID_Proyecto": 25,
+      "Proyecto": "Doña Agustina III Et. III",
+      "Año": 2025,
+      "Region": "Maule",
+      "Comuna": "Linares",
+      "Tipo_Proyecto": "DS19",
+      "Casas": 0,
+      "Departamentos": 160,
+      "Total_Viv": 160,
+      "Tipo_Viv": "Depto",
+      "Costo_Construccion_UF": 102812,
+      "Urbanizacion_UF": 20816,
+      "Gastos_Generales_UF": 24982,
+      "Costo_Total_UF": 274327,
+      "Gastos_Financieros_UF": 23903,
+      "Valor_Terreno_UF": 8411,
+      "Terreno_m2": 11350,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 81113,
+      "Margen_Porc": 24.58,
+      "Margen_UF_VIV": 507,
+      "Ingresos_Total_UF_Estimado": 329995.93,
+      "Costo_Construccion_UF_por_viv": 642.575,
+      "Urbanizacion_UF_por_viv": 130.1,
+      "Gastos_Generales_UF_por_viv": 156.1375,
+      "Costo_Total_UF_por_viv": 1714.5438,
+      "Gastos_Financieros_UF_por_viv": 149.3938,
+      "Valor_Terreno_UF_por_viv": 52.5688,
+      "Margen_UF_por_viv": 506.9563,
+      "Ingresos_Total_UF_Estimado_por_viv": 2062.4746,
+      "Terreno_m2_por_viv": 70.9375,
+      "Valor_Terreno_UF_m2": 0.741057,
+      "_region_key": "maule",
+      "_comuna_key": "linares",
+      "_tipo_proyecto_key": "ds19",
+      "_tipo_viv_key": "depto"
+    },
+    {
+      "ID_Proyecto": 3,
+      "Proyecto": "Doña Agustina III Et. I",
+      "Año": 2020,
+      "Region": "Maule",
+      "Comuna": "Linares",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 0,
+      "Departamentos": 80,
+      "Total_Viv": 80,
+      "Tipo_Viv": "Depto",
+      "Costo_Construccion_UF": 50407,
+      "Urbanizacion_UF": 7591,
+      "Gastos_Generales_UF": 17035,
+      "Costo_Total_UF": 110949,
+      "Gastos_Financieros_UF": 6740,
+      "Valor_Terreno_UF": 7689,
+      "Terreno_m2": 9403,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 29890,
+      "Margen_Porc": 23.97,
+      "Margen_UF_VIV": 374,
+      "Ingresos_Total_UF_Estimado": 124697.54,
+      "Costo_Construccion_UF_por_viv": 630.0875,
+      "Urbanizacion_UF_por_viv": 94.8875,
+      "Gastos_Generales_UF_por_viv": 212.9375,
+      "Costo_Total_UF_por_viv": 1386.8625,
+      "Gastos_Financieros_UF_por_viv": 84.25,
+      "Valor_Terreno_UF_por_viv": 96.1125,
+      "Margen_UF_por_viv": 373.625,
+      "Ingresos_Total_UF_Estimado_por_viv": 1558.7192,
+      "Terreno_m2_por_viv": 117.5375,
+      "Valor_Terreno_UF_m2": 0.817718,
+      "_region_key": "maule",
+      "_comuna_key": "linares",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "depto"
+    },
+    {
+      "ID_Proyecto": 59,
+      "Proyecto": "Puerta Norte Et. II (Saldo)",
+      "Año": 2026,
+      "Region": "Maule",
+      "Comuna": "Curico",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 0,
+      "Departamentos": 64,
+      "Total_Viv": 64,
+      "Tipo_Viv": "Depto",
+      "Costo_Construccion_UF": 44023,
+      "Urbanizacion_UF": 6334,
+      "Gastos_Generales_UF": 18874,
+      "Costo_Total_UF": 117524,
+      "Gastos_Financieros_UF": 11961,
+      "Valor_Terreno_UF": 8617,
+      "Terreno_m2": 9357,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 31107,
+      "Margen_Porc": 22.13,
+      "Margen_UF_VIV": 486,
+      "Ingresos_Total_UF_Estimado": 140564.84,
+      "Costo_Construccion_UF_por_viv": 687.8594,
+      "Urbanizacion_UF_por_viv": 98.9688,
+      "Gastos_Generales_UF_por_viv": 294.9062,
+      "Costo_Total_UF_por_viv": 1836.3125,
+      "Gastos_Financieros_UF_por_viv": 186.8906,
+      "Valor_Terreno_UF_por_viv": 134.6406,
+      "Margen_UF_por_viv": 486.0469,
+      "Ingresos_Total_UF_Estimado_por_viv": 2196.3256,
+      "Terreno_m2_por_viv": 146.2031,
+      "Valor_Terreno_UF_m2": 0.920915,
+      "_region_key": "maule",
+      "_comuna_key": "curico",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "depto"
+    },
+    {
+      "ID_Proyecto": 47,
+      "Proyecto": "Puerta Norte Et. II",
+      "Año": 2023,
+      "Region": "Maule",
+      "Comuna": "Curico",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 0,
+      "Departamentos": 64,
+      "Total_Viv": 64,
+      "Tipo_Viv": "Depto",
+      "Costo_Construccion_UF": 47354,
+      "Urbanizacion_UF": 9881,
+      "Gastos_Generales_UF": 10671,
+      "Costo_Total_UF": 95567,
+      "Gastos_Financieros_UF": 9597,
+      "Valor_Terreno_UF": 6166,
+      "Terreno_m2": 8800,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 30215,
+      "Margen_Porc": 25.79,
+      "Margen_UF_VIV": 472,
+      "Ingresos_Total_UF_Estimado": 117157.81,
+      "Costo_Construccion_UF_por_viv": 739.9062,
+      "Urbanizacion_UF_por_viv": 154.3906,
+      "Gastos_Generales_UF_por_viv": 166.7344,
+      "Costo_Total_UF_por_viv": 1493.2344,
+      "Gastos_Financieros_UF_por_viv": 149.9531,
+      "Valor_Terreno_UF_por_viv": 96.3438,
+      "Margen_UF_por_viv": 472.1094,
+      "Ingresos_Total_UF_Estimado_por_viv": 1830.5908,
+      "Terreno_m2_por_viv": 137.5,
+      "Valor_Terreno_UF_m2": 0.700682,
+      "_region_key": "maule",
+      "_comuna_key": "curico",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "depto"
+    }
+  ],
+  "typologies": [
+    {
+      "ID_Proyecto": 1,
+      "Tipologia": "Canelo Pareo",
+      "Cantidad": 124,
+      "Costo_UF_Viv": 254,
+      "_tipologia_key": "canelo pareo"
+    },
+    {
+      "ID_Proyecto": 1,
+      "Tipologia": "Canelo Aislada",
+      "Cantidad": 1,
+      "Costo_UF_Viv": 9,
+      "_tipologia_key": "canelo aislada"
+    },
+    {
+      "ID_Proyecto": 1,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 5,
+      "Costo_UF_Viv": 14,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 2,
+      "Tipologia": "Roble Full",
+      "Cantidad": 58,
+      "Costo_UF_Viv": 568.7,
+      "_tipologia_key": "roble full"
+    },
+    {
+      "ID_Proyecto": 2,
+      "Tipologia": "Nogal Full",
+      "Cantidad": 78,
+      "Costo_UF_Viv": 496.8,
+      "_tipologia_key": "nogal full"
+    },
+    {
+      "ID_Proyecto": 2,
+      "Tipologia": "Nogal Plus",
+      "Cantidad": 22,
+      "Costo_UF_Viv": 425.8,
+      "_tipologia_key": "nogal plus"
+    },
+    {
+      "ID_Proyecto": 2,
+      "Tipologia": "Nogal Estandar",
+      "Cantidad": 56,
+      "Costo_UF_Viv": 421.5,
+      "_tipologia_key": "nogal estandar"
+    },
+    {
+      "ID_Proyecto": 2,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 1,
+      "Costo_UF_Viv": 378.1,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 3,
+      "Tipologia": "Departamento Tipo A",
+      "Cantidad": 40,
+      "Costo_UF_Viv": 629.88,
+      "_tipologia_key": "departamento tipo a"
+    },
+    {
+      "ID_Proyecto": 3,
+      "Tipologia": "Departamento Tipo B",
+      "Cantidad": 40,
+      "Costo_UF_Viv": 550.76,
+      "_tipologia_key": "departamento tipo b"
+    },
+    {
+      "ID_Proyecto": 4,
+      "Tipologia": "Canelo Pareo",
+      "Cantidad": 236,
+      "Costo_UF_Viv": 296.74,
+      "_tipologia_key": "canelo pareo"
+    },
+    {
+      "ID_Proyecto": 4,
+      "Tipologia": "Canelo Aislada",
+      "Cantidad": 7,
+      "Costo_UF_Viv": 9.9,
+      "_tipologia_key": "canelo aislada"
+    },
+    {
+      "ID_Proyecto": 4,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 4,
+      "Costo_UF_Viv": 7.19,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 5,
+      "Tipologia": "Canelo Pareo",
+      "Cantidad": 152,
+      "Costo_UF_Viv": 327.07,
+      "_tipologia_key": "canelo pareo"
+    },
+    {
+      "ID_Proyecto": 5,
+      "Tipologia": "Canelo Aislada",
+      "Cantidad": 10,
+      "Costo_UF_Viv": 28.47,
+      "_tipologia_key": "canelo aislada"
+    },
+    {
+      "ID_Proyecto": 5,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 5,
+      "Costo_UF_Viv": 17.05,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 5,
+      "Tipologia": "Discapacitado Quillay",
+      "Cantidad": 6,
+      "Costo_UF_Viv": 15.58,
+      "_tipologia_key": "discapacitado quillay"
+    },
+    {
+      "ID_Proyecto": 6,
+      "Tipologia": "Canelo Pareo",
+      "Cantidad": 182,
+      "Costo_UF_Viv": 336.95,
+      "_tipologia_key": "canelo pareo"
+    },
+    {
+      "ID_Proyecto": 6,
+      "Tipologia": "Canelo Aislada",
+      "Cantidad": 17,
+      "Costo_UF_Viv": 45.38,
+      "_tipologia_key": "canelo aislada"
+    },
+    {
+      "ID_Proyecto": 6,
+      "Tipologia": "Discapacitado Quillay 20 UF",
+      "Cantidad": 2,
+      "Costo_UF_Viv": 4.75,
+      "_tipologia_key": "discapacitado quillay 20 uf"
+    },
+    {
+      "ID_Proyecto": 6,
+      "Tipologia": "Discapacitado Quillay 80 UF",
+      "Cantidad": 8,
+      "Costo_UF_Viv": 20.82,
+      "_tipologia_key": "discapacitado quillay 80 uf"
+    },
+    {
+      "ID_Proyecto": 7,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 4,
+      "Costo_UF_Viv": 10.72,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 7,
+      "Tipologia": "Manzanita Pareada",
+      "Cantidad": 186,
+      "Costo_UF_Viv": 448.39,
+      "_tipologia_key": "manzanita pareada"
+    },
+    {
+      "ID_Proyecto": 7,
+      "Tipologia": "Manzanita Aislada",
+      "Cantidad": 12,
+      "Costo_UF_Viv": 31.22,
+      "_tipologia_key": "manzanita aislada"
+    },
+    {
+      "ID_Proyecto": 8,
+      "Tipologia": "Canelo Pareo",
+      "Cantidad": 246,
+      "Costo_UF_Viv": 351.13,
+      "_tipologia_key": "canelo pareo"
+    },
+    {
+      "ID_Proyecto": 8,
+      "Tipologia": "Canelo Aislada",
+      "Cantidad": 16,
+      "Costo_UF_Viv": 25.93,
+      "_tipologia_key": "canelo aislada"
+    },
+    {
+      "ID_Proyecto": 8,
+      "Tipologia": "Discapacitado Quillay 80 UF",
+      "Cantidad": 4,
+      "Costo_UF_Viv": 7.69,
+      "_tipologia_key": "discapacitado quillay 80 uf"
+    },
+    {
+      "ID_Proyecto": 9,
+      "Tipologia": "Canelo Pareo",
+      "Cantidad": 272,
+      "Costo_UF_Viv": 330.22,
+      "_tipologia_key": "canelo pareo"
+    },
+    {
+      "ID_Proyecto": 9,
+      "Tipologia": "Canelo Aislada",
+      "Cantidad": 12,
+      "Costo_UF_Viv": 18.52,
+      "_tipologia_key": "canelo aislada"
+    },
+    {
+      "ID_Proyecto": 9,
+      "Tipologia": "Discapacitado Quillay 20 UF",
+      "Cantidad": 3,
+      "Costo_UF_Viv": 4.47,
+      "_tipologia_key": "discapacitado quillay 20 uf"
+    },
+    {
+      "ID_Proyecto": 9,
+      "Tipologia": "Discapacitado Quillay 80 UF",
+      "Cantidad": 12,
+      "Costo_UF_Viv": 19.06,
+      "_tipologia_key": "discapacitado quillay 80 uf"
+    },
+    {
+      "ID_Proyecto": 10,
+      "Tipologia": "Roble Plus",
+      "Cantidad": 25,
+      "Costo_UF_Viv": 598,
+      "_tipologia_key": "roble plus"
+    },
+    {
+      "ID_Proyecto": 10,
+      "Tipologia": "Boldo Full",
+      "Cantidad": 101,
+      "Costo_UF_Viv": 721.4,
+      "_tipologia_key": "boldo full"
+    },
+    {
+      "ID_Proyecto": 10,
+      "Tipologia": "Nogal Estandar",
+      "Cantidad": 33,
+      "Costo_UF_Viv": 520.3,
+      "_tipologia_key": "nogal estandar"
+    },
+    {
+      "ID_Proyecto": 10,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 1,
+      "Costo_UF_Viv": 387.8,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 11,
+      "Tipologia": "Roble Full",
+      "Cantidad": 10,
+      "Costo_UF_Viv": 592.3,
+      "_tipologia_key": "roble full"
+    },
+    {
+      "ID_Proyecto": 11,
+      "Tipologia": "Nogal Full",
+      "Cantidad": 48,
+      "Costo_UF_Viv": 485.4,
+      "_tipologia_key": "nogal full"
+    },
+    {
+      "ID_Proyecto": 11,
+      "Tipologia": "Nogal Plus",
+      "Cantidad": 10,
+      "Costo_UF_Viv": 434.8,
+      "_tipologia_key": "nogal plus"
+    },
+    {
+      "ID_Proyecto": 11,
+      "Tipologia": "Canelo Pareo",
+      "Cantidad": 24,
+      "Costo_UF_Viv": 347.3,
+      "_tipologia_key": "canelo pareo"
+    },
+    {
+      "ID_Proyecto": 11,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 1,
+      "Costo_UF_Viv": 358.3,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 12,
+      "Tipologia": "Roble Plus",
+      "Cantidad": 28,
+      "Costo_UF_Viv": 546.1,
+      "_tipologia_key": "roble plus"
+    },
+    {
+      "ID_Proyecto": 12,
+      "Tipologia": "Boldo Full",
+      "Cantidad": 115,
+      "Costo_UF_Viv": 679.9,
+      "_tipologia_key": "boldo full"
+    },
+    {
+      "ID_Proyecto": 12,
+      "Tipologia": "Nogal Estandar",
+      "Cantidad": 38,
+      "Costo_UF_Viv": 464.6,
+      "_tipologia_key": "nogal estandar"
+    },
+    {
+      "ID_Proyecto": 12,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 1,
+      "Costo_UF_Viv": 358.3,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 13,
+      "Tipologia": "Roble Full",
+      "Cantidad": 97,
+      "Costo_UF_Viv": 593.28,
+      "_tipologia_key": "roble full"
+    },
+    {
+      "ID_Proyecto": 13,
+      "Tipologia": "Nogal Plus",
+      "Cantidad": 16,
+      "Costo_UF_Viv": 483.63,
+      "_tipologia_key": "nogal plus"
+    },
+    {
+      "ID_Proyecto": 13,
+      "Tipologia": "Canelo Pareo",
+      "Cantidad": 31,
+      "Costo_UF_Viv": 414.96,
+      "_tipologia_key": "canelo pareo"
+    },
+    {
+      "ID_Proyecto": 13,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 1,
+      "Costo_UF_Viv": 436.73,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 13,
+      "Tipologia": "Departamento Tipo B-C",
+      "Cantidad": 16,
+      "Costo_UF_Viv": 656.48,
+      "_tipologia_key": "departamento tipo b-c"
+    },
+    {
+      "ID_Proyecto": 13,
+      "Tipologia": "Departamento Tipo D",
+      "Cantidad": 9,
+      "Costo_UF_Viv": 596.48,
+      "_tipologia_key": "departamento tipo d"
+    },
+    {
+      "ID_Proyecto": 13,
+      "Tipologia": "Departamento Tipo A",
+      "Cantidad": 7,
+      "Costo_UF_Viv": 590.93,
+      "_tipologia_key": "departamento tipo a"
+    },
+    {
+      "ID_Proyecto": 14,
+      "Tipologia": "Roble Full",
+      "Cantidad": 56,
+      "Costo_UF_Viv": 593.8,
+      "_tipologia_key": "roble full"
+    },
+    {
+      "ID_Proyecto": 14,
+      "Tipologia": "Boldo Full",
+      "Cantidad": 65,
+      "Costo_UF_Viv": 690.6,
+      "_tipologia_key": "boldo full"
+    },
+    {
+      "ID_Proyecto": 14,
+      "Tipologia": "Nogal Plus",
+      "Cantidad": 18,
+      "Costo_UF_Viv": 524.7,
+      "_tipologia_key": "nogal plus"
+    },
+    {
+      "ID_Proyecto": 14,
+      "Tipologia": "Canelo Pareo",
+      "Cantidad": 36,
+      "Costo_UF_Viv": 390.8,
+      "_tipologia_key": "canelo pareo"
+    },
+    {
+      "ID_Proyecto": 14,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 1,
+      "Costo_UF_Viv": 422.6,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 15,
+      "Tipologia": "Roble Plus",
+      "Cantidad": 12,
+      "Costo_UF_Viv": 575.73,
+      "_tipologia_key": "roble plus"
+    },
+    {
+      "ID_Proyecto": 15,
+      "Tipologia": "Boldo Full",
+      "Cantidad": 60,
+      "Costo_UF_Viv": 696.36,
+      "_tipologia_key": "boldo full"
+    },
+    {
+      "ID_Proyecto": 15,
+      "Tipologia": "Nogal Estandar",
+      "Cantidad": 22,
+      "Costo_UF_Viv": 482.84,
+      "_tipologia_key": "nogal estandar"
+    },
+    {
+      "ID_Proyecto": 15,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 1,
+      "Costo_UF_Viv": 473.84,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 16,
+      "Tipologia": "Tipologia 3",
+      "Cantidad": 74,
+      "Costo_UF_Viv": 549.43,
+      "_tipologia_key": "tipologia 3"
+    },
+    {
+      "ID_Proyecto": 16,
+      "Tipologia": "Tipologia 2",
+      "Cantidad": 74,
+      "Costo_UF_Viv": 549.43,
+      "_tipologia_key": "tipologia 2"
+    },
+    {
+      "ID_Proyecto": 16,
+      "Tipologia": "Tipologia 1",
+      "Cantidad": 22,
+      "Costo_UF_Viv": 487.26,
+      "_tipologia_key": "tipologia 1"
+    },
+    {
+      "ID_Proyecto": 16,
+      "Tipologia": "Tipologia 0",
+      "Cantidad": 42,
+      "Costo_UF_Viv": 487.26,
+      "_tipologia_key": "tipologia 0"
+    },
+    {
+      "ID_Proyecto": 16,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 1,
+      "Costo_UF_Viv": 430.07,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 17,
+      "Tipologia": "Ciruelo Aislada",
+      "Cantidad": 19,
+      "Costo_UF_Viv": 729.9,
+      "_tipologia_key": "ciruelo aislada"
+    },
+    {
+      "ID_Proyecto": 17,
+      "Tipologia": "Ciruelo Pareada",
+      "Cantidad": 78,
+      "Costo_UF_Viv": 649.7,
+      "_tipologia_key": "ciruelo pareada"
+    },
+    {
+      "ID_Proyecto": 17,
+      "Tipologia": "Manzano C/ Lucarna",
+      "Cantidad": 22,
+      "Costo_UF_Viv": 623.1,
+      "_tipologia_key": "manzano c/ lucarna"
+    },
+    {
+      "ID_Proyecto": 17,
+      "Tipologia": "Manzano S/ Lucarna",
+      "Cantidad": 34,
+      "Costo_UF_Viv": 581.1,
+      "_tipologia_key": "manzano s/ lucarna"
+    },
+    {
+      "ID_Proyecto": 17,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 2,
+      "Costo_UF_Viv": 472.5,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 18,
+      "Tipologia": "Ciruelo Aislada",
+      "Cantidad": 50,
+      "Costo_UF_Viv": 729.93,
+      "_tipologia_key": "ciruelo aislada"
+    },
+    {
+      "ID_Proyecto": 18,
+      "Tipologia": "Ciruelo Pareada",
+      "Cantidad": 38,
+      "Costo_UF_Viv": 654.15,
+      "_tipologia_key": "ciruelo pareada"
+    },
+    {
+      "ID_Proyecto": 18,
+      "Tipologia": "Manzano C/ Lucarna",
+      "Cantidad": 24,
+      "Costo_UF_Viv": 589.27,
+      "_tipologia_key": "manzano c/ lucarna"
+    },
+    {
+      "ID_Proyecto": 18,
+      "Tipologia": "Manzano S/ Lucarna",
+      "Cantidad": 38,
+      "Costo_UF_Viv": 551.96,
+      "_tipologia_key": "manzano s/ lucarna"
+    },
+    {
+      "ID_Proyecto": 18,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 2,
+      "Costo_UF_Viv": 485.32,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 19,
+      "Tipologia": "Ciruelo Aislada Inmb",
+      "Cantidad": 21,
+      "Costo_UF_Viv": 705.84,
+      "_tipologia_key": "ciruelo aislada inmb"
+    },
+    {
+      "ID_Proyecto": 19,
+      "Tipologia": "Ciruelo Pareada",
+      "Cantidad": 99,
+      "Costo_UF_Viv": 706.28,
+      "_tipologia_key": "ciruelo pareada"
+    },
+    {
+      "ID_Proyecto": 19,
+      "Tipologia": "Manzano C/ Lucarna",
+      "Cantidad": 30,
+      "Costo_UF_Viv": 580.9,
+      "_tipologia_key": "manzano c/ lucarna"
+    },
+    {
+      "ID_Proyecto": 19,
+      "Tipologia": "Manzano S/ Lucarna",
+      "Cantidad": 42,
+      "Costo_UF_Viv": 542.82,
+      "_tipologia_key": "manzano s/ lucarna"
+    },
+    {
+      "ID_Proyecto": 19,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 2,
+      "Costo_UF_Viv": 507.32,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 20,
+      "Tipologia": "Ciruelo Pareada",
+      "Cantidad": 86,
+      "Costo_UF_Viv": 662.79,
+      "_tipologia_key": "ciruelo pareada"
+    },
+    {
+      "ID_Proyecto": 20,
+      "Tipologia": "Manzano C/ Lucarna",
+      "Cantidad": 24,
+      "Costo_UF_Viv": 601.62,
+      "_tipologia_key": "manzano c/ lucarna"
+    },
+    {
+      "ID_Proyecto": 20,
+      "Tipologia": "Manzano S/ Lucarna",
+      "Cantidad": 36,
+      "Costo_UF_Viv": 551.28,
+      "_tipologia_key": "manzano s/ lucarna"
+    },
+    {
+      "ID_Proyecto": 20,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 2,
+      "Costo_UF_Viv": 476.22,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 21,
+      "Tipologia": "Ciruelo Aislada",
+      "Cantidad": 55,
+      "Costo_UF_Viv": 728.18,
+      "_tipologia_key": "ciruelo aislada"
+    },
+    {
+      "ID_Proyecto": 21,
+      "Tipologia": "Ciruelo Pareada",
+      "Cantidad": 44,
+      "Costo_UF_Viv": 673.7,
+      "_tipologia_key": "ciruelo pareada"
+    },
+    {
+      "ID_Proyecto": 21,
+      "Tipologia": "Manzano C/ Lucarna",
+      "Cantidad": 26,
+      "Costo_UF_Viv": 604.22,
+      "_tipologia_key": "manzano c/ lucarna"
+    },
+    {
+      "ID_Proyecto": 21,
+      "Tipologia": "Manzano S/ Lucarna",
+      "Cantidad": 40,
+      "Costo_UF_Viv": 552.42,
+      "_tipologia_key": "manzano s/ lucarna"
+    },
+    {
+      "ID_Proyecto": 21,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 2,
+      "Costo_UF_Viv": 492.83,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 22,
+      "Tipologia": "Ciruelo Aislada",
+      "Cantidad": 29,
+      "Costo_UF_Viv": 690.27,
+      "_tipologia_key": "ciruelo aislada"
+    },
+    {
+      "ID_Proyecto": 22,
+      "Tipologia": "Ciruelo Pareada",
+      "Cantidad": 86,
+      "Costo_UF_Viv": 637.22,
+      "_tipologia_key": "ciruelo pareada"
+    },
+    {
+      "ID_Proyecto": 22,
+      "Tipologia": "Manzano C/ Lucarna",
+      "Cantidad": 34,
+      "Costo_UF_Viv": 571.49,
+      "_tipologia_key": "manzano c/ lucarna"
+    },
+    {
+      "ID_Proyecto": 22,
+      "Tipologia": "Manzano S/ Lucarna",
+      "Cantidad": 48,
+      "Costo_UF_Viv": 529.89,
+      "_tipologia_key": "manzano s/ lucarna"
+    },
+    {
+      "ID_Proyecto": 22,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 2,
+      "Costo_UF_Viv": 451.26,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 23,
+      "Tipologia": "Ciruelo Aislada",
+      "Cantidad": 51,
+      "Costo_UF_Viv": 632.93,
+      "_tipologia_key": "ciruelo aislada"
+    },
+    {
+      "ID_Proyecto": 23,
+      "Tipologia": "Ciruelo Pareada",
+      "Cantidad": 108,
+      "Costo_UF_Viv": 577.42,
+      "_tipologia_key": "ciruelo pareada"
+    },
+    {
+      "ID_Proyecto": 23,
+      "Tipologia": "Manzano C/ Lucarna",
+      "Cantidad": 44,
+      "Costo_UF_Viv": 534.58,
+      "_tipologia_key": "manzano c/ lucarna"
+    },
+    {
+      "ID_Proyecto": 23,
+      "Tipologia": "Manzano S/ Lucarna",
+      "Cantidad": 66,
+      "Costo_UF_Viv": 493.88,
+      "_tipologia_key": "manzano s/ lucarna"
+    },
+    {
+      "ID_Proyecto": 23,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 4,
+      "Costo_UF_Viv": 429.75,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 24,
+      "Tipologia": "Roble Full",
+      "Cantidad": 91,
+      "Costo_UF_Viv": 660.2,
+      "_tipologia_key": "roble full"
+    },
+    {
+      "ID_Proyecto": 24,
+      "Tipologia": "Manzano C/ Lucarna",
+      "Cantidad": 24,
+      "Costo_UF_Viv": 545.8,
+      "_tipologia_key": "manzano c/ lucarna"
+    },
+    {
+      "ID_Proyecto": 24,
+      "Tipologia": "Manzano S/ Lucarna",
+      "Cantidad": 37,
+      "Costo_UF_Viv": 500.8,
+      "_tipologia_key": "manzano s/ lucarna"
+    },
+    {
+      "ID_Proyecto": 24,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 2,
+      "Costo_UF_Viv": 492.2,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 25,
+      "Tipologia": "Departamento Tipo A",
+      "Cantidad": 42,
+      "Costo_UF_Viv": 576.9,
+      "_tipologia_key": "departamento tipo a"
+    },
+    {
+      "ID_Proyecto": 25,
+      "Tipologia": "Departamento Tipo B",
+      "Cantidad": 18,
+      "Costo_UF_Viv": 652.74,
+      "_tipologia_key": "departamento tipo b"
+    },
+    {
+      "ID_Proyecto": 25,
+      "Tipologia": "Departamento Tipo C",
+      "Cantidad": 60,
+      "Costo_UF_Viv": 658,
+      "_tipologia_key": "departamento tipo c"
+    },
+    {
+      "ID_Proyecto": 25,
+      "Tipologia": "Departamento Tipo D",
+      "Cantidad": 40,
+      "Costo_UF_Viv": 582.47,
+      "_tipologia_key": "departamento tipo d"
+    },
+    {
+      "ID_Proyecto": 26,
+      "Tipologia": "Ciruelo Aislada",
+      "Cantidad": 12,
+      "Costo_UF_Viv": 639.69,
+      "_tipologia_key": "ciruelo aislada"
+    },
+    {
+      "ID_Proyecto": 26,
+      "Tipologia": "Ciruelo Pareada",
+      "Cantidad": 48,
+      "Costo_UF_Viv": 590.32,
+      "_tipologia_key": "ciruelo pareada"
+    },
+    {
+      "ID_Proyecto": 26,
+      "Tipologia": "Manzano Plus Pareo",
+      "Cantidad": 16,
+      "Costo_UF_Viv": 540.33,
+      "_tipologia_key": "manzano plus pareo"
+    },
+    {
+      "ID_Proyecto": 26,
+      "Tipologia": "Manzano Estandar Pareo",
+      "Cantidad": 24,
+      "Costo_UF_Viv": 497.51,
+      "_tipologia_key": "manzano estandar pareo"
+    },
+    {
+      "ID_Proyecto": 26,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 2,
+      "Costo_UF_Viv": 485.28,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 27,
+      "Tipologia": "Ciruelo Aislada Inmb",
+      "Cantidad": 6,
+      "Costo_UF_Viv": 638,
+      "_tipologia_key": "ciruelo aislada inmb"
+    },
+    {
+      "ID_Proyecto": 27,
+      "Tipologia": "Ciruelo Aislada",
+      "Cantidad": 43,
+      "Costo_UF_Viv": 638,
+      "_tipologia_key": "ciruelo aislada"
+    },
+    {
+      "ID_Proyecto": 27,
+      "Tipologia": "Ciruelo Pareada",
+      "Cantidad": 54,
+      "Costo_UF_Viv": 585,
+      "_tipologia_key": "ciruelo pareada"
+    },
+    {
+      "ID_Proyecto": 27,
+      "Tipologia": "Manzano C/ Lucarna",
+      "Cantidad": 26,
+      "Costo_UF_Viv": 537,
+      "_tipologia_key": "manzano c/ lucarna"
+    },
+    {
+      "ID_Proyecto": 27,
+      "Tipologia": "Manzano S/ Lucarna",
+      "Cantidad": 40,
+      "Costo_UF_Viv": 496,
+      "_tipologia_key": "manzano s/ lucarna"
+    },
+    {
+      "ID_Proyecto": 27,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 2,
+      "Costo_UF_Viv": 452,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 28,
+      "Tipologia": "Ciruelo Pareada",
+      "Cantidad": 60,
+      "Costo_UF_Viv": 578.72,
+      "_tipologia_key": "ciruelo pareada"
+    },
+    {
+      "ID_Proyecto": 28,
+      "Tipologia": "Manzano Plus",
+      "Cantidad": 34,
+      "Costo_UF_Viv": 531.99,
+      "_tipologia_key": "manzano plus"
+    },
+    {
+      "ID_Proyecto": 28,
+      "Tipologia": "Manzano Plus Estandar",
+      "Cantidad": 30,
+      "Costo_UF_Viv": 489.15,
+      "_tipologia_key": "manzano plus estandar"
+    },
+    {
+      "ID_Proyecto": 28,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 2,
+      "Costo_UF_Viv": 465.74,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 29,
+      "Tipologia": "Boldo Full",
+      "Cantidad": 26,
+      "Costo_UF_Viv": 681.17,
+      "_tipologia_key": "boldo full"
+    },
+    {
+      "ID_Proyecto": 29,
+      "Tipologia": "Laurel",
+      "Cantidad": 35,
+      "Costo_UF_Viv": 820.72,
+      "_tipologia_key": "laurel"
+    },
+    {
+      "ID_Proyecto": 29,
+      "Tipologia": "Laurel Condominio",
+      "Cantidad": 18,
+      "Costo_UF_Viv": 816.55,
+      "_tipologia_key": "laurel condominio"
+    },
+    {
+      "ID_Proyecto": 30,
+      "Tipologia": "Roble Full",
+      "Cantidad": 15,
+      "Costo_UF_Viv": 545.16,
+      "_tipologia_key": "roble full"
+    },
+    {
+      "ID_Proyecto": 30,
+      "Tipologia": "Nogal Full",
+      "Cantidad": 46,
+      "Costo_UF_Viv": 483.34,
+      "_tipologia_key": "nogal full"
+    },
+    {
+      "ID_Proyecto": 31,
+      "Tipologia": "Roble Full",
+      "Cantidad": 46,
+      "Costo_UF_Viv": 531.72,
+      "_tipologia_key": "roble full"
+    },
+    {
+      "ID_Proyecto": 31,
+      "Tipologia": "Nogal Full",
+      "Cantidad": 46,
+      "Costo_UF_Viv": 464.91,
+      "_tipologia_key": "nogal full"
+    },
+    {
+      "ID_Proyecto": 32,
+      "Tipologia": "Vivienda Colonial 107 m2",
+      "Cantidad": 21,
+      "Costo_UF_Viv": 1540.2,
+      "_tipologia_key": "vivienda colonial 107 m2"
+    },
+    {
+      "ID_Proyecto": 32,
+      "Tipologia": "Vivienda Colonial 126 m2",
+      "Cantidad": 21,
+      "Costo_UF_Viv": 1710.7,
+      "_tipologia_key": "vivienda colonial 126 m2"
+    },
+    {
+      "ID_Proyecto": 33,
+      "Tipologia": "Boldo Full",
+      "Cantidad": 14,
+      "Costo_UF_Viv": 739.81,
+      "_tipologia_key": "boldo full"
+    },
+    {
+      "ID_Proyecto": 33,
+      "Tipologia": "Laurel",
+      "Cantidad": 42,
+      "Costo_UF_Viv": 892.77,
+      "_tipologia_key": "laurel"
+    },
+    {
+      "ID_Proyecto": 34,
+      "Tipologia": "Boldo Full",
+      "Cantidad": 56,
+      "Costo_UF_Viv": 788.74,
+      "_tipologia_key": "boldo full"
+    },
+    {
+      "ID_Proyecto": 34,
+      "Tipologia": "Laurel",
+      "Cantidad": 33,
+      "Costo_UF_Viv": 895.32,
+      "_tipologia_key": "laurel"
+    },
+    {
+      "ID_Proyecto": 35,
+      "Tipologia": "Roble Full",
+      "Cantidad": 48,
+      "Costo_UF_Viv": 562.31,
+      "_tipologia_key": "roble full"
+    },
+    {
+      "ID_Proyecto": 35,
+      "Tipologia": "Boldo Full",
+      "Cantidad": 58,
+      "Costo_UF_Viv": 684.37,
+      "_tipologia_key": "boldo full"
+    },
+    {
+      "ID_Proyecto": 36,
+      "Tipologia": "Roble Full",
+      "Cantidad": 68,
+      "Costo_UF_Viv": 552.01,
+      "_tipologia_key": "roble full"
+    },
+    {
+      "ID_Proyecto": 36,
+      "Tipologia": "Nogal Full",
+      "Cantidad": 16,
+      "Costo_UF_Viv": 483.71,
+      "_tipologia_key": "nogal full"
+    },
+    {
+      "ID_Proyecto": 37,
+      "Tipologia": "Roble Full",
+      "Cantidad": 93,
+      "Costo_UF_Viv": 573.4,
+      "_tipologia_key": "roble full"
+    },
+    {
+      "ID_Proyecto": 38,
+      "Tipologia": "Boldo Full",
+      "Cantidad": 60,
+      "Costo_UF_Viv": 774.91,
+      "_tipologia_key": "boldo full"
+    },
+    {
+      "ID_Proyecto": 38,
+      "Tipologia": "Roble Plus",
+      "Cantidad": 12,
+      "Costo_UF_Viv": 637.17,
+      "_tipologia_key": "roble plus"
+    },
+    {
+      "ID_Proyecto": 38,
+      "Tipologia": "Nogal Estandar",
+      "Cantidad": 22,
+      "Costo_UF_Viv": 536.31,
+      "_tipologia_key": "nogal estandar"
+    },
+    {
+      "ID_Proyecto": 38,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 1,
+      "Costo_UF_Viv": 484.78,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 39,
+      "Tipologia": "Boldo Full",
+      "Cantidad": 14,
+      "Costo_UF_Viv": 733.2,
+      "_tipologia_key": "boldo full"
+    },
+    {
+      "ID_Proyecto": 39,
+      "Tipologia": "Laurel",
+      "Cantidad": 42,
+      "Costo_UF_Viv": 880.1,
+      "_tipologia_key": "laurel"
+    },
+    {
+      "ID_Proyecto": 40,
+      "Tipologia": "Roble Full",
+      "Cantidad": 47,
+      "Costo_UF_Viv": 571.31,
+      "_tipologia_key": "roble full"
+    },
+    {
+      "ID_Proyecto": 40,
+      "Tipologia": "Nogal Full",
+      "Cantidad": 28,
+      "Costo_UF_Viv": 519.76,
+      "_tipologia_key": "nogal full"
+    },
+    {
+      "ID_Proyecto": 41,
+      "Tipologia": "Roble Full",
+      "Cantidad": 116,
+      "Costo_UF_Viv": 696.56,
+      "_tipologia_key": "roble full"
+    },
+    {
+      "ID_Proyecto": 42,
+      "Tipologia": "Boldo Condominio",
+      "Cantidad": 35,
+      "Costo_UF_Viv": 942.18,
+      "_tipologia_key": "boldo condominio"
+    },
+    {
+      "ID_Proyecto": 42,
+      "Tipologia": "Laurel Condominio",
+      "Cantidad": 35,
+      "Costo_UF_Viv": 1109.51,
+      "_tipologia_key": "laurel condominio"
+    },
+    {
+      "ID_Proyecto": 43,
+      "Tipologia": "Boldo Full",
+      "Cantidad": 54,
+      "Costo_UF_Viv": 871,
+      "_tipologia_key": "boldo full"
+    },
+    {
+      "ID_Proyecto": 43,
+      "Tipologia": "Ciruelo Pareada",
+      "Cantidad": 31,
+      "Costo_UF_Viv": 722.73,
+      "_tipologia_key": "ciruelo pareada"
+    },
+    {
+      "ID_Proyecto": 43,
+      "Tipologia": "Departamento Tipo A",
+      "Cantidad": 24,
+      "Costo_UF_Viv": 628.01,
+      "_tipologia_key": "departamento tipo a"
+    },
+    {
+      "ID_Proyecto": 43,
+      "Tipologia": "Departamento Tipo B",
+      "Cantidad": 24,
+      "Costo_UF_Viv": 692.29,
+      "_tipologia_key": "departamento tipo b"
+    },
+    {
+      "ID_Proyecto": 43,
+      "Tipologia": "Departamento Tipo C",
+      "Cantidad": 24,
+      "Costo_UF_Viv": 697.86,
+      "_tipologia_key": "departamento tipo c"
+    },
+    {
+      "ID_Proyecto": 43,
+      "Tipologia": "Departamento Tipo D",
+      "Cantidad": 24,
+      "Costo_UF_Viv": 633.91,
+      "_tipologia_key": "departamento tipo d"
+    },
+    {
+      "ID_Proyecto": 44,
+      "Tipologia": "Boldo Full",
+      "Cantidad": 19,
+      "Costo_UF_Viv": 921.4,
+      "_tipologia_key": "boldo full"
+    },
+    {
+      "ID_Proyecto": 44,
+      "Tipologia": "Laurel",
+      "Cantidad": 39,
+      "Costo_UF_Viv": 1081.4,
+      "_tipologia_key": "laurel"
+    },
+    {
+      "ID_Proyecto": 45,
+      "Tipologia": "Cirueo Aislada",
+      "Cantidad": 19,
+      "Costo_UF_Viv": 711.2,
+      "_tipologia_key": "cirueo aislada"
+    },
+    {
+      "ID_Proyecto": 45,
+      "Tipologia": "Ciruelo Pareada",
+      "Cantidad": 78,
+      "Costo_UF_Viv": 633,
+      "_tipologia_key": "ciruelo pareada"
+    },
+    {
+      "ID_Proyecto": 45,
+      "Tipologia": "Manzano C/ Lucarna",
+      "Cantidad": 22,
+      "Costo_UF_Viv": 607.1,
+      "_tipologia_key": "manzano c/ lucarna"
+    },
+    {
+      "ID_Proyecto": 45,
+      "Tipologia": "Manzano S/ Lucarna",
+      "Cantidad": 34,
+      "Costo_UF_Viv": 566.1,
+      "_tipologia_key": "manzano s/ lucarna"
+    },
+    {
+      "ID_Proyecto": 45,
+      "Tipologia": "Minusvalido Quillay",
+      "Cantidad": 2,
+      "Costo_UF_Viv": 460.4,
+      "_tipologia_key": "minusvalido quillay"
+    },
+    {
+      "ID_Proyecto": 46,
+      "Tipologia": "Boldo",
+      "Cantidad": 71,
+      "Costo_UF_Viv": 938.26,
+      "_tipologia_key": "boldo"
+    },
+    {
+      "ID_Proyecto": 46,
+      "Tipologia": "Laurel",
+      "Cantidad": 10,
+      "Costo_UF_Viv": 1116.22,
+      "_tipologia_key": "laurel"
+    },
+    {
+      "ID_Proyecto": 47,
+      "Tipologia": "Departamento Tipo A",
+      "Cantidad": 16,
+      "Costo_UF_Viv": 680.85,
+      "_tipologia_key": "departamento tipo a"
+    },
+    {
+      "ID_Proyecto": 47,
+      "Tipologia": "Departamento Tipo B",
+      "Cantidad": 16,
+      "Costo_UF_Viv": 750.55,
+      "_tipologia_key": "departamento tipo b"
+    },
+    {
+      "ID_Proyecto": 47,
+      "Tipologia": "Departamento Tipo C",
+      "Cantidad": 16,
+      "Costo_UF_Viv": 756.59,
+      "_tipologia_key": "departamento tipo c"
+    },
+    {
+      "ID_Proyecto": 47,
+      "Tipologia": "Departamento Tipo D",
+      "Cantidad": 16,
+      "Costo_UF_Viv": 687.26,
+      "_tipologia_key": "departamento tipo d"
+    },
+    {
+      "ID_Proyecto": 48,
+      "Tipologia": "Boldo Full",
+      "Cantidad": 46,
+      "Costo_UF_Viv": 870.94,
+      "_tipologia_key": "boldo full"
+    },
+    {
+      "ID_Proyecto": 48,
+      "Tipologia": "Roble Full",
+      "Cantidad": 45,
+      "Costo_UF_Viv": 710.36,
+      "_tipologia_key": "roble full"
+    },
+    {
+      "ID_Proyecto": 48,
+      "Tipologia": "Ciruelo Pareada",
+      "Cantidad": 8,
+      "Costo_UF_Viv": 672.93,
+      "_tipologia_key": "ciruelo pareada"
+    },
+    {
+      "ID_Proyecto": 49,
+      "Tipologia": "Boldo",
+      "Cantidad": 52,
+      "Costo_UF_Viv": 982.78,
+      "_tipologia_key": "boldo"
+    },
+    {
+      "ID_Proyecto": 49,
+      "Tipologia": "Laurel",
+      "Cantidad": 59,
+      "Costo_UF_Viv": 1185.53,
+      "_tipologia_key": "laurel"
+    },
+    {
+      "ID_Proyecto": 50,
+      "Tipologia": "Roble Full",
+      "Cantidad": 40,
+      "Costo_UF_Viv": 727.93,
+      "_tipologia_key": "roble full"
+    },
+    {
+      "ID_Proyecto": 50,
+      "Tipologia": "Nogal Full",
+      "Cantidad": 23,
+      "Costo_UF_Viv": 623.75,
+      "_tipologia_key": "nogal full"
+    },
+    {
+      "ID_Proyecto": 50,
+      "Tipologia": "Departamento Tipo A",
+      "Cantidad": 10,
+      "Costo_UF_Viv": 662.4,
+      "_tipologia_key": "departamento tipo a"
+    },
+    {
+      "ID_Proyecto": 50,
+      "Tipologia": "Departamento Tipo B",
+      "Cantidad": 10,
+      "Costo_UF_Viv": 729.96,
+      "_tipologia_key": "departamento tipo b"
+    },
+    {
+      "ID_Proyecto": 50,
+      "Tipologia": "Departamento Tipo C",
+      "Cantidad": 10,
+      "Costo_UF_Viv": 736.87,
+      "_tipologia_key": "departamento tipo c"
+    },
+    {
+      "ID_Proyecto": 50,
+      "Tipologia": "Departamento Tipo D",
+      "Cantidad": 10,
+      "Costo_UF_Viv": 669.89,
+      "_tipologia_key": "departamento tipo d"
+    },
+    {
+      "ID_Proyecto": 51,
+      "Tipologia": "Roble Full",
+      "Cantidad": 136,
+      "Costo_UF_Viv": 725.79,
+      "_tipologia_key": "roble full"
+    },
+    {
+      "ID_Proyecto": 52,
+      "Tipologia": "Roble Full",
+      "Cantidad": 50,
+      "Costo_UF_Viv": 656.94,
+      "_tipologia_key": "roble full"
+    },
+    {
+      "ID_Proyecto": 52,
+      "Tipologia": "Ciruelo Pareada",
+      "Cantidad": 50,
+      "Costo_UF_Viv": 587.31,
+      "_tipologia_key": "ciruelo pareada"
+    },
+    {
+      "ID_Proyecto": 53,
+      "Tipologia": "Laurel",
+      "Cantidad": 1,
+      "Costo_UF_Viv": 1071.85,
+      "_tipologia_key": "laurel"
+    },
+    {
+      "ID_Proyecto": 53,
+      "Tipologia": "Viv Colonial 77 m2",
+      "Cantidad": 25,
+      "Costo_UF_Viv": 1406.11,
+      "_tipologia_key": "viv colonial 77 m2"
+    },
+    {
+      "ID_Proyecto": 53,
+      "Tipologia": "Viv Colonial 101,2 m2",
+      "Cantidad": 12,
+      "Costo_UF_Viv": 1801.78,
+      "_tipologia_key": "viv colonial 101,2 m2"
+    },
+    {
+      "ID_Proyecto": 53,
+      "Tipologia": "Viv Colonial 116,5 m2",
+      "Cantidad": 21,
+      "Costo_UF_Viv": 1906.36,
+      "_tipologia_key": "viv colonial 116,5 m2"
+    },
+    {
+      "ID_Proyecto": 54,
+      "Tipologia": "Departamento Tipo A",
+      "Cantidad": 40,
+      "Costo_UF_Viv": 663.74,
+      "_tipologia_key": "departamento tipo a"
+    },
+    {
+      "ID_Proyecto": 54,
+      "Tipologia": "Departamento Tipo B",
+      "Cantidad": 40,
+      "Costo_UF_Viv": 732.35,
+      "_tipologia_key": "departamento tipo b"
+    },
+    {
+      "ID_Proyecto": 54,
+      "Tipologia": "Departamento Tipo C",
+      "Cantidad": 40,
+      "Costo_UF_Viv": 738.26,
+      "_tipologia_key": "departamento tipo c"
+    },
+    {
+      "ID_Proyecto": 54,
+      "Tipologia": "Departamento Tipo D",
+      "Cantidad": 40,
+      "Costo_UF_Viv": 670.12,
+      "_tipologia_key": "departamento tipo d"
+    },
+    {
+      "ID_Proyecto": 55,
+      "Tipologia": "Ciruelo Pareada",
+      "Cantidad": 58,
+      "Costo_UF_Viv": 773.32,
+      "_tipologia_key": "ciruelo pareada"
+    },
+    {
+      "ID_Proyecto": 55,
+      "Tipologia": "Laurel",
+      "Cantidad": 25,
+      "Costo_UF_Viv": 1111.42,
+      "_tipologia_key": "laurel"
+    },
+    {
+      "ID_Proyecto": 56,
+      "Tipologia": "Boldo Full",
+      "Cantidad": 7,
+      "Costo_UF_Viv": 846.82,
+      "_tipologia_key": "boldo full"
+    },
+    {
+      "ID_Proyecto": 56,
+      "Tipologia": "Ciruelo Aislada",
+      "Cantidad": 82,
+      "Costo_UF_Viv": 737.13,
+      "_tipologia_key": "ciruelo aislada"
+    },
+    {
+      "ID_Proyecto": 56,
+      "Tipologia": "Roble Full",
+      "Cantidad": 8,
+      "Costo_UF_Viv": 723.72,
+      "_tipologia_key": "roble full"
+    },
+    {
+      "ID_Proyecto": 57,
+      "Tipologia": "Laurel",
+      "Cantidad": 12,
+      "Costo_UF_Viv": 1118.13,
+      "_tipologia_key": "laurel"
+    },
+    {
+      "ID_Proyecto": 57,
+      "Tipologia": "Viv Colonial 101,2 m2",
+      "Cantidad": 22,
+      "Costo_UF_Viv": 1721.1,
+      "_tipologia_key": "viv colonial 101,2 m2"
+    },
+    {
+      "ID_Proyecto": 57,
+      "Tipologia": "Viv Colonial 116,5 m2",
+      "Cantidad": 32,
+      "Costo_UF_Viv": 1890.86,
+      "_tipologia_key": "viv colonial 116,5 m2"
+    },
+    {
+      "ID_Proyecto": 58,
+      "Tipologia": "Ciruelo Aislada",
+      "Cantidad": 107,
+      "Costo_UF_Viv": 828.31,
+      "_tipologia_key": "ciruelo aislada"
+    },
+    {
+      "ID_Proyecto": 59,
+      "Tipologia": "Departamento Tipo A",
+      "Cantidad": 16,
+      "Costo_UF_Viv": 624.19,
+      "_tipologia_key": "departamento tipo a"
+    },
+    {
+      "ID_Proyecto": 59,
+      "Tipologia": "Departamento Tipo B",
+      "Cantidad": 16,
+      "Costo_UF_Viv": 688.08,
+      "_tipologia_key": "departamento tipo b"
+    },
+    {
+      "ID_Proyecto": 59,
+      "Tipologia": "Departamento Tipo C",
+      "Cantidad": 16,
+      "Costo_UF_Viv": 693.62,
+      "_tipologia_key": "departamento tipo c"
+    },
+    {
+      "ID_Proyecto": 59,
+      "Tipologia": "Departamento Tipo D",
+      "Cantidad": 16,
+      "Costo_UF_Viv": 630.06,
+      "_tipologia_key": "departamento tipo d"
+    },
+    {
+      "ID_Proyecto": 60,
+      "Tipologia": "Departamento Tipo A",
+      "Cantidad": 30,
+      "Costo_UF_Viv": 652.26,
+      "_tipologia_key": "departamento tipo a"
+    },
+    {
+      "ID_Proyecto": 60,
+      "Tipologia": "Departamento Tipo B",
+      "Cantidad": 30,
+      "Costo_UF_Viv": 738.01,
+      "_tipologia_key": "departamento tipo b"
+    },
+    {
+      "ID_Proyecto": 60,
+      "Tipologia": "Departamento Tipo C",
+      "Cantidad": 30,
+      "Costo_UF_Viv": 743.95,
+      "_tipologia_key": "departamento tipo c"
+    },
+    {
+      "ID_Proyecto": 60,
+      "Tipologia": "Departamento Tipo D",
+      "Cantidad": 30,
+      "Costo_UF_Viv": 658.55,
+      "_tipologia_key": "departamento tipo d"
+    }
+  ],
+  "stats": {
+    "global": {
+      "Costo_Construccion_UF_por_viv": {
+        "median": 685.893,
+        "p25": 600.8757,
+        "p75": 818.557
+      },
+      "Urbanizacion_UF_por_viv": {
+        "median": 169.9797,
+        "p25": 125.0326,
+        "p75": 205.982
+      },
+      "Gastos_Generales_UF_por_viv": {
+        "median": 167.722,
+        "p25": 139.6618,
+        "p75": 217.5421
+      },
+      "Costo_Total_UF_por_viv": {
+        "median": 1549.8873,
+        "p25": 1368.3146,
+        "p75": 1836.3125
+      },
+      "Gastos_Financieros_UF_por_viv": {
+        "median": 97.2527,
+        "p25": 69.7976,
+        "p75": 138.7157
+      },
+      "Valor_Terreno_UF_por_viv": {
+        "median": 206.4058,
+        "p25": 144.6689,
+        "p75": 255.7308
+      },
+      "Margen_UF_por_viv": {
+        "median": 430.3905,
+        "p25": 370.9434,
+        "p75": 533.2368
+      },
+      "Ingresos_Total_UF_Estimado_por_viv": {
+        "median": 1906.0784,
+        "p25": 1661.1739,
+        "p75": 2235.0082
+      },
+      "Terreno_m2_por_viv": {
+        "median": 268.0121,
+        "p25": 234.831,
+        "p75": 304.5965
+      },
+      "Valor_Terreno_UF_m2": {
+        "median": 0.763,
+        "p25": 0.5644,
+        "p75": 0.9765
+      },
+      "Margen_Porc": {
+        "median": 21.845,
+        "p25": 20.5,
+        "p75": 24.34
+      }
+    },
+    "byTipoProyecto": {
+      "ds19": {
+        "count": 20,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 631.2029,
+            "p25": 599.5686,
+            "p75": 685.8716
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 156.6619,
+            "p25": 125.1161,
+            "p75": 172.2157
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 146.2883,
+            "p25": 130.5205,
+            "p75": 156.1375
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1546.5534,
+            "p25": 1431.3107,
+            "p75": 1667.1018
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 97.5019,
+            "p25": 69.2062,
+            "p75": 117.9444
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 206.4058,
+            "p25": 181.5254,
+            "p75": 223.693
+          },
+          "Margen_UF_por_viv": {
+            "median": 419.4172,
+            "p25": 396.9548,
+            "p75": 443.0103
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 1961.899,
+            "p25": 1820.7824,
+            "p75": 2041.8494
+          },
+          "Terreno_m2_por_viv": {
+            "median": 272.8355,
+            "p25": 243.4724,
+            "p75": 300.1645
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.7466,
+            "p25": 0.6383,
+            "p75": 0.8365
+          },
+          "Margen_Porc": {
+            "median": 21.48,
+            "p25": 20.69,
+            "p75": 22.25
+          }
+        }
+      },
+      "ds49": {
+        "count": 7,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 384.7481,
+            "p25": 372.2709,
+            "p75": 388.1734
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 194.0431,
+            "p25": 193.5351,
+            "p75": 201.5891
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 104.6429,
+            "p25": 96.188,
+            "p75": 109.6172
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 927.052,
+            "p25": 911.0909,
+            "p75": 955.2776
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 30.2707,
+            "p25": 19.5549,
+            "p75": 35.1866
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 39.4656,
+            "p25": 36.4393,
+            "p75": 46.5933
+          },
+          "Margen_UF_por_viv": {
+            "median": 204.8612,
+            "p25": 198.9595,
+            "p75": 468.1238
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 1107.6001,
+            "p25": 1003.2382,
+            "p75": 1653.5633
+          },
+          "Terreno_m2_por_viv": {
+            "median": 206.8459,
+            "p25": 204.4505,
+            "p75": 214.0144
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.2177,
+            "p25": 0.16,
+            "p75": 0.2182
+          },
+          "Margen_Porc": {
+            "median": 24.34,
+            "p25": 20.42,
+            "p75": 28.31
+          }
+        }
+      },
+      "inmb": {
+        "count": 33,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 792.8454,
+            "p25": 687.8594,
+            "p75": 911.1011
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 187.5414,
+            "p25": 117.4022,
+            "p75": 222.7423
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 211.1789,
+            "p25": 173.5714,
+            "p75": 251.2679
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1793.3596,
+            "p25": 1397.2267,
+            "p75": 2144.5714
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 109.8895,
+            "p25": 84.25,
+            "p75": 162.3143
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 236.17,
+            "p25": 186.5053,
+            "p75": 339.6076
+          },
+          "Margen_UF_por_viv": {
+            "median": 485.358,
+            "p25": 373.625,
+            "p75": 611.6386
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 2196.3256,
+            "p25": 1830.5908,
+            "p75": 2498.3755
+          },
+          "Terreno_m2_por_viv": {
+            "median": 278.0,
+            "p25": 247.7279,
+            "p75": 313.5728
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.9188,
+            "p25": 0.7028,
+            "p75": 1.2811
+          },
+          "Margen_Porc": {
+            "median": 22.37,
+            "p25": 20.6,
+            "p75": 23.97
+          }
+        }
+      }
+    },
+    "byTipoViv": {
+      "casa": {
+        "count": 51,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 678.4194,
+            "p25": 585.5476,
+            "p75": 843.3571
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 172.2157,
+            "p25": 124.9718,
+            "p75": 208.0253
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 164.3019,
+            "p25": 130.6688,
+            "p75": 221.2432
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1544.8175,
+            "p25": 1324.0495,
+            "p75": 1850.4321
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 95.4947,
+            "p25": 67.0543,
+            "p75": 131.2581
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 218.3144,
+            "p25": 146.3214,
+            "p75": 270.5556
+          },
+          "Margen_UF_por_viv": {
+            "median": 424.6081,
+            "p25": 363.7747,
+            "p75": 536.75
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 1861.0187,
+            "p25": 1640.5467,
+            "p75": 2336.2812
+          },
+          "Terreno_m2_por_viv": {
+            "median": 273.4194,
+            "p25": 244.7732,
+            "p75": 311.131
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.7539,
+            "p25": 0.4703,
+            "p75": 0.9983
+          },
+          "Margen_Porc": {
+            "median": 21.51,
+            "p25": 20.38,
+            "p75": 23.82
+          }
+        }
+      },
+      "mixto": {
+        "count": 3,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 770.5801,
+            "p25": 600.8757,
+            "p75": 870.5049
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 187.5414,
+            "p25": 129.8192,
+            "p75": 195.8932
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 163.6243,
+            "p25": 146.3672,
+            "p75": 221.0777
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1558.9006,
+            "p25": 1431.3107,
+            "p75": 1908.9709
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 83.5437,
+            "p25": 67.4294,
+            "p75": 109.8895
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 189.7379,
+            "p25": 181.5254,
+            "p75": 214.5912
+          },
+          "Margen_UF_por_viv": {
+            "median": 422.1356,
+            "p25": 312.1878,
+            "p75": 431.2816
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 1773.7946,
+            "p25": 1673.8128,
+            "p75": 2053.7217
+          },
+          "Terreno_m2_por_viv": {
+            "median": 288.1989,
+            "p25": 208.339,
+            "p75": 313.5728
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.7446,
+            "p25": 0.6051,
+            "p75": 0.8713
+          },
+          "Margen_Porc": {
+            "median": 21,
+            "p25": 17.6,
+            "p75": 25.22
+          }
+        }
+      },
+      "depto": {
+        "count": 6,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 706.9755,
+            "p25": 642.575,
+            "p75": 737.4438
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 142.2453,
+            "p25": 98.9688,
+            "p75": 212.1062
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 187.4667,
+            "p25": 166.7344,
+            "p75": 212.9375
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1766.6802,
+            "p25": 1493.2344,
+            "p75": 1836.3125
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 149.6735,
+            "p25": 122.4562,
+            "p75": 153.1417
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 115.4922,
+            "p25": 96.1125,
+            "p75": 182.75
+          },
+          "Margen_UF_por_viv": {
+            "median": 496.5016,
+            "p25": 472.1094,
+            "p75": 636.0833
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 2129.4001,
+            "p25": 1830.5908,
+            "p75": 2235.0082
+          },
+          "Terreno_m2_por_viv": {
+            "median": 112.1021,
+            "p25": 95.0062,
+            "p75": 137.5
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.8693,
+            "p25": 0.7411,
+            "p75": 1.7133
+          },
+          "Margen_Porc": {
+            "median": 25.185,
+            "p25": 23.97,
+            "p75": 28.46
+          }
+        }
+      }
+    },
+    "byRegion": {
+      "region de ohiggins": {
+        "count": 11,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 600.8757,
+            "p25": 512.4512,
+            "p75": 678.4194
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 129.8192,
+            "p25": 125.1097,
+            "p75": 195.2344
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 149.497,
+            "p25": 130.5205,
+            "p75": 161.8553
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1531.2,
+            "p25": 1287.3742,
+            "p75": 1667.1018
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 99.5092,
+            "p25": 56.2688,
+            "p75": 131.2581
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 181.5254,
+            "p25": 128.2096,
+            "p75": 205.1355
+          },
+          "Margen_UF_por_viv": {
+            "median": 412.0558,
+            "p25": 396.9548,
+            "p75": 429.9521
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 1861.0166,
+            "p25": 1556.6899,
+            "p75": 1974.0031
+          },
+          "Terreno_m2_por_viv": {
+            "median": 273.4194,
+            "p25": 222.0215,
+            "p75": 300.1645
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.6757,
+            "p25": 0.4709,
+            "p75": 0.7722
+          },
+          "Margen_Porc": {
+            "median": 21.51,
+            "p25": 20.5,
+            "p75": 26.23
+          }
+        }
+      },
+      "maule": {
+        "count": 36,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 658.4526,
+            "p25": 599.5686,
+            "p75": 743.9397
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 164.299,
+            "p25": 117.0,
+            "p75": 195.8932
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 165.5181,
+            "p25": 130.6688,
+            "p75": 200.59
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1529.5678,
+            "p25": 1337.6667,
+            "p75": 1793.3596
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 88.0369,
+            "p25": 69.7976,
+            "p75": 138.7157
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 196.8998,
+            "p25": 103.6413,
+            "p75": 233.2453
+          },
+          "Margen_UF_por_viv": {
+            "median": 446.2686,
+            "p25": 364.6995,
+            "p75": 506.9563
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 1860.3788,
+            "p25": 1625.5189,
+            "p75": 2197.3481
+          },
+          "Terreno_m2_por_viv": {
+            "median": 255.1479,
+            "p25": 214.0144,
+            "p75": 311.131
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.7438,
+            "p25": 0.5431,
+            "p75": 0.8981
+          },
+          "Margen_Porc": {
+            "median": 22.19,
+            "p25": 21.01,
+            "p75": 24.58
+          }
+        }
+      },
+      "region metropolitana": {
+        "count": 7,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 871.9821,
+            "p25": 735.4421,
+            "p75": 890.6916
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 220.3214,
+            "p25": 174.2418,
+            "p75": 238.5421
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 217.5421,
+            "p25": 211.1789,
+            "p75": 221.2432
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1899.1786,
+            "p25": 1855.7895,
+            "p75": 2209.5571
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 97.5789,
+            "p25": 95.4947,
+            "p75": 118.2679
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 292.1429,
+            "p25": 255.7308,
+            "p75": 321.8393
+          },
+          "Margen_UF_por_viv": {
+            "median": 536.75,
+            "p25": 363.7747,
+            "p75": 581.9159
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 2324.5995,
+            "p25": 1856.1819,
+            "p75": 2855.3282
+          },
+          "Terreno_m2_por_viv": {
+            "median": 293.9533,
+            "p25": 284.0714,
+            "p75": 398.991
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.9983,
+            "p25": 0.9765,
+            "p75": 1.0284
+          },
+          "Margen_Porc": {
+            "median": 20.38,
+            "p25": 19.65,
+            "p75": 22.86
+          }
+        }
+      },
+      "nuble": {
+        "count": 3,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 792.8454,
+            "p25": 698.5,
+            "p75": 876.9798
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 197.404,
+            "p25": 167.7438,
+            "p75": 222.7423
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 225.3196,
+            "p25": 134.2312,
+            "p75": 229.2929
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1597.1212,
+            "p25": 1403.325,
+            "p75": 2141.0722
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 161.4845,
+            "p25": 69.2062,
+            "p75": 245.6465
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 253.4948,
+            "p25": 238.3875,
+            "p75": 270.5556
+          },
+          "Margen_UF_por_viv": {
+            "median": 495.5253,
+            "p25": 357.2375,
+            "p75": 558.8866
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 2336.2812,
+            "p25": 1820.7824,
+            "p75": 2498.3755
+          },
+          "Terreno_m2_por_viv": {
+            "median": 261.4646,
+            "p25": 244.7732,
+            "p75": 296.65
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 1.0348,
+            "p25": 0.8036,
+            "p75": 1.0356
+          },
+          "Margen_Porc": {
+            "median": 21.21,
+            "p25": 19.62,
+            "p75": 22.37
+          }
+        }
+      },
+      "biobio": {
+        "count": 3,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 843.3571,
+            "p25": 818.557,
+            "p75": 1032.5422
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 294.0536,
+            "p25": 208.0253,
+            "p75": 354.7349
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 251.2679,
+            "p25": 200.2911,
+            "p75": 278.1446
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 2144.5714,
+            "p25": 1505.8481,
+            "p75": 2329.1084
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 108.0127,
+            "p25": 93.1429,
+            "p75": 189.9036
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 339.6076,
+            "p25": 318.2143,
+            "p75": 396.4096
+          },
+          "Margen_UF_por_viv": {
+            "median": 602.625,
+            "p25": 411.481,
+            "p75": 611.6386
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 2480.9593,
+            "p25": 2092.9858,
+            "p75": 3087.5242
+          },
+          "Terreno_m2_por_viv": {
+            "median": 292.0253,
+            "p25": 212.3393,
+            "p75": 431.4217
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 1.1629,
+            "p25": 0.9188,
+            "p75": 1.4986
+          },
+          "Margen_Porc": {
+            "median": 19.81,
+            "p25": 19.66,
+            "p75": 24.29
+          }
+        }
+      }
+    },
+    "byCombo": {
+      "ds19|casa|region de ohiggins": {
+        "count": 7,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 625.1287,
+            "p25": 597.2711,
+            "p75": 678.4194
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 151.8816,
+            "p25": 125.1161,
+            "p75": 175.9766
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 149.497,
+            "p25": 134.0651,
+            "p75": 153.3935
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1648.9123,
+            "p25": 1548.2894,
+            "p75": 1667.1018
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 106.9281,
+            "p25": 99.5092,
+            "p75": 120.1988
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 194.4386,
+            "p25": 173.326,
+            "p75": 205.1355
+          },
+          "Margen_UF_por_viv": {
+            "median": 412.0558,
+            "p25": 400.914,
+            "p75": 424.6081
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 1972.66,
+            "p25": 1861.0166,
+            "p75": 1974.0031
+          },
+          "Terreno_m2_por_viv": {
+            "median": 277.3023,
+            "p25": 273.4194,
+            "p75": 300.1645
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.6757,
+            "p25": 0.6383,
+            "p75": 0.7503
+          },
+          "Margen_Porc": {
+            "median": 21.51,
+            "p25": 21.33,
+            "p75": 21.84
+          }
+        }
+      },
+      "ds49|casa|maule": {
+        "count": 6,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 378.5095,
+            "p25": 313.834,
+            "p75": 388.1734
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 193.7891,
+            "p25": 105.2556,
+            "p75": 203.8872
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 100.4154,
+            "p25": 90.4515,
+            "p75": 109.6172
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 919.0715,
+            "p25": 619.5587,
+            "p75": 955.2776
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 24.9128,
+            "p25": 9.7444,
+            "p75": 35.1866
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 43.0294,
+            "p25": 36.4393,
+            "p75": 64.1278
+          },
+          "Margen_UF_por_viv": {
+            "median": 201.9103,
+            "p25": 167.3584,
+            "p75": 533.2368
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 1055.4192,
+            "p25": 817.4179,
+            "p75": 1661.1739
+          },
+          "Terreno_m2_por_viv": {
+            "median": 210.4301,
+            "p25": 187.5263,
+            "p75": 226.709
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.2179,
+            "p25": 0.16,
+            "p75": 0.31
+          },
+          "Margen_Porc": {
+            "median": 22.38,
+            "p25": 20.35,
+            "p75": 32.1
+          }
+        }
+      },
+      "ds19|casa|maule": {
+        "count": 8,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 622.0901,
+            "p25": 599.5686,
+            "p75": 632.3506
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 164.299,
+            "p25": 133.0079,
+            "p75": 167.6351
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 127.2867,
+            "p25": 122.4413,
+            "p75": 146.2095
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1529.5678,
+            "p25": 1502.4412,
+            "p75": 1578.397
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 101.2828,
+            "p25": 76.9054,
+            "p75": 116.9351
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 213.5187,
+            "p25": 207.6761,
+            "p75": 220.8137
+          },
+          "Margen_UF_por_viv": {
+            "median": 446.2686,
+            "p25": 416.6989,
+            "p75": 452.0754
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 2028.2633,
+            "p25": 1951.1381,
+            "p75": 2058.2739
+          },
+          "Terreno_m2_por_viv": {
+            "median": 257.3132,
+            "p25": 243.4724,
+            "p75": 297.1765
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.7898,
+            "p25": 0.7423,
+            "p75": 0.8888
+          },
+          "Margen_Porc": {
+            "median": 21.645,
+            "p25": 21.03,
+            "p75": 21.88
+          }
+        }
+      },
+      "inmb|mixto|maule": {
+        "count": 2,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 820.5425,
+            "p25": 770.5801,
+            "p75": 870.5049
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 191.7173,
+            "p25": 187.5414,
+            "p75": 195.8932
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 192.351,
+            "p25": 163.6243,
+            "p75": 221.0777
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1733.9358,
+            "p25": 1558.9006,
+            "p75": 1908.9709
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 96.7166,
+            "p25": 83.5437,
+            "p75": 109.8895
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 202.1645,
+            "p25": 189.7379,
+            "p75": 214.5912
+          },
+          "Margen_UF_por_viv": {
+            "median": 371.7347,
+            "p25": 312.1878,
+            "p75": 431.2816
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 1913.7582,
+            "p25": 1773.7946,
+            "p75": 2053.7217
+          },
+          "Terreno_m2_por_viv": {
+            "median": 300.8859,
+            "p25": 288.1989,
+            "p75": 313.5728
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.6748,
+            "p25": 0.6051,
+            "p75": 0.7446
+          },
+          "Margen_Porc": {
+            "median": 19.3,
+            "p25": 17.6,
+            "p75": 21
+          }
+        }
+      },
+      "ds19|casa|region metropolitana": {
+        "count": 2,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 685.2677,
+            "p25": 635.0934,
+            "p75": 735.4421
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 140.5577,
+            "p25": 106.8737,
+            "p75": 174.2418
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 179.3724,
+            "p25": 147.5659,
+            "p75": 211.1789
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1589.9195,
+            "p25": 1324.0495,
+            "p75": 1855.7895
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 85.665,
+            "p25": 75.8352,
+            "p75": 95.4947
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 221.118,
+            "p25": 186.5053,
+            "p75": 255.7308
+          },
+          "Margen_UF_por_viv": {
+            "median": 338.7347,
+            "p25": 313.6947,
+            "p75": 363.7747
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 1853.7264,
+            "p25": 1851.2709,
+            "p75": 1856.1819
+          },
+          "Terreno_m2_por_viv": {
+            "median": 336.4581,
+            "p25": 261.8846,
+            "p75": 411.0316
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.7151,
+            "p25": 0.4537,
+            "p75": 0.9765
+          },
+          "Margen_Porc": {
+            "median": 18.275,
+            "p25": 16.9,
+            "p75": 19.65
+          }
+        }
+      },
+      "ds19|casa|nuble": {
+        "count": 1,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 698.5,
+            "p25": 698.5,
+            "p75": 698.5
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 167.7438,
+            "p25": 167.7438,
+            "p75": 167.7438
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 134.2312,
+            "p25": 134.2312,
+            "p75": 134.2312
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1403.325,
+            "p25": 1403.325,
+            "p75": 1403.325
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 69.2062,
+            "p25": 69.2062,
+            "p75": 69.2062
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 238.3875,
+            "p25": 238.3875,
+            "p75": 238.3875
+          },
+          "Margen_UF_por_viv": {
+            "median": 357.2375,
+            "p25": 357.2375,
+            "p75": 357.2375
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 1820.7824,
+            "p25": 1820.7824,
+            "p75": 1820.7824
+          },
+          "Terreno_m2_por_viv": {
+            "median": 296.65,
+            "p25": 296.65,
+            "p75": 296.65
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.8036,
+            "p25": 0.8036,
+            "p75": 0.8036
+          },
+          "Margen_Porc": {
+            "median": 19.62,
+            "p25": 19.62,
+            "p75": 19.62
+          }
+        }
+      },
+      "inmb|casa|region metropolitana": {
+        "count": 5,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 890.6916,
+            "p25": 871.9821,
+            "p75": 1139.7143
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 238.5421,
+            "p25": 220.3214,
+            "p75": 239.0
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 221.2432,
+            "p25": 217.5421,
+            "p75": 261.5536
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 2209.5571,
+            "p25": 1899.1786,
+            "p75": 2325.972
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 118.2679,
+            "p25": 97.5789,
+            "p75": 162.3143
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 321.8393,
+            "p25": 292.1429,
+            "p75": 353.2897
+          },
+          "Margen_UF_por_viv": {
+            "median": 581.9159,
+            "p25": 536.75,
+            "p75": 666.4
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 2855.3282,
+            "p25": 2324.5995,
+            "p75": 2915.1356
+          },
+          "Terreno_m2_por_viv": {
+            "median": 293.9533,
+            "p25": 284.0714,
+            "p75": 398.991
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 1.0284,
+            "p25": 0.9983,
+            "p75": 1.2019
+          },
+          "Margen_Porc": {
+            "median": 22.86,
+            "p25": 20.38,
+            "p75": 23.09
+          }
+        }
+      },
+      "inmb|casa|region de ohiggins": {
+        "count": 2,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 614.1442,
+            "p25": 549.8689,
+            "p75": 678.4194
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 125.8991,
+            "p25": 125.1097,
+            "p75": 126.6885
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 176.7263,
+            "p25": 153.3871,
+            "p75": 200.0656
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1191.9248,
+            "p25": 1096.4754,
+            "p75": 1287.3742
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 97.252,
+            "p25": 63.2459,
+            "p75": 131.2581
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 162.2399,
+            "p25": 119.3443,
+            "p75": 205.1355
+          },
+          "Margen_UF_por_viv": {
+            "median": 332.3134,
+            "p25": 267.6721,
+            "p75": 396.9548
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 1619.3198,
+            "p25": 1377.623,
+            "p75": 1861.0166
+          },
+          "Terreno_m2_por_viv": {
+            "median": 264.7507,
+            "p25": 256.082,
+            "p75": 273.4194
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.6081,
+            "p25": 0.466,
+            "p75": 0.7503
+          },
+          "Margen_Porc": {
+            "median": 20.38,
+            "p25": 19.43,
+            "p75": 21.33
+          }
+        }
+      },
+      "ds49|casa|region de ohiggins": {
+        "count": 1,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 490.3366,
+            "p25": 490.3366,
+            "p75": 490.3366
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 201.5891,
+            "p25": 201.5891,
+            "p75": 201.5891
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 119.896,
+            "p25": 119.896,
+            "p75": 119.896
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1014.2624,
+            "p25": 1014.2624,
+            "p75": 1014.2624
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 42.2772,
+            "p25": 42.2772,
+            "p75": 42.2772
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 0.0,
+            "p25": 0.0,
+            "p75": 0.0
+          },
+          "Margen_UF_por_viv": {
+            "median": 468.1238,
+            "p25": 468.1238,
+            "p75": 468.1238
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 1653.5633,
+            "p25": 1653.5633,
+            "p75": 1653.5633
+          },
+          "Terreno_m2_por_viv": {
+            "median": 204.4505,
+            "p25": 204.4505,
+            "p75": 204.4505
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.0,
+            "p25": 0.0,
+            "p75": 0.0
+          },
+          "Margen_Porc": {
+            "median": 28.31,
+            "p25": 28.31,
+            "p75": 28.31
+          }
+        }
+      },
+      "inmb|casa|maule": {
+        "count": 14,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 783.2493,
+            "p25": 636.5733,
+            "p75": 1106.5
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 154.5018,
+            "p25": 114.1698,
+            "p75": 199.7191
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 190.9662,
+            "p25": 164.3019,
+            "p75": 293.7759
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1581.1127,
+            "p25": 1355.319,
+            "p75": 2322.6724
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 91.5756,
+            "p25": 72.6559,
+            "p75": 197.9136
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 234.7077,
+            "p25": 186.75,
+            "p75": 436.0517
+          },
+          "Margen_UF_por_viv": {
+            "median": 433.0127,
+            "p25": 358.06,
+            "p75": 705.8448
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 1860.3788,
+            "p25": 1542.6932,
+            "p75": 3043.7466
+          },
+          "Terreno_m2_por_viv": {
+            "median": 307.1666,
+            "p25": 267.2069,
+            "p75": 357.5432
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.8181,
+            "p25": 0.5707,
+            "p75": 1.4275
+          },
+          "Margen_Porc": {
+            "median": 22.685,
+            "p25": 21.25,
+            "p75": 23.82
+          }
+        }
+      },
+      "ds19|mixto|region de ohiggins": {
+        "count": 1,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 600.8757,
+            "p25": 600.8757,
+            "p75": 600.8757
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 129.8192,
+            "p25": 129.8192,
+            "p75": 129.8192
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 146.3672,
+            "p25": 146.3672,
+            "p75": 146.3672
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1431.3107,
+            "p25": 1431.3107,
+            "p75": 1431.3107
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 67.4294,
+            "p25": 67.4294,
+            "p75": 67.4294
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 181.5254,
+            "p25": 181.5254,
+            "p75": 181.5254
+          },
+          "Margen_UF_por_viv": {
+            "median": 422.1356,
+            "p25": 422.1356,
+            "p75": 422.1356
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 1673.8128,
+            "p25": 1673.8128,
+            "p75": 1673.8128
+          },
+          "Terreno_m2_por_viv": {
+            "median": 208.339,
+            "p25": 208.339,
+            "p75": 208.339
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.8713,
+            "p25": 0.8713,
+            "p75": 0.8713
+          },
+          "Margen_Porc": {
+            "median": 25.22,
+            "p25": 25.22,
+            "p75": 25.22
+          }
+        }
+      },
+      "inmb|casa|biobio": {
+        "count": 3,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 843.3571,
+            "p25": 818.557,
+            "p75": 1032.5422
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 294.0536,
+            "p25": 208.0253,
+            "p75": 354.7349
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 251.2679,
+            "p25": 200.2911,
+            "p75": 278.1446
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 2144.5714,
+            "p25": 1505.8481,
+            "p75": 2329.1084
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 108.0127,
+            "p25": 93.1429,
+            "p75": 189.9036
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 339.6076,
+            "p25": 318.2143,
+            "p75": 396.4096
+          },
+          "Margen_UF_por_viv": {
+            "median": 602.625,
+            "p25": 411.481,
+            "p75": 611.6386
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 2480.9593,
+            "p25": 2092.9858,
+            "p75": 3087.5242
+          },
+          "Terreno_m2_por_viv": {
+            "median": 292.0253,
+            "p25": 212.3393,
+            "p75": 431.4217
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 1.1629,
+            "p25": 0.9188,
+            "p75": 1.4986
+          },
+          "Margen_Porc": {
+            "median": 19.81,
+            "p25": 19.66,
+            "p75": 24.29
+          }
+        }
+      },
+      "inmb|casa|nuble": {
+        "count": 2,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 834.9126,
+            "p25": 792.8454,
+            "p75": 876.9798
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 210.0731,
+            "p25": 197.404,
+            "p75": 222.7423
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 227.3063,
+            "p25": 225.3196,
+            "p75": 229.2929
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1869.0967,
+            "p25": 1597.1212,
+            "p75": 2141.0722
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 203.5655,
+            "p25": 161.4845,
+            "p75": 245.6465
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 262.0252,
+            "p25": 253.4948,
+            "p75": 270.5556
+          },
+          "Margen_UF_por_viv": {
+            "median": 527.206,
+            "p25": 495.5253,
+            "p75": 558.8866
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 2417.3283,
+            "p25": 2336.2812,
+            "p75": 2498.3755
+          },
+          "Terreno_m2_por_viv": {
+            "median": 253.1189,
+            "p25": 244.7732,
+            "p75": 261.4646
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 1.0352,
+            "p25": 1.0348,
+            "p75": 1.0356
+          },
+          "Margen_Porc": {
+            "median": 21.79,
+            "p25": 21.21,
+            "p75": 22.37
+          }
+        }
+      },
+      "inmb|depto|maule": {
+        "count": 5,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 726.0917,
+            "p25": 687.8594,
+            "p75": 737.4438
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 154.3906,
+            "p25": 98.9688,
+            "p75": 212.1062
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 195.7833,
+            "p25": 179.15,
+            "p75": 212.9375
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1818.8167,
+            "p25": 1493.2344,
+            "p75": 1836.3125
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 149.9531,
+            "p25": 122.4562,
+            "p75": 153.1417
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 134.6406,
+            "p25": 96.3438,
+            "p75": 182.75
+          },
+          "Margen_UF_por_viv": {
+            "median": 486.0469,
+            "p25": 472.1094,
+            "p75": 636.0833
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 2196.3256,
+            "p25": 1830.5908,
+            "p75": 2235.0082
+          },
+          "Terreno_m2_por_viv": {
+            "median": 117.5375,
+            "p25": 106.6667,
+            "p75": 137.5
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.9209,
+            "p25": 0.8177,
+            "p75": 1.7133
+          },
+          "Margen_Porc": {
+            "median": 25.79,
+            "p25": 23.97,
+            "p75": 28.46
+          }
+        }
+      },
+      "ds19|depto|maule": {
+        "count": 1,
+        "stats": {
+          "Costo_Construccion_UF_por_viv": {
+            "median": 642.575,
+            "p25": 642.575,
+            "p75": 642.575
+          },
+          "Urbanizacion_UF_por_viv": {
+            "median": 130.1,
+            "p25": 130.1,
+            "p75": 130.1
+          },
+          "Gastos_Generales_UF_por_viv": {
+            "median": 156.1375,
+            "p25": 156.1375,
+            "p75": 156.1375
+          },
+          "Costo_Total_UF_por_viv": {
+            "median": 1714.5438,
+            "p25": 1714.5438,
+            "p75": 1714.5438
+          },
+          "Gastos_Financieros_UF_por_viv": {
+            "median": 149.3938,
+            "p25": 149.3938,
+            "p75": 149.3938
+          },
+          "Valor_Terreno_UF_por_viv": {
+            "median": 52.5688,
+            "p25": 52.5688,
+            "p75": 52.5688
+          },
+          "Margen_UF_por_viv": {
+            "median": 506.9563,
+            "p25": 506.9563,
+            "p75": 506.9563
+          },
+          "Ingresos_Total_UF_Estimado_por_viv": {
+            "median": 2062.4746,
+            "p25": 2062.4746,
+            "p75": 2062.4746
+          },
+          "Terreno_m2_por_viv": {
+            "median": 70.9375,
+            "p25": 70.9375,
+            "p75": 70.9375
+          },
+          "Valor_Terreno_UF_m2": {
+            "median": 0.7411,
+            "p25": 0.7411,
+            "p75": 0.7411
+          },
+          "Margen_Porc": {
+            "median": 24.58,
+            "p25": 24.58,
+            "p75": 24.58
+          }
+        }
+      }
+    }
+  },
+  "typologyStats": {
+    "canelo pareo": {
+      "label": "Canelo Pareo",
+      "count": 9,
+      "medianCostoUfViv": 336.95,
+      "p25": 327.07,
+      "p75": 351.13
+    },
+    "roble full": {
+      "label": "Roble Full",
+      "count": 17,
+      "medianCostoUfViv": 593.28,
+      "p25": 568.7,
+      "p75": 696.56
+    },
+    "nogal full": {
+      "label": "Nogal Full",
+      "count": 7,
+      "medianCostoUfViv": 485.4,
+      "p25": 483.71,
+      "p75": 496.8
+    },
+    "nogal plus": {
+      "label": "Nogal Plus",
+      "count": 4,
+      "medianCostoUfViv": 459.215,
+      "p25": 434.8,
+      "p75": 483.63
+    },
+    "nogal estandar": {
+      "label": "Nogal Estandar",
+      "count": 5,
+      "medianCostoUfViv": 482.84,
+      "p25": 464.6,
+      "p75": 520.3
+    },
+    "minusvalido quillay": {
+      "label": "Minusvalido Quillay",
+      "count": 21,
+      "medianCostoUfViv": 460.4,
+      "p25": 429.75,
+      "p75": 484.78
+    },
+    "departamento tipo a": {
+      "label": "Departamento Tipo A",
+      "count": 9,
+      "medianCostoUfViv": 629.88,
+      "p25": 624.19,
+      "p75": 662.4
+    },
+    "departamento tipo b": {
+      "label": "Departamento Tipo B",
+      "count": 8,
+      "medianCostoUfViv": 711.125,
+      "p25": 688.08,
+      "p75": 732.35
+    },
+    "manzanita pareada": {
+      "label": "Manzanita Pareada",
+      "count": 1,
+      "medianCostoUfViv": 448.39,
+      "p25": 448.39,
+      "p75": 448.39
+    },
+    "roble plus": {
+      "label": "Roble Plus",
+      "count": 4,
+      "medianCostoUfViv": 586.865,
+      "p25": 575.73,
+      "p75": 598
+    },
+    "boldo full": {
+      "label": "Boldo Full",
+      "count": 14,
+      "medianCostoUfViv": 736.505,
+      "p25": 690.6,
+      "p75": 846.82
+    },
+    "departamento tipo b-c": {
+      "label": "Departamento Tipo B-C",
+      "count": 1,
+      "medianCostoUfViv": 656.48,
+      "p25": 656.48,
+      "p75": 656.48
+    },
+    "departamento tipo d": {
+      "label": "Departamento Tipo D",
+      "count": 8,
+      "medianCostoUfViv": 646.23,
+      "p25": 630.06,
+      "p75": 669.89
+    },
+    "tipologia 3": {
+      "label": "Tipologia 3",
+      "count": 1,
+      "medianCostoUfViv": 549.43,
+      "p25": 549.43,
+      "p75": 549.43
+    },
+    "tipologia 2": {
+      "label": "Tipologia 2",
+      "count": 1,
+      "medianCostoUfViv": 549.43,
+      "p25": 549.43,
+      "p75": 549.43
+    },
+    "tipologia 1": {
+      "label": "Tipologia 1",
+      "count": 1,
+      "medianCostoUfViv": 487.26,
+      "p25": 487.26,
+      "p75": 487.26
+    },
+    "tipologia 0": {
+      "label": "Tipologia 0",
+      "count": 1,
+      "medianCostoUfViv": 487.26,
+      "p25": 487.26,
+      "p75": 487.26
+    },
+    "ciruelo aislada": {
+      "label": "Ciruelo Aislada",
+      "count": 9,
+      "medianCostoUfViv": 728.18,
+      "p25": 639.69,
+      "p75": 729.93
+    },
+    "ciruelo pareada": {
+      "label": "Ciruelo Pareada",
+      "count": 15,
+      "medianCostoUfViv": 649.7,
+      "p25": 590.32,
+      "p75": 672.93
+    },
+    "manzano c/ lucarna": {
+      "label": "Manzano C/ Lucarna",
+      "count": 10,
+      "medianCostoUfViv": 585.085,
+      "p25": 545.8,
+      "p75": 604.22
+    },
+    "manzano s/ lucarna": {
+      "label": "Manzano S/ Lucarna",
+      "count": 10,
+      "medianCostoUfViv": 547.05,
+      "p25": 500.8,
+      "p75": 552.42
+    },
+    "ciruelo aislada inmb": {
+      "label": "Ciruelo Aislada Inmb",
+      "count": 2,
+      "medianCostoUfViv": 671.92,
+      "p25": 638,
+      "p75": 705.84
+    },
+    "departamento tipo c": {
+      "label": "Departamento Tipo C",
+      "count": 7,
+      "medianCostoUfViv": 736.87,
+      "p25": 697.86,
+      "p75": 738.26
+    },
+    "manzano plus pareo": {
+      "label": "Manzano Plus Pareo",
+      "count": 1,
+      "medianCostoUfViv": 540.33,
+      "p25": 540.33,
+      "p75": 540.33
+    },
+    "manzano estandar pareo": {
+      "label": "Manzano Estandar Pareo",
+      "count": 1,
+      "medianCostoUfViv": 497.51,
+      "p25": 497.51,
+      "p75": 497.51
+    },
+    "manzano plus": {
+      "label": "Manzano Plus",
+      "count": 1,
+      "medianCostoUfViv": 531.99,
+      "p25": 531.99,
+      "p75": 531.99
+    },
+    "manzano plus estandar": {
+      "label": "Manzano Plus Estandar",
+      "count": 1,
+      "medianCostoUfViv": 489.15,
+      "p25": 489.15,
+      "p75": 489.15
+    },
+    "laurel": {
+      "label": "Laurel",
+      "count": 10,
+      "medianCostoUfViv": 1076.625,
+      "p25": 892.77,
+      "p75": 1116.22
+    },
+    "laurel condominio": {
+      "label": "Laurel Condominio",
+      "count": 2,
+      "medianCostoUfViv": 963.03,
+      "p25": 816.55,
+      "p75": 1109.51
+    },
+    "vivienda colonial 107 m2": {
+      "label": "Vivienda Colonial 107 m2",
+      "count": 1,
+      "medianCostoUfViv": 1540.2,
+      "p25": 1540.2,
+      "p75": 1540.2
+    },
+    "vivienda colonial 126 m2": {
+      "label": "Vivienda Colonial 126 m2",
+      "count": 1,
+      "medianCostoUfViv": 1710.7,
+      "p25": 1710.7,
+      "p75": 1710.7
+    },
+    "boldo condominio": {
+      "label": "Boldo Condominio",
+      "count": 1,
+      "medianCostoUfViv": 942.18,
+      "p25": 942.18,
+      "p75": 942.18
+    },
+    "cirueo aislada": {
+      "label": "Cirueo Aislada",
+      "count": 1,
+      "medianCostoUfViv": 711.2,
+      "p25": 711.2,
+      "p75": 711.2
+    },
+    "boldo": {
+      "label": "Boldo",
+      "count": 2,
+      "medianCostoUfViv": 960.52,
+      "p25": 938.26,
+      "p75": 982.78
+    },
+    "viv colonial 77 m2": {
+      "label": "Viv Colonial 77 m2",
+      "count": 1,
+      "medianCostoUfViv": 1406.11,
+      "p25": 1406.11,
+      "p75": 1406.11
+    },
+    "viv colonial 101,2 m2": {
+      "label": "Viv Colonial 101,2 m2",
+      "count": 2,
+      "medianCostoUfViv": 1761.44,
+      "p25": 1721.1,
+      "p75": 1801.78
+    },
+    "viv colonial 116,5 m2": {
+      "label": "Viv Colonial 116,5 m2",
+      "count": 2,
+      "medianCostoUfViv": 1898.61,
+      "p25": 1890.86,
+      "p75": 1906.36
+    }
+  },
+  "options": {
+    "regions": [
+      "Biobío",
+      "Maule",
+      "Region Metropolitana",
+      "Region de Ohiggins",
+      "Ñuble"
+    ],
+    "comunas": [
+      "Chillan",
+      "Curico",
+      "Linares",
+      "Los Angeles",
+      "Maule",
+      "Melipilla",
+      "Parral",
+      "Rengo",
+      "San Clemente",
+      "San Fernando",
+      "San Javier",
+      "Talca",
+      "Yerbas Buenas"
+    ],
+    "tiposProyecto": [
+      "DS19",
+      "DS49",
+      "INMB"
+    ],
+    "tiposViv": [
+      "Casa",
+      "Depto",
+      "Mixto"
+    ],
+    "tipologias": [
+      "Boldo",
+      "Boldo Condominio",
+      "Boldo Full",
+      "Canelo Aislada",
+      "Canelo Pareo",
+      "Ciruelo Aislada",
+      "Ciruelo Aislada Inmb",
+      "Ciruelo Pareada",
+      "Cirueo Aislada",
+      "Departamento Tipo A",
+      "Departamento Tipo B",
+      "Departamento Tipo B-C",
+      "Departamento Tipo C",
+      "Departamento Tipo D",
+      "Discapacitado Quillay",
+      "Discapacitado Quillay 20 UF",
+      "Discapacitado Quillay 80 UF",
+      "Laurel",
+      "Laurel Condominio",
+      "Manzanita Aislada",
+      "Manzanita Pareada",
+      "Manzano C/ Lucarna",
+      "Manzano Estandar Pareo",
+      "Manzano Plus",
+      "Manzano Plus Estandar",
+      "Manzano Plus Pareo",
+      "Manzano S/ Lucarna",
+      "Minusvalido Quillay",
+      "Nogal Estandar",
+      "Nogal Full",
+      "Nogal Plus",
+      "Roble Full",
+      "Roble Plus",
+      "Tipologia 0",
+      "Tipologia 1",
+      "Tipologia 2",
+      "Tipologia 3",
+      "Viv Colonial 101,2 m2",
+      "Viv Colonial 116,5 m2",
+      "Viv Colonial 77 m2",
+      "Vivienda Colonial 107 m2",
+      "Vivienda Colonial 126 m2"
+    ]
+  }
+}

@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Evaluación económica Preliminar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow top-meta"><span>Evaluacion preliminar</span><span>Desarrollado por Marcelo Troncoso</span></p>
+          <h1>Evaluación económica Preliminar</h1>
+        </div>
+        <div class="threshold">
+          <span>Umbral rentable</span>
+          <strong>18%</strong>
+        </div>
+      </header>
+
+      <section class="workspace">
+        <form id="project-form" class="input-panel">
+          <div class="section-head">
+            <h2>Datos del proyecto</h2>
+            <button class="ghost-button" type="button" id="reset-button">Limpiar</button>
+          </div>
+
+          <label class="full-field project-name-field">
+            Nombre proyecto
+            <input id="projectName" name="projectName" type="text" placeholder="Ej. Terreno Curico DS19" />
+          </label>
+
+          <div class="grid two">
+            <label>
+              Region
+              <select id="region" name="region" required></select>
+            </label>
+            <label>
+              Comuna
+              <select id="comuna" name="comuna"></select>
+            </label>
+            <label>
+              Tipo proyecto
+              <select id="tipoProyecto" name="tipoProyecto" required></select>
+            </label>
+            <label>
+              Tipo vivienda
+              <select id="tipoViv" name="tipoViv" required></select>
+            </label>
+            <label id="total-viv-field">
+              Total viviendas
+              <input id="totalViv" name="totalViv" type="number" min="1" step="1" value="100" required />
+            </label>
+            <label id="casas-field" class="hidden">
+              Casas
+              <input id="casas" name="casas" type="number" min="0" step="1" value="50" />
+            </label>
+            <label id="departamentos-field" class="hidden">
+              Departamentos
+              <input id="departamentos" name="departamentos" type="number" min="0" step="1" value="50" />
+            </label>
+          </div>
+
+          <div class="uf-panel">
+            <label>
+              UF actual ($/UF)
+              <input id="ufActualClp" name="ufActualClp" type="number" min="0" step="0.01" placeholder="Manual o actualizar" />
+            </label>
+            <button class="ghost-button" type="button" id="update-uf-button">Actualizar UF</button>
+            <span id="uf-status">UF manual si no hay conexion</span>
+          </div>
+
+          <div class="grid two">
+            <label>
+              Terreno m2
+              <input id="terrenoM2" name="terrenoM2" type="number" min="1" step="1" value="30000" required />
+            </label>
+            <label>
+              Valor terreno UF
+              <input id="valorTerrenoUf" name="valorTerrenoUf" type="number" min="0" step="1" placeholder="Opcional" />
+            </label>
+            <label>
+              Valor terreno UF/m2
+              <input id="valorTerrenoUfM2" name="valorTerrenoUfM2" type="number" min="0" step="0.01" placeholder="Ej. 0,5" />
+            </label>
+            <label>
+              Cuenta T UF
+              <input id="cuentaTUf" name="cuentaTUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
+            </label>
+            <label id="presupuesto-financiado-field" class="hidden">
+              Presupuesto financiado UF/viv
+              <input id="presupuestoFinanciadoUf" name="presupuestoFinanciadoUf" type="number" min="0" step="1" placeholder="Ej. 1900" />
+              <small id="presupuesto-financiado-note" class="field-note">Total financiado: --</small>
+            </label>
+            <label id="iva-construccion-field" class="hidden">
+              IVA costo construcción UF
+              <input id="ivaConstruccionUf" name="ivaConstruccionUf" type="number" min="0" step="1" placeholder="Automatico si queda vacio" />
+              <small id="iva-calculado-note" class="field-note">Automatico: --</small>
+            </label>
+            <label id="credito-especial-field" class="hidden">
+              Crédito especial UF
+              <input id="creditoEspecialUf" name="creditoEspecialUf" type="number" min="0" step="1" placeholder="Opcional DS19" />
+            </label>
+            <label id="utilidad-constructora-field" class="hidden">
+              Utilidad constructora %
+              <input id="utilidadConstructoraPct" name="utilidadConstructoraPct" type="number" min="0" step="0.1" value="10" />
+              <small id="utilidad-constructora-calculado-note" class="field-note">Automatico: --</small>
+            </label>
+            <label id="iva-debito-field" class="hidden">
+              IVA debito fiscal UF
+              <input id="ivaDebitoFiscalUf" name="ivaDebitoFiscalUf" type="number" min="0" step="1" placeholder="Automatico si queda vacio" />
+              <small id="iva-debito-calculado-note" class="field-note">Automatico: --</small>
+            </label>
+            <label id="credito-65-field" class="hidden">
+              Credito 65% UF
+              <input id="credito65Uf" name="credito65Uf" type="number" step="1" placeholder="Opcional INMB, puede ser negativo" />
+            </label>
+          </div>
+
+          <div class="section-head compact">
+            <h2>Supuestos opcionales</h2>
+            <span>Valores totales UF</span>
+          </div>
+
+          <div class="grid two">
+            <label>
+              Construccion UF
+              <input id="costoConstruccionUf" name="costoConstruccionUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+            </label>
+            <label>
+              Urbanizacion UF
+              <input id="urbanizacionUf" name="urbanizacionUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+            </label>
+            <label>
+              Instalacion de faenas UF
+              <input id="instalacionFaenasUf" name="instalacionFaenasUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+            </label>
+            <label>
+              Gastos generales UF
+              <input id="gastosGeneralesUf" name="gastosGeneralesUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+            </label>
+            <label>
+              Gastos financieros UF
+              <input id="gastosFinancierosUf" name="gastosFinancierosUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+            </label>
+            <label>
+              Ajuste historico %
+              <input id="ajusteHistoricoPct" name="ajusteHistoricoPct" type="number" min="0" step="0.1" value="1.5" />
+            </label>
+            <label>
+              Maquinaria/equipos/implementos UF
+              <input id="maquinariaEquiposUf" name="maquinariaEquiposUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
+            </label>
+            <label>
+              Honorarios UF
+              <input id="honorariosUf" name="honorariosUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
+            </label>
+            <label>
+              Derechos y permisos UF
+              <input id="derechosPermisosUf" name="derechosPermisosUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
+            </label>
+            <label>
+              Gastos legales UF
+              <input id="gastosLegalesUf" name="gastosLegalesUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
+            </label>
+            <label>
+              Eventualidades UF
+              <input id="eventualidadesUf" name="eventualidadesUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
+            </label>
+            <label>
+              Descarga Cuenta U UF
+              <input id="descargaCuentaUUf" name="descargaCuentaUUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
+            </label>
+            <label>
+              Activaciones UF
+              <input id="activacionesUf" name="activacionesUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
+            </label>
+            <label>
+              Imprevisto %
+              <input id="imprevistoPct" name="imprevistoPct" type="number" min="0" step="0.1" value="2" />
+              <small id="imprevisto-calculado-note" class="field-note">Automatico: --</small>
+            </label>
+            <label>
+              Imprevisto UF
+              <input id="imprevistoUf" name="imprevistoUf" type="number" min="0" step="1" placeholder="Automatico si queda vacio" />
+            </label>
+          </div>
+
+          <div id="typology-section">
+            <div class="section-head compact">
+              <h2>Tipologias y venta</h2>
+              <button class="ghost-button" type="button" id="add-typology-button">Agregar</button>
+            </div>
+            <div class="typology-editor">
+              <div class="typology-head">
+                <span>Tipologia</span>
+                <span>Cantidad</span>
+                <span>Venta UF/un</span>
+                <span></span>
+              </div>
+              <div id="typology-rows"></div>
+              <p id="typology-balance" class="balance-note"></p>
+            </div>
+          </div>
+
+          <div class="section-head compact">
+            <h2>Comentarios</h2>
+            <span>Para la caratula PDF</span>
+          </div>
+          <label class="comments-field">
+            Comentarios de la evaluacion
+            <textarea id="projectComments" name="projectComments" rows="5" placeholder="Escribe observaciones, criterios usados o pendientes de revisar"></textarea>
+          </label>
+
+          <div class="save-panel">
+            <div>
+              <h2>Simulaciones guardadas</h2>
+              <span id="save-status">Guardado local en este navegador</span>
+            </div>
+            <div class="save-actions">
+              <button class="ghost-button" type="button" id="save-simulation-button">Guardar simulacion</button>
+              <select id="saved-simulations" aria-label="Simulaciones guardadas"></select>
+              <button class="ghost-button" type="button" id="load-simulation-button">Cargar</button>
+              <button class="ghost-button" type="button" id="export-simulation-button">Exportar</button>
+              <button class="ghost-button" type="button" id="import-simulation-button">Importar</button>
+              <button class="ghost-button danger-button" type="button" id="delete-simulation-button">Borrar</button>
+              <input id="import-simulation-file" class="hidden" type="file" accept="application/json,.json" />
+            </div>
+          </div>
+
+          <div class="save-panel">
+            <div>
+              <h2>Base historica</h2>
+              <span id="historical-status">Base incluida en la app</span>
+            </div>
+            <div class="save-actions">
+              <button class="ghost-button" type="button" id="import-historical-button">Importar historicos</button>
+              <button class="ghost-button danger-button" type="button" id="clear-historical-button">Quitar importados</button>
+              <input id="import-historical-file" class="hidden" type="file" accept="application/json,.json,text/csv,.csv" />
+            </div>
+          </div>
+        </form>
+
+        <section class="output-panel">
+          <div class="print-actions">
+            <button class="ghost-button" type="button" id="print-button">Imprimir PDF</button>
+          </div>
+
+          <div class="result-band" id="result-band">
+            <div>
+              <p class="eyebrow">MC estimado</p>
+              <strong id="mc-value">--</strong>
+            </div>
+            <span id="status-pill" class="status-pill">Calculando</span>
+          </div>
+
+          <div class="kpi-grid">
+            <article>
+              <span>Ingresos UF</span>
+              <strong id="ingresos-value">--</strong>
+            </article>
+            <article>
+              <span>Costo total UF</span>
+              <strong id="costo-value">--</strong>
+            </article>
+            <article>
+              <span>Terreno max. UF</span>
+              <strong id="terreno-max-value">--</strong>
+            </article>
+          </div>
+
+          <div class="diagnosis" id="diagnosis"></div>
+
+          <div class="section-head compact">
+            <h2>Sensibilidad</h2>
+            <span id="sensitivity-label">Impacto sobre MC</span>
+          </div>
+          <div class="sensitivity-table-wrap">
+            <table class="sensitivity-table">
+              <thead>
+                <tr>
+                  <th>Escenario</th>
+                  <th>Cambio</th>
+                  <th>MC</th>
+                  <th>Diferencia</th>
+                </tr>
+              </thead>
+              <tbody id="sensitivity-table"></tbody>
+            </table>
+          </div>
+
+          <div class="section-head compact">
+            <h2>Supuestos usados</h2>
+            <span id="confidence-label">--</span>
+          </div>
+          <p class="confidence-detail" id="confidence-detail">--</p>
+          <div class="assumptions" id="assumptions"></div>
+
+          <div class="section-head compact">
+            <h2>Proyectos similares</h2>
+            <span id="peer-count">--</span>
+          </div>
+          <div class="peer-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Proyecto</th>
+                  <th>Tipo</th>
+                  <th>Viv.</th>
+                  <th>Constr.</th>
+                  <th>Urb.</th>
+                  <th>GG</th>
+                  <th>GF</th>
+                  <th>MC</th>
+                  <th>Terreno UF/m2</th>
+                </tr>
+              </thead>
+              <tbody id="peers-table"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <section id="print-cover" class="print-cover">
+        <header class="print-cover-head">
+          <div>
+            <p class="eyebrow">Evaluación económica Preliminar</p>
+            <h2 id="print-project-name">Proyecto sin nombre</h2>
+            <span class="print-project-name">Carátula de resultado</span>
+          </div>
+          <div class="print-head-badges">
+            <span id="print-project-type">--</span>
+            <strong id="print-status">--</strong>
+          </div>
+        </header>
+
+        <div class="print-hero">
+          <div>
+            <span>MC estimado</span>
+            <strong id="print-mc">--</strong>
+          </div>
+          <div>
+            <span>Ingresos UF</span>
+            <strong id="print-ingresos">--</strong>
+          </div>
+          <div>
+            <span>Costo total UF</span>
+            <strong id="print-costo">--</strong>
+          </div>
+          <div>
+            <span>Margen UF</span>
+            <strong id="print-margen">--</strong>
+          </div>
+          <div>
+            <span>Terreno max. UF</span>
+            <strong id="print-terreno-max">--</strong>
+          </div>
+        </div>
+
+        <p id="print-diagnosis" class="print-diagnosis"></p>
+
+        <table class="print-cost-table">
+          <thead>
+            <tr>
+              <th>Partida</th>
+              <th>UF</th>
+              <th>UF/viv</th>
+            </tr>
+          </thead>
+          <tbody id="print-cost-body"></tbody>
+        </table>
+
+        <section class="print-income-section">
+          <h3>Ingresos</h3>
+          <table class="print-income-table">
+            <thead>
+              <tr>
+                <th>Tipologia</th>
+                <th>Cantidad</th>
+                <th>Venta UF/un</th>
+                <th>Total UF</th>
+              </tr>
+            </thead>
+            <tbody id="print-income-body"></tbody>
+          </table>
+        </section>
+
+        <section id="print-comments-section" class="print-comments hidden">
+          <h3>Comentarios</h3>
+          <p id="print-comments"></p>
+        </section>
+
+        <p class="print-credit">Desarrollado por Marcelo Troncoso</p>
+      </section>
+    </main>
+
+    <script src="data/data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
