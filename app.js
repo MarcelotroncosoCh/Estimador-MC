@@ -429,12 +429,7 @@ async function updateUfFromApi({ silent = false } = {}) {
   if (!silent) setUfStatus("Actualizando UF...");
 
   try {
-    const response = await fetch("https://mindicador.cl/api/uf", { signal: controller.signal });
-    if (!response.ok) throw new Error("Respuesta no disponible");
-    const data = await response.json();
-    const value = Number(data?.serie?.[0]?.valor);
-    const date = data?.serie?.[0]?.fecha ? new Date(data.serie[0].fecha) : null;
-    if (!Number.isFinite(value)) throw new Error("UF no encontrada");
+    const { value, date } = await fetchUfValue(controller.signal);
     $("ufActualClp").value = value.toFixed(2);
     localStorage.setItem("estimadorMcUfActualClp", String(value));
     setUfStatus(`UF actualizada${date ? ` al ${date.toLocaleDateString("es-CL")}` : ""}: ${PESOS.format(value)}`, "ok");
@@ -444,6 +439,52 @@ async function updateUfFromApi({ silent = false } = {}) {
   } finally {
     clearTimeout(timeout);
   }
+}
+
+async function fetchUfValue(signal) {
+  const mindicadorDaily = "https://mindicador.cl/api";
+  const mindicadorUf = "https://mindicador.cl/api/uf";
+  const sources = [
+    mindicadorDaily,
+    mindicadorUf,
+    `https://api.allorigins.win/raw?url=${encodeURIComponent(mindicadorDaily)}`,
+    `https://api.allorigins.win/raw?url=${encodeURIComponent(mindicadorUf)}`,
+  ];
+
+  let lastError;
+  for (const source of sources) {
+    try {
+      const response = await fetch(source, { signal, cache: "no-store" });
+      if (!response.ok) throw new Error("Respuesta no disponible");
+      const data = await response.json();
+      const parsed = parseUfPayload(data);
+      if (Number.isFinite(parsed.value)) return parsed;
+    } catch (error) {
+      lastError = error;
+    }
+  }
+
+  throw lastError || new Error("UF no encontrada");
+}
+
+function parseUfPayload(data) {
+  const directValue = Number(data?.uf?.valor);
+  if (Number.isFinite(directValue)) {
+    return {
+      value: directValue,
+      date: data?.uf?.fecha ? new Date(data.uf.fecha) : data?.fecha ? new Date(data.fecha) : null,
+    };
+  }
+
+  const serieValue = Number(data?.serie?.[0]?.valor);
+  if (Number.isFinite(serieValue)) {
+    return {
+      value: serieValue,
+      date: data?.serie?.[0]?.fecha ? new Date(data.serie[0].fecha) : null,
+    };
+  }
+
+  return { value: null, date: null };
 }
 
 function typologyOptions(selected = "") {
