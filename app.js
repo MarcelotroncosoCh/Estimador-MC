@@ -446,6 +446,7 @@ async function fetchUfValue(signal) {
   const mindicadorDaily = "https://mindicador.cl/api";
   const mindicadorUf = "https://mindicador.cl/api/uf";
   const sources = [
+    "data/uf-cache.json",
     estimatorProxy,
     mindicadorDaily,
     mindicadorUf,
