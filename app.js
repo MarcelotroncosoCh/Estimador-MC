@@ -442,13 +442,19 @@ async function updateUfFromApi({ silent = false } = {}) {
 }
 
 async function fetchUfValue(signal) {
+  const estimatorProxy = "https://estimador-mc-inmobiliario.chelotrc.chatgpt.site/api/uf";
   const mindicadorDaily = "https://mindicador.cl/api";
   const mindicadorUf = "https://mindicador.cl/api/uf";
   const sources = [
+    estimatorProxy,
     mindicadorDaily,
     mindicadorUf,
+    `https://api.allorigins.win/get?url=${encodeURIComponent(mindicadorDaily)}`,
+    `https://api.allorigins.win/get?url=${encodeURIComponent(mindicadorUf)}`,
     `https://api.allorigins.win/raw?url=${encodeURIComponent(mindicadorDaily)}`,
     `https://api.allorigins.win/raw?url=${encodeURIComponent(mindicadorUf)}`,
+    `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(mindicadorDaily)}`,
+    `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(mindicadorUf)}`,
   ];
 
   let lastError;
@@ -468,6 +474,22 @@ async function fetchUfValue(signal) {
 }
 
 function parseUfPayload(data) {
+  if (typeof data?.contents === "string") {
+    try {
+      return parseUfPayload(JSON.parse(data.contents));
+    } catch (error) {
+      return { value: null, date: null };
+    }
+  }
+
+  const proxyValue = Number(data?.value);
+  if (Number.isFinite(proxyValue)) {
+    return {
+      value: proxyValue,
+      date: data?.date ? new Date(data.date) : null,
+    };
+  }
+
   const directValue = Number(data?.uf?.valor);
   if (Number.isFinite(directValue)) {
     return {
