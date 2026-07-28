@@ -9,6 +9,7 @@ const LOCAL_COMERCIAL_LABEL = "Local comercial";
 const LOCAL_COMERCIAL_MIN_UF = 850;
 const LOCAL_COMERCIAL_MAX_UF = 1100;
 const LOCAL_COMERCIAL_MEDIAN_UF = (LOCAL_COMERCIAL_MIN_UF + LOCAL_COMERCIAL_MAX_UF) / 2;
+const BASE_CORE_HISTORICAL_FACTOR = 1.025;
 
 const projectNumericFields = [
   "ID_Proyecto",
@@ -859,7 +860,7 @@ function adjustedSource(source, factor) {
   return factor === 1 ? source : `${source} + ajuste historico ${((factor - 1) * 100).toFixed(1)}%`;
 }
 
-function calculateConstruction(input, peers, constructionMedian, historicalFactor = 1) {
+function calculateConstruction(input, peers, constructionMedian, historicalFactor = 1, sourceFactor = historicalFactor) {
   if (Number.isFinite(input.costoConstruccionUf)) {
     return { value: input.costoConstruccionUf, source: "ingresado" };
   }
@@ -869,7 +870,7 @@ function calculateConstruction(input, peers, constructionMedian, historicalFacto
     if (peerCost) {
       return {
         value: peerCost.value * input.totalViv * historicalFactor,
-        source: adjustedSource(peerCost.source, historicalFactor),
+        source: adjustedSource(peerCost.source, sourceFactor),
       };
     }
   }
@@ -887,11 +888,14 @@ function calculateConstruction(input, peers, constructionMedian, historicalFacto
       : "tipologias historicas generales";
     return {
       value: rowsWithCost.reduce((sum, row) => sum + row.value, 0) * historicalFactor,
-      source: adjustedSource(source, historicalFactor),
+      source: adjustedSource(source, sourceFactor),
     };
   }
 
-  return { value: constructionMedian.value * input.totalViv * historicalFactor, source: adjustedSource(constructionMedian.source, historicalFactor) };
+  return {
+    value: constructionMedian.value * input.totalViv * historicalFactor,
+    source: adjustedSource(constructionMedian.source, sourceFactor),
+  };
 }
 
 function calculate() {
@@ -907,16 +911,17 @@ function calculate() {
   const financeMedian = peerCostMedian(peerSet, "Gastos_Financieros_UF_por_viv");
   const landUfM2Median = peerCostMedian(peerSet, "Valor_Terreno_UF_m2");
   const historicalFactor = 1 + Math.max(0, Number.isFinite(input.ajusteHistoricoPct) ? input.ajusteHistoricoPct : 1.5) / 100;
+  const coreHistoricalFactor = BASE_CORE_HISTORICAL_FACTOR * historicalFactor;
 
   const revenue = calculateRevenue(input, peerSet, revenueMedian);
-  const construction = calculateConstruction(input, peerSet, constructionMedian, historicalFactor);
+  const construction = calculateConstruction(input, peerSet, constructionMedian, coreHistoricalFactor, historicalFactor);
   const siteSetupHistorical = peerOptionalCost(peerSet, "Instalacion_Faenas_UF", "Instalacion_Faenas_UF_por_viv", input.totalViv, historicalFactor);
   const siteSetup = {
     value: input.instalacionFaenasUf ?? siteSetupHistorical.value,
     source: Number.isFinite(input.instalacionFaenasUf) ? "ingresado" : siteSetupHistorical.source,
   };
   const urban = {
-    value: input.urbanizacionUf ?? urbanMedian.value * input.totalViv * historicalFactor,
+    value: input.urbanizacionUf ?? urbanMedian.value * input.totalViv * coreHistoricalFactor,
     source: Number.isFinite(input.urbanizacionUf) ? "ingresado" : adjustedSource(urbanMedian.source, historicalFactor),
   };
   const activations = {
@@ -928,11 +933,11 @@ function calculate() {
     source: activations.value > 0 ? `${urban.source}, neto de activaciones` : urban.source,
   };
   const gg = {
-    value: input.gastosGeneralesUf ?? ggMedian.value * input.totalViv * historicalFactor,
+    value: input.gastosGeneralesUf ?? ggMedian.value * input.totalViv * coreHistoricalFactor,
     source: Number.isFinite(input.gastosGeneralesUf) ? "ingresado" : adjustedSource(ggMedian.source, historicalFactor),
   };
   const finance = {
-    value: input.gastosFinancierosUf ?? financeMedian.value * input.totalViv * historicalFactor,
+    value: input.gastosFinancierosUf ?? financeMedian.value * input.totalViv * coreHistoricalFactor,
     source: Number.isFinite(input.gastosFinancierosUf) ? "ingresado" : adjustedSource(financeMedian.source, historicalFactor),
   };
   const machinery = {
