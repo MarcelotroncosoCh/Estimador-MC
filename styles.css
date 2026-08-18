@@ -1,6 +1,6 @@
 :root {
   color-scheme: light;
-  --bg: #f4f6f5;
+  --bg: #252a2d;
   --surface: #ffffff;
   --surface-2: #eef3f0;
   --ink: #17211d;
@@ -45,11 +45,12 @@ textarea {
   justify-content: space-between;
   gap: 20px;
   padding: 18px 4px 22px;
+  color: #f7faf8;
 }
 
 .eyebrow {
   margin: 0 0 5px;
-  color: var(--muted);
+  color: #b7c1bc;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0;
@@ -60,6 +61,7 @@ textarea {
   display: flex;
   align-items: center;
   gap: 8px;
+  color: #d8e0dc;
   font-size: 10px;
 }
 
@@ -74,7 +76,7 @@ textarea {
   display: inline-block;
   width: 1px;
   height: 11px;
-  background: var(--line);
+  background: rgba(216, 224, 220, 0.42);
 }
 
 h1,
