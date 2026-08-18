@@ -235,6 +235,14 @@ label {
   font-weight: 400;
 }
 
+.estimate-note {
+  color: #53665e;
+}
+
+.estimate-note.manual {
+  color: var(--accent);
+}
+
 .hidden {
   display: none;
 }

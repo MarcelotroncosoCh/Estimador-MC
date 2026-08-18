@@ -1114,6 +1114,13 @@ function calculate() {
     autoIvaConstruccionUf: constructionVat.automaticValue,
     autoIvaDebitoFiscalUf: ivaDebito.automaticValue,
     autoUtilidadConstructoraUf: utilidadConstructora.value,
+    estimateNotes: {
+      costoConstruccion: construction,
+      urbanizacion: urban,
+      instalacionFaenas: siteSetup,
+      gastosGenerales: gg,
+      gastosFinancieros: finance,
+    },
     sensitivityBase: {
       construction: construction.value,
       urbanization: urbanNet.value,
@@ -1277,6 +1284,23 @@ function renderTypologyBalance(result) {
       : `Hay ${CLP.format(Math.abs(diff))} viviendas sobre el total definido.`;
 }
 
+function setEstimateNote(id, item) {
+  const note = $(id);
+  if (!note || !item) return;
+  const isManual = item.source === "ingresado";
+  note.textContent = `${isManual ? "Manual" : "Historico estimado"}: ${uf(item.value)}`;
+  note.classList.toggle("manual", isManual);
+}
+
+function renderEstimateNotes(result) {
+  const notes = result.estimateNotes || {};
+  setEstimateNote("costo-construccion-estimate-note", notes.costoConstruccion);
+  setEstimateNote("urbanizacion-estimate-note", notes.urbanizacion);
+  setEstimateNote("instalacion-faenas-estimate-note", notes.instalacionFaenas);
+  setEstimateNote("gastos-generales-estimate-note", notes.gastosGenerales);
+  setEstimateNote("gastos-financieros-estimate-note", notes.gastosFinancieros);
+}
+
 function render(result) {
   const status = result.mc >= THRESHOLD ? "Rentable" : result.mc >= 15 ? "Riesgoso" : "No rentable";
   const tone = result.mc >= THRESHOLD ? "ok" : result.mc >= 15 ? "warn" : "bad";
@@ -1284,6 +1308,7 @@ function render(result) {
   resultBand.className = `result-band ${tone === "ok" ? "" : tone}`;
 
   renderTypologyBalance(result);
+  renderEstimateNotes(result);
   $("mc-value").textContent = pct(result.mc);
   $("status-pill").textContent = status;
   $("ingresos-value").textContent = uf(result.ingresos);
