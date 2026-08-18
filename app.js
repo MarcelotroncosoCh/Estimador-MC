@@ -1367,7 +1367,7 @@ function render(result) {
     printCostRows +
     `
       <tr class="print-total-row">
-        <td>Total costo</td>
+        <td>Costo total UF</td>
         <td>${uf(result.costoTotal)}</td>
         <td>${uf(result.costoTotal / totalVivForPrint)}</td>
       </tr>
