@@ -1163,6 +1163,7 @@ function calculate() {
       ["Terreno base", landBaseUf],
       ["Cuenta T", cuentaT.value],
       ["Imprevistos", imprevisto.value],
+      ["IVA costo construccion", constructionVat.value],
       ["Credito especial", specialCredit.value],
     ],
     printIncomeRows:
