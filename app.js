@@ -1747,7 +1747,6 @@ async function init() {
   }
 
   refreshSavedSimulations();
-  refreshHistoricalStatus(readImportedHistoricalProjects().length);
   recalculate();
 }
 
