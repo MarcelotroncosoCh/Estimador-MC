@@ -1359,10 +1359,19 @@ function render(result) {
   $("print-terreno-max").textContent = uf(result.maxLand);
   $("print-diagnosis").textContent = diagnosis.textContent;
   const totalVivForPrint = Math.max(1, Number(result.input.totalViv) || 1);
-  $("print-cost-body").innerHTML = (result.printCostsOrdered || result.printCosts)
+  const printCostRows = (result.printCostsOrdered || result.printCosts)
     .filter(([, value]) => Number.isFinite(value))
     .map(([label, value]) => `<tr><td>${label}</td><td>${uf(value)}</td><td>${uf(value / totalVivForPrint)}</td></tr>`)
     .join("");
+  $("print-cost-body").innerHTML =
+    printCostRows +
+    `
+      <tr class="print-total-row">
+        <td>Total costo</td>
+        <td>${uf(result.costoTotal)}</td>
+        <td>${uf(result.costoTotal / totalVivForPrint)}</td>
+      </tr>
+    `;
   const printIncomeRows = (result.printIncomeRows || []).filter(
     (row) => Number.isFinite(row.cantidad) && Number.isFinite(row.price) && Number.isFinite(row.revenue),
   );
