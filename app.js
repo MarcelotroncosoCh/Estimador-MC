@@ -3,7 +3,6 @@ const CLP = new Intl.NumberFormat("es-CL", { maximumFractionDigits: 0 });
 const PESOS = new Intl.NumberFormat("es-CL", { style: "currency", currency: "CLP", maximumFractionDigits: 0 });
 const PCT = new Intl.NumberFormat("es-CL", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const SIMULATIONS_KEY = "estimadorMcSimulaciones";
-const HISTORICAL_PROJECTS_KEY = "estimadorMcHistoricosImportados";
 const MIN_TYPOLOGY_COST_UF_VIV = 100;
 const LOCAL_COMERCIAL_LABEL = "Local comercial";
 const LOCAL_COMERCIAL_MIN_UF = 850;
@@ -1594,25 +1593,6 @@ function deleteSelectedSimulation() {
   $("save-status").textContent = `Borrada: ${simulation.name}`;
 }
 
-function readImportedHistoricalProjects() {
-  try {
-    const saved = JSON.parse(localStorage.getItem(HISTORICAL_PROJECTS_KEY) || "[]");
-    return Array.isArray(saved) ? saved : [];
-  } catch {
-    return [];
-  }
-}
-
-function writeImportedHistoricalProjects(projects) {
-  localStorage.setItem(HISTORICAL_PROJECTS_KEY, JSON.stringify(projects));
-}
-
-function refreshHistoricalStatus(count = readImportedHistoricalProjects().length) {
-  $("historical-status").textContent = count
-    ? `${count} proyecto${count === 1 ? "" : "s"} importado${count === 1 ? "" : "s"} desde SQL/exportacion`
-    : "Base incluida en la app";
-}
-
 function reloadProjectSelectors({ keepCurrent = true } = {}) {
   const currentRegion = $("region").value;
   const currentTipoProyecto = $("tipoProyecto").value;
@@ -1631,44 +1611,9 @@ function reloadProjectSelectors({ keepCurrent = true } = {}) {
   syncProjectTypeFields();
 }
 
-function importHistoricalFromFile(file) {
-  if (!file) return;
-  const reader = new FileReader();
-  reader.addEventListener("load", () => {
-    try {
-      const imported = parseHistoricalProjects(String(reader.result || ""), file.name);
-      if (!imported.length) throw new Error("Sin proyectos");
-      const saved = readImportedHistoricalProjects();
-      const merged = [...saved, ...imported];
-      writeImportedHistoricalProjects(merged);
-      mergeImportedProjects(imported);
-      reloadProjectSelectors();
-      refreshHistoricalStatus(merged.length);
-      $("historical-status").textContent = `Importados ${imported.length} proyecto${imported.length === 1 ? "" : "s"} nuevos`;
-      recalculate();
-    } catch {
-      $("historical-status").textContent = "No se pudo importar. Revisa formato JSON/CSV.";
-    } finally {
-      $("import-historical-file").value = "";
-    }
-  });
-  reader.readAsText(file);
-}
-
-function clearImportedHistoricalProjects() {
-  localStorage.removeItem(HISTORICAL_PROJECTS_KEY);
-  db = structuredClone(baseDb);
-  rebuildDbOptions();
-  reloadProjectSelectors();
-  refreshHistoricalStatus(0);
-  recalculate();
-}
-
 async function init() {
   baseDb = structuredClone(window.PROJECT_DATA || (await fetch("data/projects.json").then((response) => response.json())));
   db = structuredClone(baseDb);
-  const importedHistoricalProjects = readImportedHistoricalProjects().map(normalizeImportedProject);
-  if (importedHistoricalProjects.length) mergeImportedProjects(importedHistoricalProjects);
   const projectTypes = visibleProjectTypes();
 
   fillSelect("region", db.options.regions);
@@ -1723,9 +1668,6 @@ async function init() {
   $("import-simulation-button").addEventListener("click", () => $("import-simulation-file").click());
   $("import-simulation-file").addEventListener("change", () => importSimulationFromFile($("import-simulation-file").files?.[0]));
   $("delete-simulation-button").addEventListener("click", deleteSelectedSimulation);
-  $("import-historical-button").addEventListener("click", () => $("import-historical-file").click());
-  $("import-historical-file").addEventListener("change", () => importHistoricalFromFile($("import-historical-file").files?.[0]));
-  $("clear-historical-button").addEventListener("click", clearImportedHistoricalProjects);
 
   ["imprevistoUf", "ivaConstruccionUf", "ivaDebitoFiscalUf"].forEach((field) => {
     $(field).dataset.auto = "true";
