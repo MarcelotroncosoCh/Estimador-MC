@@ -391,6 +391,8 @@ textarea {
   padding: 20px;
   border-radius: 8px;
   background: linear-gradient(135deg, #10231f, #19433a);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 18px 42px rgba(14, 118, 104, 0.18);
   color: #fff;
 }
 
@@ -411,10 +413,12 @@ textarea {
 
 .result-band.warn {
   background: linear-gradient(135deg, #382313, #825012);
+  box-shadow: 0 18px 42px rgba(181, 71, 8, 0.18);
 }
 
 .result-band.bad {
   background: linear-gradient(135deg, #3b1714, #8d271f);
+  box-shadow: 0 18px 42px rgba(180, 35, 24, 0.16);
 }
 
 .kpi-grid {
@@ -554,10 +558,31 @@ textarea {
   overflow: auto;
   border: 1px solid var(--line);
   border-radius: 8px;
+  background: #fff;
 }
 
 .peer-table-wrap table {
   min-width: 900px;
+}
+
+.peer-table-wrap th {
+  background: #eef5f2;
+  color: #33433d;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.peer-table-wrap tbody tr:nth-child(even) {
+  background: #f8fbf9;
+}
+
+.peer-table-wrap tbody tr:hover {
+  background: #edf7f3;
+}
+
+.peer-table-wrap td:first-child {
+  font-weight: 700;
+  color: var(--ink);
 }
 
 .peer-table-wrap td:nth-child(n + 3),

@@ -1287,7 +1287,7 @@ function setEstimateNote(id, item) {
   const note = $(id);
   if (!note || !item) return;
   const isManual = item.source === "ingresado";
-  note.textContent = `${isManual ? "Manual" : "Historico estimado"}: ${uf(item.value)}`;
+  note.textContent = `${isManual ? "Manual" : "Usara historico"}: ${uf(item.value)}`;
   note.classList.toggle("manual", isManual);
 }
 
