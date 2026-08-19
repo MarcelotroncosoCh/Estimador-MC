@@ -8,6 +8,7 @@ const LOCAL_COMERCIAL_LABEL = "Local comercial";
 const LOCAL_COMERCIAL_COST_UF = 653;
 const BASE_CORE_HISTORICAL_FACTOR = 1.04;
 const DS49_CONSTRUCTION_HISTORICAL_FACTOR = 1.06;
+const PERMITS_HISTORICAL_FACTOR = 1.06;
 
 const projectNumericFields = [
   "ID_Proyecto",
@@ -956,6 +957,7 @@ function calculate() {
   const constructionHistoricalFactor = constructionBaseFactor * historicalFactor;
   const urbanHistoricalFactor = coreHistoricalFactor * urbanizationFactor;
   const complementaryHistoricalFactor = coreHistoricalFactor * complementaryFactor;
+  const permitsHistoricalFactor = PERMITS_HISTORICAL_FACTOR * historicalFactor * complementaryFactor;
   const urbanSourceFactor = historicalFactor * urbanizationFactor;
   const complementarySourceFactor = historicalFactor * complementaryFactor;
 
@@ -983,7 +985,7 @@ function calculate() {
     "Derechos_Permisos_UF",
     "Derechos_Permisos_UF_por_viv",
     input.totalViv,
-    complementaryHistoricalFactor,
+    permitsHistoricalFactor,
     complementarySourceFactor,
   );
   const legalHistorical = peerOptionalCost(peerSet, "Gastos_Legales_UF", "Gastos_Legales_UF_por_viv", input.totalViv, complementaryHistoricalFactor, complementarySourceFactor);
