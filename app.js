@@ -82,7 +82,6 @@ const baseFields = [
   "ufActualClp",
   "totalViv",
   "localesComerciales",
-  "precioLocalComercialUf",
   "totalUnidadesProyecto",
   "casas",
   "departamentos",
@@ -391,7 +390,6 @@ function syncProjectTypeFields() {
   $("credito-65-field").classList.toggle("hidden", !inmb);
   $("typology-section").classList.toggle("hidden", ds49);
   $("locales-comerciales-field").classList.toggle("hidden", !ds19);
-  $("precio-local-comercial-field").classList.toggle("hidden", !ds19);
   $("total-unidades-field").classList.toggle("hidden", !ds19);
   if (!ds19) $("localesComerciales").value = 0;
   syncTotalUnitsField();
@@ -533,13 +531,7 @@ function parseUfPayload(data) {
 
 function typologyOptions(selected = "") {
   const normalizedSelected = normalizeTypologyLabel(selected);
-  const tipologias = [
-    ...new Set(
-      [...(db.options.tipologias || []).map(normalizeTypologyLabel), normalizedSelected]
-        .filter(Boolean)
-        .filter((tipologia) => tipologia === normalizedSelected || slug(tipologia) !== slug(LOCAL_COMERCIAL_LABEL)),
-    ),
-  ].sort();
+  const tipologias = [...new Set([...(db.options.tipologias || []).map(normalizeTypologyLabel), LOCAL_COMERCIAL_LABEL])].sort();
   const options = [`<option value="">Sin definir</option>`]
     .concat(
       tipologias.map(
@@ -572,7 +564,7 @@ function addTypologyRow(data = {}) {
 }
 
 function ensureOneTypologyRow() {
-  if (!$("typology-rows").children.length) addTypologyRow({ cantidad: effectiveTotalViv(), precio: "" });
+  if (!$("typology-rows").children.length) addTypologyRow({ cantidad: syncTotalUnitsField(), precio: "" });
 }
 
 function readTypologies() {
@@ -815,7 +807,6 @@ function readInput() {
     tipoVivKey: slug(data.tipoViv),
     totalViv,
     localesComerciales,
-    precioLocalComercialUf: slug(data.tipoProyecto) === "ds19" ? num(data.precioLocalComercialUf) ?? LOCAL_COMERCIAL_MEDIAN_UF : 0,
     totalUnidadesProyecto,
     casas: num(data.casas) || 0,
     departamentos: num(data.departamentos) || 0,
@@ -854,17 +845,6 @@ function assumption(label, value, source) {
 }
 
 function calculateRevenue(input, peers, revenueMedian) {
-  const localRevenueRow =
-    input.localesComerciales > 0
-      ? {
-          tipologia: LOCAL_COMERCIAL_LABEL,
-          cantidad: input.localesComerciales,
-          price: input.precioLocalComercialUf,
-          revenue: input.localesComerciales * input.precioLocalComercialUf,
-          source: Number.isFinite(input.precioLocalComercialUf) ? "precio local ingresado" : "653 UF/local",
-        }
-      : null;
-
   if (input.tipoProyectoKey === "ds49") {
     const peerBudgets = peers
       .filter(({ project }) => project._tipo_proyecto_key === "ds49")
@@ -877,10 +857,7 @@ function calculateRevenue(input, peers, revenueMedian) {
     const historicalBudgetPerViv = median(peerBudgets) ?? median(globalBudgets) ?? 0;
     const budgetPerViv = input.presupuestoFinanciadoUf ?? historicalBudgetPerViv;
     const housingTotal = budgetPerViv * input.totalViv;
-    const rows = [
-      { tipologia: "Presupuesto financiado", cantidad: input.totalViv, price: budgetPerViv, revenue: housingTotal },
-      ...(localRevenueRow ? [localRevenueRow] : []),
-    ];
+    const rows = [{ tipologia: "Presupuesto financiado", cantidad: input.totalViv, price: budgetPerViv, revenue: housingTotal }];
     return {
       rows,
       total: rows.reduce((sum, row) => sum + row.revenue, 0),
@@ -895,7 +872,8 @@ function calculateRevenue(input, peers, revenueMedian) {
     };
   }
 
-  const housingRows = input.typologies.length ? input.typologies : [{ cantidad: input.totalViv, precio: null, tipologia: "" }];
+  const expectedQuantity = input.tipoProyectoKey === "ds19" ? input.totalUnidadesProyecto : input.totalViv;
+  const housingRows = input.typologies.length ? input.typologies : [{ cantidad: expectedQuantity, precio: null, tipologia: "" }];
   const byTypology = housingRows.map((row) => {
     const localComercial = row.tipologiaKey === slug(LOCAL_COMERCIAL_LABEL);
     const price = row.precio ?? (localComercial ? LOCAL_COMERCIAL_MEDIAN_UF : revenueMedian.value);
@@ -906,10 +884,9 @@ function calculateRevenue(input, peers, revenueMedian) {
         : revenueMedian.source;
     return { ...row, price, revenue: price * row.cantidad, source };
   });
-  const rows = [...byTypology, ...(localRevenueRow ? [localRevenueRow] : [])];
   return {
-    rows,
-    total: rows.reduce((sum, row) => sum + row.revenue, 0),
+    rows: byTypology,
+    total: byTypology.reduce((sum, row) => sum + row.revenue, 0),
     quantity: byTypology.reduce((sum, row) => sum + row.cantidad, 0),
   };
 }
@@ -1341,18 +1318,20 @@ function buildSensitivityRows(result) {
 
 function renderTypologyBalance(result) {
   const note = $("typology-balance");
-  const diff = result.input.totalViv - result.typologyQuantity;
+  const expectedQuantity = result.input.tipoProyectoKey === "ds19" ? result.input.totalUnidadesProyecto : result.input.totalViv;
+  const unitLabel = result.input.tipoProyectoKey === "ds19" ? "unidades" : "viviendas";
+  const diff = expectedQuantity - result.typologyQuantity;
   note.className = "balance-note";
   if (diff === 0) {
     note.classList.add("ok");
-    note.textContent = `Distribucion completa: ${CLP.format(result.typologyQuantity)} de ${CLP.format(result.input.totalViv)} viviendas.`;
+    note.textContent = `Distribucion completa: ${CLP.format(result.typologyQuantity)} de ${CLP.format(expectedQuantity)} ${unitLabel}.`;
     return;
   }
   note.classList.add("warn");
   note.textContent =
     diff > 0
-      ? `Faltan ${CLP.format(diff)} viviendas por distribuir en tipologias.`
-      : `Hay ${CLP.format(Math.abs(diff))} viviendas sobre el total definido.`;
+      ? `Faltan ${CLP.format(diff)} ${unitLabel} por distribuir en tipologias.`
+      : `Hay ${CLP.format(Math.abs(diff))} ${unitLabel} sobre el total definido.`;
 }
 
 function setEstimateNote(id, item) {
@@ -1520,7 +1499,7 @@ function recalculate() {
 
 function resetTypologies() {
   $("typology-rows").innerHTML = "";
-  addTypologyRow({ cantidad: effectiveTotalViv(), precio: "" });
+  addTypologyRow({ cantidad: syncTotalUnitsField(), precio: "" });
 }
 
 function readSavedSimulations() {
@@ -1781,15 +1760,25 @@ async function init() {
 
   $("totalViv").addEventListener("change", () => {
     if ($("typology-rows").children.length === 1) {
-      document.querySelector(".typology-qty").value = effectiveTotalViv();
+      document.querySelector(".typology-qty").value = syncTotalUnitsField();
     }
     recalculate();
   });
 
-  $("casas").addEventListener("change", recalculate);
-  $("departamentos").addEventListener("change", recalculate);
-  $("localesComerciales").addEventListener("change", recalculate);
-  $("precioLocalComercialUf").addEventListener("change", recalculate);
+  const syncSingleTypologyQuantity = () => {
+    if ($("typology-rows").children.length === 1) {
+      document.querySelector(".typology-qty").value = syncTotalUnitsField();
+    }
+    recalculate();
+  };
+  $("casas").addEventListener("change", syncSingleTypologyQuantity);
+  $("departamentos").addEventListener("change", syncSingleTypologyQuantity);
+  $("localesComerciales").addEventListener("change", () => {
+    if ($("typology-rows").children.length === 1) {
+      document.querySelector(".typology-qty").value = syncTotalUnitsField();
+    }
+    recalculate();
+  });
 
   $("add-typology-button").addEventListener("click", () => {
     addTypologyRow({ cantidad: "", precio: "" });
@@ -1804,7 +1793,6 @@ async function init() {
     $("tipoViv").value = db.options.tiposViv.includes("Casa") ? "Casa" : db.options.tiposViv[0];
     $("totalViv").value = 100;
     $("localesComerciales").value = 0;
-    $("precioLocalComercialUf").value = LOCAL_COMERCIAL_MEDIAN_UF;
     $("totalUnidadesProyecto").value = 100;
     $("casas").value = 50;
     $("departamentos").value = 50;
