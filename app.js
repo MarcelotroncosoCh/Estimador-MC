@@ -1282,7 +1282,7 @@ function calculate() {
     ],
     printCostsOrdered: [
       ["Costo de construccion", construction.value],
-      ["Costo locales comerciales", localCommercialCost.value],
+      ["Costo locales comerciales", input.tipoProyectoKey === "ds19" ? localCommercialCost.value : null],
       ["Urbanizacion", urbanNet.value],
       ["Instalacion de faena", siteSetup.value],
       ["Gastos generales", gg.value],
@@ -1299,7 +1299,7 @@ function calculate() {
       ["Cuenta T", cuentaT.value],
       ["Imprevistos", imprevisto.value],
       ["IVA costo construccion", constructionVat.value],
-      ["Credito especial", specialCredit.value],
+      ["Credito especial", input.tipoProyectoKey === "ds49" ? null : specialCredit.value],
     ],
     printIncomeRows: revenue.rows,
     assumptions: [
