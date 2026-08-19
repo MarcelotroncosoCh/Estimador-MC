@@ -7,7 +7,7 @@ const MIN_TYPOLOGY_COST_UF_VIV = 100;
 const LOCAL_COMERCIAL_LABEL = "Local comercial";
 const LOCAL_COMERCIAL_COST_UF = 653;
 const BASE_CORE_HISTORICAL_FACTOR = 1.04;
-const DS49_CONSTRUCTION_HISTORICAL_FACTOR = 1.06;
+const SOCIAL_CONSTRUCTION_HISTORICAL_FACTOR = 1.12;
 const PERMITS_HISTORICAL_FACTOR = 1.06;
 
 const projectNumericFields = [
@@ -912,11 +912,17 @@ function calculateRevenue(input, peers, revenueMedian) {
   };
 }
 
-function adjustedSource(source, factor) {
-  return factor === 1 ? source : `${source} + ajuste historico ${((factor - 1) * 100).toFixed(1)}%`;
+function adjustedSource(source, factor, label = "ajuste historico") {
+  return factor === 1 ? source : `${source} + ${label} ${((factor - 1) * 100).toFixed(1)}%`;
 }
 
-function calculateConstruction(input, peers, constructionMedian, historicalFactor = 1, sourceFactor = historicalFactor) {
+function calculateConstruction(
+  input,
+  peers,
+  constructionMedian,
+  historicalFactor = 1,
+  sourceFactor = historicalFactor,
+) {
   if (Number.isFinite(input.costoConstruccionUf)) {
     return { value: input.costoConstruccionUf, source: "ingresado" };
   }
@@ -926,7 +932,7 @@ function calculateConstruction(input, peers, constructionMedian, historicalFacto
     if (peerCost) {
       return {
         value: peerCost.value * input.totalViv * historicalFactor,
-        source: adjustedSource(peerCost.source, sourceFactor),
+        source: adjustedSource(peerCost.source, sourceFactor, "ajuste construccion"),
       };
     }
   }
@@ -944,13 +950,13 @@ function calculateConstruction(input, peers, constructionMedian, historicalFacto
       : "tipologias historicas generales";
     return {
       value: rowsWithCost.reduce((sum, row) => sum + row.value, 0) * historicalFactor,
-      source: adjustedSource(source, sourceFactor),
+      source: adjustedSource(source, sourceFactor, "ajuste construccion"),
     };
   }
 
   return {
     value: constructionMedian.value * input.totalViv * historicalFactor,
-    source: adjustedSource(constructionMedian.source, sourceFactor),
+    source: adjustedSource(constructionMedian.source, sourceFactor, "ajuste construccion"),
   };
 }
 
@@ -966,20 +972,30 @@ function calculate() {
   const ggMedian = peerCostMedian(peerSet, "Gastos_Generales_UF_por_viv");
   const financeMedian = peerCostMedian(peerSet, "Gastos_Financieros_UF_por_viv");
   const landUfM2Median = peerCostMedian(peerSet, "Valor_Terreno_UF_m2");
-  const historicalFactor = 1 + Math.max(0, Number.isFinite(input.ajusteHistoricoPct) ? input.ajusteHistoricoPct : 1.5) / 100;
+  const constructionAdjustmentFactor =
+    1 + Math.max(0, Number.isFinite(input.ajusteHistoricoPct) ? input.ajusteHistoricoPct : 1.5) / 100;
   const urbanizationFactor = 1 + Math.max(0, Number.isFinite(input.ajusteUrbanizacionPct) ? input.ajusteUrbanizacionPct : 0) / 100;
   const complementaryFactor = 1 + Math.max(0, Number.isFinite(input.ajusteComplementariosPct) ? input.ajusteComplementariosPct : 0) / 100;
-  const coreHistoricalFactor = BASE_CORE_HISTORICAL_FACTOR * historicalFactor;
-  const constructionBaseFactor = input.tipoProyectoKey === "ds49" ? DS49_CONSTRUCTION_HISTORICAL_FACTOR : BASE_CORE_HISTORICAL_FACTOR;
-  const constructionHistoricalFactor = constructionBaseFactor * historicalFactor;
+  const coreHistoricalFactor = BASE_CORE_HISTORICAL_FACTOR;
+  const constructionBaseFactor =
+    input.tipoProyectoKey === "ds49" || input.tipoProyectoKey === "ds19"
+      ? SOCIAL_CONSTRUCTION_HISTORICAL_FACTOR
+      : BASE_CORE_HISTORICAL_FACTOR;
+  const constructionHistoricalFactor = constructionBaseFactor * constructionAdjustmentFactor;
   const urbanHistoricalFactor = coreHistoricalFactor * urbanizationFactor;
   const complementaryHistoricalFactor = coreHistoricalFactor * complementaryFactor;
-  const permitsHistoricalFactor = PERMITS_HISTORICAL_FACTOR * historicalFactor * complementaryFactor;
-  const urbanSourceFactor = historicalFactor * urbanizationFactor;
-  const complementarySourceFactor = historicalFactor * complementaryFactor;
+  const permitsHistoricalFactor = PERMITS_HISTORICAL_FACTOR * complementaryFactor;
+  const urbanSourceFactor = urbanizationFactor;
+  const complementarySourceFactor = complementaryFactor;
 
   const revenue = calculateRevenue(input, peerSet, revenueMedian);
-  const construction = calculateConstruction(input, peerSet, constructionMedian, constructionHistoricalFactor, historicalFactor);
+  const construction = calculateConstruction(
+    input,
+    peerSet,
+    constructionMedian,
+    constructionHistoricalFactor,
+    constructionAdjustmentFactor,
+  );
   const siteSetupHistorical = peerOptionalCost(
     peerSet,
     "Instalacion_Faenas_UF",
@@ -1040,11 +1056,11 @@ function calculate() {
   };
   const gg = {
     value: input.gastosGeneralesUf ?? ggMedian.value * input.totalViv * coreHistoricalFactor,
-    source: Number.isFinite(input.gastosGeneralesUf) ? "ingresado" : adjustedSource(ggMedian.source, historicalFactor),
+    source: Number.isFinite(input.gastosGeneralesUf) ? "ingresado" : ggMedian.source,
   };
   const finance = {
     value: input.gastosFinancierosUf ?? financeMedian.value * input.totalViv * coreHistoricalFactor,
-    source: Number.isFinite(input.gastosFinancierosUf) ? "ingresado" : adjustedSource(financeMedian.source, historicalFactor),
+    source: Number.isFinite(input.gastosFinancierosUf) ? "ingresado" : financeMedian.source,
   };
   const safetyTools = {
     value: input.tipoProyectoKey === "ds49" ? input.impSeguridadHerramientasUf ?? safetyToolsHistorical.value : null,
