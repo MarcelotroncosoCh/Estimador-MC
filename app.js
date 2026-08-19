@@ -389,6 +389,10 @@ function syncProjectTypeFields() {
   $("iva-debito-field").classList.toggle("hidden", !inmb);
   $("credito-65-field").classList.toggle("hidden", !inmb);
   $("typology-section").classList.toggle("hidden", ds49);
+  $("locales-comerciales-field").classList.toggle("hidden", !ds19);
+  $("total-unidades-field").classList.toggle("hidden", !ds19);
+  if (!ds19) $("localesComerciales").value = 0;
+  syncTotalUnitsField();
 }
 
 function syncLandFields(changedField) {
@@ -527,7 +531,13 @@ function parseUfPayload(data) {
 
 function typologyOptions(selected = "") {
   const normalizedSelected = normalizeTypologyLabel(selected);
-  const tipologias = [...new Set([...(db.options.tipologias || []).map(normalizeTypologyLabel), LOCAL_COMERCIAL_LABEL])].sort();
+  const tipologias = [
+    ...new Set(
+      [...(db.options.tipologias || []).map(normalizeTypologyLabel), normalizedSelected]
+        .filter(Boolean)
+        .filter((tipologia) => tipologia === normalizedSelected || slug(tipologia) !== slug(LOCAL_COMERCIAL_LABEL)),
+    ),
+  ].sort();
   const options = [`<option value="">Sin definir</option>`]
     .concat(
       tipologias.map(
@@ -589,7 +599,7 @@ function effectiveLocalesComerciales() {
 }
 
 function syncTotalUnitsField() {
-  const totalUnits = effectiveTotalViv() + effectiveLocalesComerciales();
+  const totalUnits = effectiveTotalViv() + (isDS19() ? effectiveLocalesComerciales() : 0);
   $("totalUnidadesProyecto").value = totalUnits;
   return totalUnits;
 }
@@ -793,7 +803,7 @@ function peerWeightedTypologyCostPerViv(peers, filter = () => true) {
 function readInput() {
   const data = Object.fromEntries(baseFields.map((field) => [field, $(field).value]));
   const totalViv = effectiveTotalViv();
-  const localesComerciales = effectiveLocalesComerciales();
+  const localesComerciales = slug(data.tipoProyecto) === "ds19" ? effectiveLocalesComerciales() : 0;
   const totalUnidadesProyecto = totalViv + localesComerciales;
   return {
     ...data,
