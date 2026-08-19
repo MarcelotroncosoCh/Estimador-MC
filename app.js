@@ -82,6 +82,7 @@ const baseFields = [
   "ufActualClp",
   "totalViv",
   "localesComerciales",
+  "precioLocalComercialUf",
   "totalUnidadesProyecto",
   "casas",
   "departamentos",
@@ -390,6 +391,7 @@ function syncProjectTypeFields() {
   $("credito-65-field").classList.toggle("hidden", !inmb);
   $("typology-section").classList.toggle("hidden", ds49);
   $("locales-comerciales-field").classList.toggle("hidden", !ds19);
+  $("precio-local-comercial-field").classList.toggle("hidden", !ds19);
   $("total-unidades-field").classList.toggle("hidden", !ds19);
   if (!ds19) $("localesComerciales").value = 0;
   syncTotalUnitsField();
@@ -813,6 +815,7 @@ function readInput() {
     tipoVivKey: slug(data.tipoViv),
     totalViv,
     localesComerciales,
+    precioLocalComercialUf: slug(data.tipoProyecto) === "ds19" ? num(data.precioLocalComercialUf) ?? LOCAL_COMERCIAL_MEDIAN_UF : 0,
     totalUnidadesProyecto,
     casas: num(data.casas) || 0,
     departamentos: num(data.departamentos) || 0,
@@ -856,9 +859,9 @@ function calculateRevenue(input, peers, revenueMedian) {
       ? {
           tipologia: LOCAL_COMERCIAL_LABEL,
           cantidad: input.localesComerciales,
-          price: LOCAL_COMERCIAL_MEDIAN_UF,
-          revenue: input.localesComerciales * LOCAL_COMERCIAL_MEDIAN_UF,
-          source: "653 UF/local",
+          price: input.precioLocalComercialUf,
+          revenue: input.localesComerciales * input.precioLocalComercialUf,
+          source: Number.isFinite(input.precioLocalComercialUf) ? "precio local ingresado" : "653 UF/local",
         }
       : null;
 
@@ -1786,6 +1789,7 @@ async function init() {
   $("casas").addEventListener("change", recalculate);
   $("departamentos").addEventListener("change", recalculate);
   $("localesComerciales").addEventListener("change", recalculate);
+  $("precioLocalComercialUf").addEventListener("change", recalculate);
 
   $("add-typology-button").addEventListener("click", () => {
     addTypologyRow({ cantidad: "", precio: "" });
@@ -1800,6 +1804,7 @@ async function init() {
     $("tipoViv").value = db.options.tiposViv.includes("Casa") ? "Casa" : db.options.tiposViv[0];
     $("totalViv").value = 100;
     $("localesComerciales").value = 0;
+    $("precioLocalComercialUf").value = LOCAL_COMERCIAL_MEDIAN_UF;
     $("totalUnidadesProyecto").value = 100;
     $("casas").value = 50;
     $("departamentos").value = 50;
