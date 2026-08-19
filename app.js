@@ -26,6 +26,7 @@ const projectNumericFields = [
   "Honorarios_UF",
   "Derechos_Permisos_UF",
   "Gastos_Legales_UF",
+  "Maquinaria_Equipos_Implementos_UF",
   "Maquinaria_Equipos_UF",
   "Valor_Terreno_UF",
   "Terreno_m2",
@@ -43,6 +44,7 @@ const projectNumericFields = [
   "Honorarios_UF_por_viv",
   "Derechos_Permisos_UF_por_viv",
   "Gastos_Legales_UF_por_viv",
+  "Maquinaria_Equipos_Implementos_UF_por_viv",
   "Maquinaria_Equipos_UF_por_viv",
   "Valor_Terreno_UF_por_viv",
   "Margen_UF_por_viv",
@@ -61,6 +63,7 @@ const statKeys = [
   "Honorarios_UF_por_viv",
   "Derechos_Permisos_UF_por_viv",
   "Gastos_Legales_UF_por_viv",
+  "Maquinaria_Equipos_Implementos_UF_por_viv",
   "Maquinaria_Equipos_UF_por_viv",
   "Valor_Terreno_UF_por_viv",
   "Margen_UF_por_viv",
@@ -224,7 +227,7 @@ function normalizeImportedProject(row, index = 0) {
     ["Honorarios_UF", ["Honorarios_UF", "Honorarios UF"]],
     ["Derechos_Permisos_UF", ["Derechos_Permisos_UF", "Derechos y permisos UF", "Derechos_Permisos"]],
     ["Gastos_Legales_UF", ["Gastos_Legales_UF", "Gastos legales UF", "Gastos de ventas UF"]],
-    ["Maquinaria_Equipos_UF", ["Maquinaria_Equipos_UF", "Maquinaria/equipos/implementos UF", "Maquinaria UF"]],
+    ["Maquinaria_Equipos_Implementos_UF", ["Maquinaria_Equipos_Implementos_UF", "Maquinaria/equipos/implementos UF", "Maquinaria UF", "Maquinaria_Equipos_UF"]],
   ];
   optionalCostAliases.forEach(([field, aliases]) => {
     const imported = numberFromImport(getImportedValue(row, aliases));
@@ -242,6 +245,16 @@ function normalizeImportedProject(row, index = 0) {
   project.Honorarios_UF_por_viv = safePerViv(project.Honorarios_UF, project.Honorarios_UF_por_viv);
   project.Derechos_Permisos_UF_por_viv = safePerViv(project.Derechos_Permisos_UF, project.Derechos_Permisos_UF_por_viv);
   project.Gastos_Legales_UF_por_viv = safePerViv(project.Gastos_Legales_UF, project.Gastos_Legales_UF_por_viv);
+  project.Maquinaria_Equipos_Implementos_UF_por_viv = safePerViv(
+    project.Maquinaria_Equipos_Implementos_UF,
+    project.Maquinaria_Equipos_Implementos_UF_por_viv,
+  );
+  if (!Number.isFinite(Number(project.Maquinaria_Equipos_UF)) && Number.isFinite(Number(project.Maquinaria_Equipos_Implementos_UF))) {
+    project.Maquinaria_Equipos_UF = Number(project.Maquinaria_Equipos_Implementos_UF);
+  }
+  if (!Number.isFinite(Number(project.Maquinaria_Equipos_UF_por_viv)) && Number.isFinite(Number(project.Maquinaria_Equipos_Implementos_UF_por_viv))) {
+    project.Maquinaria_Equipos_UF_por_viv = Number(project.Maquinaria_Equipos_Implementos_UF_por_viv);
+  }
   project.Maquinaria_Equipos_UF_por_viv = safePerViv(project.Maquinaria_Equipos_UF, project.Maquinaria_Equipos_UF_por_viv);
   project.Valor_Terreno_UF_por_viv = safePerViv(project.Valor_Terreno_UF, project.Valor_Terreno_UF_por_viv);
   project.Margen_UF_por_viv = safePerViv(project.Margen_UF, project.Margen_UF_por_viv);
@@ -915,6 +928,16 @@ function calculate() {
   const revenue = calculateRevenue(input, peerSet, revenueMedian);
   const construction = calculateConstruction(input, peerSet, constructionMedian, coreHistoricalFactor, historicalFactor);
   const siteSetupHistorical = peerOptionalCost(peerSet, "Instalacion_Faenas_UF", "Instalacion_Faenas_UF_por_viv", input.totalViv, historicalFactor);
+  const machineryHistorical = peerOptionalCost(
+    peerSet,
+    "Maquinaria_Equipos_Implementos_UF",
+    "Maquinaria_Equipos_Implementos_UF_por_viv",
+    input.totalViv,
+    historicalFactor,
+  );
+  const feesHistorical = peerOptionalCost(peerSet, "Honorarios_UF", "Honorarios_UF_por_viv", input.totalViv, historicalFactor);
+  const permitsHistorical = peerOptionalCost(peerSet, "Derechos_Permisos_UF", "Derechos_Permisos_UF_por_viv", input.totalViv, historicalFactor);
+  const legalHistorical = peerOptionalCost(peerSet, "Gastos_Legales_UF", "Gastos_Legales_UF_por_viv", input.totalViv, historicalFactor);
   const siteSetup = {
     value: input.instalacionFaenasUf ?? siteSetupHistorical.value,
     source: Number.isFinite(input.instalacionFaenasUf) ? "ingresado" : siteSetupHistorical.source,
@@ -940,20 +963,20 @@ function calculate() {
     source: Number.isFinite(input.gastosFinancierosUf) ? "ingresado" : adjustedSource(financeMedian.source, historicalFactor),
   };
   const machinery = {
-    value: input.maquinariaEquiposUf ?? 0,
-    source: Number.isFinite(input.maquinariaEquiposUf) ? "ingresado" : "no ingresado",
+    value: input.maquinariaEquiposUf ?? machineryHistorical.value,
+    source: Number.isFinite(input.maquinariaEquiposUf) ? "ingresado" : machineryHistorical.source,
   };
   const legal = {
-    value: input.gastosLegalesUf ?? 0,
-    source: Number.isFinite(input.gastosLegalesUf) ? "ingresado" : "no ingresado",
+    value: input.gastosLegalesUf ?? legalHistorical.value,
+    source: Number.isFinite(input.gastosLegalesUf) ? "ingresado" : legalHistorical.source,
   };
   const fees = {
-    value: input.honorariosUf ?? 0,
-    source: Number.isFinite(input.honorariosUf) ? "ingresado" : "no ingresado",
+    value: input.honorariosUf ?? feesHistorical.value,
+    source: Number.isFinite(input.honorariosUf) ? "ingresado" : feesHistorical.source,
   };
   const permits = {
-    value: input.derechosPermisosUf ?? 0,
-    source: Number.isFinite(input.derechosPermisosUf) ? "ingresado" : "no ingresado",
+    value: input.derechosPermisosUf ?? permitsHistorical.value,
+    source: Number.isFinite(input.derechosPermisosUf) ? "ingresado" : permitsHistorical.source,
   };
   const contingencies = {
     value: input.eventualidadesUf ?? 0,
@@ -1119,6 +1142,10 @@ function calculate() {
       instalacionFaenas: siteSetup,
       gastosGenerales: gg,
       gastosFinancieros: finance,
+      maquinariaEquipos: machinery,
+      honorarios: fees,
+      derechosPermisos: permits,
+      gastosLegales: legal,
     },
     sensitivityBase: {
       construction: construction.value,
@@ -1299,6 +1326,10 @@ function renderEstimateNotes(result) {
   setEstimateNote("instalacion-faenas-estimate-note", notes.instalacionFaenas);
   setEstimateNote("gastos-generales-estimate-note", notes.gastosGenerales);
   setEstimateNote("gastos-financieros-estimate-note", notes.gastosFinancieros);
+  setEstimateNote("maquinaria-equipos-estimate-note", notes.maquinariaEquipos);
+  setEstimateNote("honorarios-estimate-note", notes.honorarios);
+  setEstimateNote("derechos-permisos-estimate-note", notes.derechosPermisos);
+  setEstimateNote("gastos-legales-estimate-note", notes.gastosLegales);
 }
 
 function render(result) {

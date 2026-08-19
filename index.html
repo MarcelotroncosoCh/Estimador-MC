@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Evaluación económica Preliminar</title>
-    <link rel="stylesheet" href="styles.css?v=20260818-10" />
+    <link rel="stylesheet" href="styles.css?v=20260819-1" />
   </head>
   <body>
     <main class="app-shell">
@@ -155,19 +155,23 @@
             </label>
             <label>
               Maquinaria/equipos/implementos UF
-              <input id="maquinariaEquiposUf" name="maquinariaEquiposUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
+              <input id="maquinariaEquiposUf" name="maquinariaEquiposUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+              <small id="maquinaria-equipos-estimate-note" class="field-note estimate-note">Usara historico: --</small>
             </label>
             <label>
               Honorarios UF
-              <input id="honorariosUf" name="honorariosUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
+              <input id="honorariosUf" name="honorariosUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+              <small id="honorarios-estimate-note" class="field-note estimate-note">Usara historico: --</small>
             </label>
             <label>
               Derechos y permisos UF
-              <input id="derechosPermisosUf" name="derechosPermisosUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
+              <input id="derechosPermisosUf" name="derechosPermisosUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+              <small id="derechos-permisos-estimate-note" class="field-note estimate-note">Usara historico: --</small>
             </label>
             <label>
               Gastos legales UF
-              <input id="gastosLegalesUf" name="gastosLegalesUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
+              <input id="gastosLegalesUf" name="gastosLegalesUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+              <small id="gastos-legales-estimate-note" class="field-note estimate-note">Usara historico: --</small>
             </label>
             <label>
               Eventualidades UF
@@ -393,7 +397,7 @@
       window.readImportedHistoricalProjects = window.readImportedHistoricalProjects || (() => []);
       window.refreshHistoricalStatus = window.refreshHistoricalStatus || (() => {});
     </script>
-    <script src="data/data.js?v=20260818-10"></script>
-    <script src="app.js?v=20260818-10"></script>
+    <script src="data/data.js?v=20260819-1"></script>
+    <script src="app.js?v=20260819-1"></script>
   </body>
 </html>
