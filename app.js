@@ -5,8 +5,8 @@ const PCT = new Intl.NumberFormat("es-CL", { minimumFractionDigits: 1, maximumFr
 const SIMULATIONS_KEY = "estimadorMcSimulaciones";
 const MIN_TYPOLOGY_COST_UF_VIV = 100;
 const LOCAL_COMERCIAL_LABEL = "Local comercial";
-const LOCAL_COMERCIAL_MIN_UF = 850;
-const LOCAL_COMERCIAL_MAX_UF = 1100;
+const LOCAL_COMERCIAL_MIN_UF = 653;
+const LOCAL_COMERCIAL_MAX_UF = 653;
 const LOCAL_COMERCIAL_MEDIAN_UF = (LOCAL_COMERCIAL_MIN_UF + LOCAL_COMERCIAL_MAX_UF) / 2;
 const BASE_CORE_HISTORICAL_FACTOR = 1.04;
 
@@ -81,6 +81,8 @@ const baseFields = [
   "tipoViv",
   "ufActualClp",
   "totalViv",
+  "localesComerciales",
+  "totalUnidadesProyecto",
   "casas",
   "departamentos",
   "terrenoM2",
@@ -582,6 +584,16 @@ function effectiveTotalViv() {
   return Math.max(1, num($("totalViv").value) || 1);
 }
 
+function effectiveLocalesComerciales() {
+  return Math.max(0, num($("localesComerciales").value) || 0);
+}
+
+function syncTotalUnitsField() {
+  const totalUnits = effectiveTotalViv() + effectiveLocalesComerciales();
+  $("totalUnidadesProyecto").value = totalUnits;
+  return totalUnits;
+}
+
 function scoreProject(project, input) {
   let score = 0;
   if (project._tipo_proyecto_key === input.tipoProyectoKey) score += 48;
@@ -781,6 +793,8 @@ function peerWeightedTypologyCostPerViv(peers, filter = () => true) {
 function readInput() {
   const data = Object.fromEntries(baseFields.map((field) => [field, $(field).value]));
   const totalViv = effectiveTotalViv();
+  const localesComerciales = effectiveLocalesComerciales();
+  const totalUnidadesProyecto = totalViv + localesComerciales;
   return {
     ...data,
     regionKey: slug(data.region),
@@ -788,6 +802,8 @@ function readInput() {
     tipoProyectoKey: slug(data.tipoProyecto),
     tipoVivKey: slug(data.tipoViv),
     totalViv,
+    localesComerciales,
+    totalUnidadesProyecto,
     casas: num(data.casas) || 0,
     departamentos: num(data.departamentos) || 0,
     ufActualClp: num(data.ufActualClp),
@@ -825,6 +841,17 @@ function assumption(label, value, source) {
 }
 
 function calculateRevenue(input, peers, revenueMedian) {
+  const localRevenueRow =
+    input.localesComerciales > 0
+      ? {
+          tipologia: LOCAL_COMERCIAL_LABEL,
+          cantidad: input.localesComerciales,
+          price: LOCAL_COMERCIAL_MEDIAN_UF,
+          revenue: input.localesComerciales * LOCAL_COMERCIAL_MEDIAN_UF,
+          source: "653 UF/local",
+        }
+      : null;
+
   if (input.tipoProyectoKey === "ds49") {
     const peerBudgets = peers
       .filter(({ project }) => project._tipo_proyecto_key === "ds49")
@@ -836,12 +863,17 @@ function calculateRevenue(input, peers, revenueMedian) {
       .filter((value) => Number.isFinite(value) && value > 0);
     const historicalBudgetPerViv = median(peerBudgets) ?? median(globalBudgets) ?? 0;
     const budgetPerViv = input.presupuestoFinanciadoUf ?? historicalBudgetPerViv;
-    const total = budgetPerViv * input.totalViv;
+    const housingTotal = budgetPerViv * input.totalViv;
+    const rows = [
+      { tipologia: "Presupuesto financiado", cantidad: input.totalViv, price: budgetPerViv, revenue: housingTotal },
+      ...(localRevenueRow ? [localRevenueRow] : []),
+    ];
     return {
-      rows: [],
-      total,
+      rows,
+      total: rows.reduce((sum, row) => sum + row.revenue, 0),
       quantity: input.totalViv,
       budgetPerViv,
+      budgetHousingTotal: housingTotal,
       source: Number.isFinite(input.presupuestoFinanciadoUf)
         ? "presupuesto UF/viv ingresado"
         : peerBudgets.length
@@ -850,20 +882,21 @@ function calculateRevenue(input, peers, revenueMedian) {
     };
   }
 
-  const rows = input.typologies.length ? input.typologies : [{ cantidad: input.totalViv, precio: null, tipologia: "" }];
-  const byTypology = rows.map((row) => {
+  const housingRows = input.typologies.length ? input.typologies : [{ cantidad: input.totalViv, precio: null, tipologia: "" }];
+  const byTypology = housingRows.map((row) => {
     const localComercial = row.tipologiaKey === slug(LOCAL_COMERCIAL_LABEL);
     const price = row.precio ?? (localComercial ? LOCAL_COMERCIAL_MEDIAN_UF : revenueMedian.value);
     const source = Number.isFinite(row.precio)
       ? "ingresado"
       : localComercial
-        ? `rango historico ${LOCAL_COMERCIAL_MIN_UF}-${LOCAL_COMERCIAL_MAX_UF} UF`
+        ? "653 UF/local"
         : revenueMedian.source;
     return { ...row, price, revenue: price * row.cantidad, source };
   });
+  const rows = [...byTypology, ...(localRevenueRow ? [localRevenueRow] : [])];
   return {
-    rows: byTypology,
-    total: byTypology.reduce((sum, row) => sum + row.revenue, 0),
+    rows,
+    total: rows.reduce((sum, row) => sum + row.revenue, 0),
     quantity: byTypology.reduce((sum, row) => sum + row.cantidad, 0),
   };
 }
@@ -1121,6 +1154,7 @@ function calculate() {
     ingresos: ingresosAjustados,
     ingresosBase: revenue.total,
     presupuestoFinanciadoUfViv: revenue.budgetPerViv,
+    presupuestoFinanciadoTotal: revenue.budgetHousingTotal,
     costoTotal,
     utilidadProyecto,
     margen,
@@ -1193,10 +1227,7 @@ function calculate() {
       ["IVA costo construccion", constructionVat.value],
       ["Credito especial", specialCredit.value],
     ],
-    printIncomeRows:
-      input.tipoProyectoKey === "ds49"
-        ? [{ tipologia: "Presupuesto financiado", cantidad: input.totalViv, price: revenue.total / input.totalViv, revenue: revenue.total }]
-        : revenue.rows,
+    printIncomeRows: revenue.rows,
     assumptions: [
       assumption("Construccion UF", construction.value, construction.source),
       assumption("Urbanizacion UF neta", urbanNet.value, urbanNet.source),
@@ -1333,6 +1364,7 @@ function renderEstimateNotes(result) {
 }
 
 function render(result) {
+  syncTotalUnitsField();
   const status = result.mc >= THRESHOLD ? "Rentable" : result.mc >= 15 ? "Riesgoso" : "No rentable";
   const tone = result.mc >= THRESHOLD ? "ok" : result.mc >= 15 ? "warn" : "bad";
   const resultBand = $("result-band");
@@ -1354,7 +1386,7 @@ function render(result) {
   $("utilidad-constructora-calculado-note").textContent = `Automatico: ${uf(result.autoUtilidadConstructoraUf)}`;
   $("presupuesto-financiado-note").textContent =
     result.input.tipoProyectoKey === "ds49"
-      ? `Total financiado: ${uf(result.ingresosBase)}${Number.isFinite(result.presupuestoFinanciadoUfViv) ? ` (${uf(result.presupuestoFinanciadoUfViv)}/viv)` : ""}`
+      ? `Total financiado viviendas: ${uf(result.presupuestoFinanciadoTotal)}${Number.isFinite(result.presupuestoFinanciadoUfViv) ? ` (${uf(result.presupuestoFinanciadoUfViv)}/viv)` : ""}`
       : "Total financiado: --";
 
   const gap = result.maxLand - result.landUf;
@@ -1743,6 +1775,7 @@ async function init() {
 
   $("casas").addEventListener("change", recalculate);
   $("departamentos").addEventListener("change", recalculate);
+  $("localesComerciales").addEventListener("change", recalculate);
 
   $("add-typology-button").addEventListener("click", () => {
     addTypologyRow({ cantidad: "", precio: "" });
@@ -1756,6 +1789,8 @@ async function init() {
     $("tipoProyecto").value = resetProjectTypes.includes("DS19") ? "DS19" : resetProjectTypes[0];
     $("tipoViv").value = db.options.tiposViv.includes("Casa") ? "Casa" : db.options.tiposViv[0];
     $("totalViv").value = 100;
+    $("localesComerciales").value = 0;
+    $("totalUnidadesProyecto").value = 100;
     $("casas").value = 50;
     $("departamentos").value = 50;
     $("terrenoM2").value = 30000;

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Evaluación económica Preliminar</title>
-    <link rel="stylesheet" href="styles.css?v=20260819-2" />
+    <link rel="stylesheet" href="styles.css?v=20260819-3" />
   </head>
   <body>
     <main class="app-shell">
@@ -51,6 +51,15 @@
             <label id="total-viv-field">
               Total viviendas
               <input id="totalViv" name="totalViv" type="number" min="1" step="1" value="100" required />
+            </label>
+            <label>
+              Total locales comerciales
+              <input id="localesComerciales" name="localesComerciales" type="number" min="0" step="1" value="0" />
+              <small class="field-note">653 UF por local</small>
+            </label>
+            <label>
+              Total unidades proyecto
+              <input id="totalUnidadesProyecto" name="totalUnidadesProyecto" type="number" min="1" step="1" value="100" readonly />
             </label>
             <label id="casas-field" class="hidden">
               Casas
@@ -397,7 +406,7 @@
       window.readImportedHistoricalProjects = window.readImportedHistoricalProjects || (() => []);
       window.refreshHistoricalStatus = window.refreshHistoricalStatus || (() => {});
     </script>
-    <script src="data/data.js?v=20260819-2"></script>
-    <script src="app.js?v=20260819-2"></script>
+    <script src="data/data.js?v=20260819-3"></script>
+    <script src="app.js?v=20260819-3"></script>
   </body>
 </html>
