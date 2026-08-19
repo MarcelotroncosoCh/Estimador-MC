@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Evaluación económica Preliminar</title>
-    <link rel="stylesheet" href="styles.css?v=20260819-13" />
+    <link rel="stylesheet" href="styles.css?v=20260819-14" />
   </head>
   <body>
     <main class="app-shell">
@@ -21,54 +21,56 @@
 
       <section class="workspace">
         <form id="project-form" class="input-panel">
-          <div class="section-head">
-            <h2>Datos del proyecto</h2>
-            <button class="ghost-button" type="button" id="reset-button">Limpiar</button>
-          </div>
+          <div class="form-section project-section">
+            <div class="section-head">
+              <h2>Datos del proyecto</h2>
+              <button class="ghost-button" type="button" id="reset-button">Limpiar</button>
+            </div>
 
-          <label class="full-field project-name-field">
-            Nombre proyecto
-            <input id="projectName" name="projectName" type="text" placeholder="Ej. Terreno Curico DS19" />
-          </label>
+            <label class="full-field project-name-field">
+              Nombre proyecto
+              <input id="projectName" name="projectName" type="text" placeholder="Ej. Terreno Curico DS19" />
+            </label>
 
-          <div class="grid two">
-            <label>
-              Region
-              <select id="region" name="region" required></select>
-            </label>
-            <label>
-              Comuna
-              <select id="comuna" name="comuna"></select>
-            </label>
-            <label>
-              Tipo proyecto
-              <select id="tipoProyecto" name="tipoProyecto" required></select>
-            </label>
-            <label>
-              Tipo vivienda
-              <select id="tipoViv" name="tipoViv" required></select>
-            </label>
-            <label id="total-viv-field">
-              Total viviendas
-              <input id="totalViv" name="totalViv" type="number" min="1" step="1" value="100" required />
-            </label>
-            <label id="locales-comerciales-field">
-              Total locales comerciales
-              <input id="localesComerciales" name="localesComerciales" type="number" min="0" step="1" value="0" />
-              <small class="field-note">Distribuir en tipologias; costo 653 UF/local</small>
-            </label>
-            <label id="total-unidades-field">
-              Total unidades proyecto
-              <input id="totalUnidadesProyecto" name="totalUnidadesProyecto" type="number" min="1" step="1" value="100" readonly />
-            </label>
-            <label id="casas-field" class="hidden">
-              Casas
-              <input id="casas" name="casas" type="number" min="0" step="1" value="50" />
-            </label>
-            <label id="departamentos-field" class="hidden">
-              Departamentos
-              <input id="departamentos" name="departamentos" type="number" min="0" step="1" value="50" />
-            </label>
+            <div class="grid two">
+              <label>
+                Region
+                <select id="region" name="region" required></select>
+              </label>
+              <label>
+                Comuna
+                <select id="comuna" name="comuna"></select>
+              </label>
+              <label>
+                Tipo proyecto
+                <select id="tipoProyecto" name="tipoProyecto" required></select>
+              </label>
+              <label>
+                Tipo vivienda
+                <select id="tipoViv" name="tipoViv" required></select>
+              </label>
+              <label id="total-viv-field">
+                Total viviendas
+                <input id="totalViv" name="totalViv" type="number" min="1" step="1" value="100" required />
+              </label>
+              <label id="locales-comerciales-field">
+                Total locales comerciales
+                <input id="localesComerciales" name="localesComerciales" type="number" min="0" step="1" value="0" />
+                <small class="field-note">Distribuir en tipologias; costo 653 UF/local</small>
+              </label>
+              <label id="total-unidades-field">
+                Total unidades proyecto
+                <input id="totalUnidadesProyecto" name="totalUnidadesProyecto" type="number" min="1" step="1" value="100" readonly />
+              </label>
+              <label id="casas-field" class="hidden">
+                Casas
+                <input id="casas" name="casas" type="number" min="0" step="1" value="50" />
+              </label>
+              <label id="departamentos-field" class="hidden">
+                Departamentos
+                <input id="departamentos" name="departamentos" type="number" min="0" step="1" value="50" />
+              </label>
+            </div>
           </div>
 
           <div class="uf-panel">
@@ -80,7 +82,7 @@
             <span id="uf-status">UF manual si no hay conexion</span>
           </div>
 
-          <div class="grid two">
+          <div class="grid two form-section land-section">
             <label>
               Terreno m2
               <input id="terrenoM2" name="terrenoM2" type="number" min="1" step="1" value="30000" required />
@@ -127,103 +129,105 @@
             </label>
           </div>
 
-          <div class="section-head compact">
-            <h2>Supuestos opcionales</h2>
-            <span>Valores totales UF</span>
+          <div class="form-section assumptions-section">
+            <div class="section-head compact">
+              <h2>Supuestos opcionales</h2>
+              <span>Valores totales UF</span>
+            </div>
+
+            <div class="grid two">
+              <label>
+                Construccion UF
+                <input id="costoConstruccionUf" name="costoConstruccionUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+                <small id="costo-construccion-estimate-note" class="field-note estimate-note">Usara historico: --</small>
+              </label>
+              <label>
+                Urbanizacion UF
+                <input id="urbanizacionUf" name="urbanizacionUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+                <small id="urbanizacion-estimate-note" class="field-note estimate-note">Usara historico: --</small>
+              </label>
+              <label>
+                Instalacion de faenas UF
+                <input id="instalacionFaenasUf" name="instalacionFaenasUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+                <small id="instalacion-faenas-estimate-note" class="field-note estimate-note">Usara historico: --</small>
+              </label>
+              <label>
+                Gastos generales UF
+                <input id="gastosGeneralesUf" name="gastosGeneralesUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+                <small id="gastos-generales-estimate-note" class="field-note estimate-note">Usara historico: --</small>
+              </label>
+              <label>
+                Gastos financieros UF
+                <input id="gastosFinancierosUf" name="gastosFinancierosUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+                <small id="gastos-financieros-estimate-note" class="field-note estimate-note">Usara historico: --</small>
+              </label>
+              <label>
+                Ajuste construccion %
+                <input id="ajusteHistoricoPct" name="ajusteHistoricoPct" type="number" min="0" step="0.1" value="1.5" />
+              </label>
+              <label>
+                Ajuste urbanizacion %
+                <input id="ajusteUrbanizacionPct" name="ajusteUrbanizacionPct" type="number" min="0" step="0.1" value="0" />
+              </label>
+              <label>
+                Ajuste complementarios %
+                <input id="ajusteComplementariosPct" name="ajusteComplementariosPct" type="number" min="0" step="0.1" value="0" />
+              </label>
+              <label id="maquinaria-equipos-field">
+                Maquinaria/equipos/implementos UF
+                <input id="maquinariaEquiposUf" name="maquinariaEquiposUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+                <small id="maquinaria-equipos-estimate-note" class="field-note estimate-note">Usara historico: --</small>
+              </label>
+              <label id="imp-seguridad-field" class="hidden">
+                Imp. seguridad/herramientas UF
+                <input id="impSeguridadHerramientasUf" name="impSeguridadHerramientasUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+                <small id="imp-seguridad-estimate-note" class="field-note estimate-note">Usara historico: --</small>
+              </label>
+              <label id="maquinaria-arriendo-field" class="hidden">
+                Maquinaria arriendo/compra UF
+                <input id="maquinariaArriendoCompraUf" name="maquinariaArriendoCompraUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+                <small id="maquinaria-arriendo-estimate-note" class="field-note estimate-note">Usara historico: --</small>
+              </label>
+              <label>
+                Honorarios UF
+                <input id="honorariosUf" name="honorariosUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+                <small id="honorarios-estimate-note" class="field-note estimate-note">Usara historico: --</small>
+              </label>
+              <label>
+                Derechos y permisos UF
+                <input id="derechosPermisosUf" name="derechosPermisosUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+                <small id="derechos-permisos-estimate-note" class="field-note estimate-note">Usara historico: --</small>
+              </label>
+              <label>
+                Gastos legales UF
+                <input id="gastosLegalesUf" name="gastosLegalesUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+                <small id="gastos-legales-estimate-note" class="field-note estimate-note">Usara historico: --</small>
+              </label>
+              <label>
+                Eventualidades UF
+                <input id="eventualidadesUf" name="eventualidadesUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
+              </label>
+              <label>
+                Descarga Cuenta U UF
+                <input id="descargaCuentaUUf" name="descargaCuentaUUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
+              </label>
+              <label>
+                Activaciones UF
+                <input id="activacionesUf" name="activacionesUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
+              </label>
+              <label>
+                Imprevisto %
+                <input id="imprevistoPct" name="imprevistoPct" type="number" min="0" step="0.1" value="2" />
+                <small id="imprevisto-calculado-note" class="field-note">Automatico: --</small>
+              </label>
+              <label>
+                Imprevisto UF
+                <input id="imprevistoUf" name="imprevistoUf" type="number" min="0" step="1" placeholder="Automatico si queda vacio" />
+              </label>
+            </div>
           </div>
 
-          <div class="grid two">
-            <label>
-              Construccion UF
-              <input id="costoConstruccionUf" name="costoConstruccionUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
-              <small id="costo-construccion-estimate-note" class="field-note estimate-note">Usara historico: --</small>
-            </label>
-            <label>
-              Urbanizacion UF
-              <input id="urbanizacionUf" name="urbanizacionUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
-              <small id="urbanizacion-estimate-note" class="field-note estimate-note">Usara historico: --</small>
-            </label>
-            <label>
-              Instalacion de faenas UF
-              <input id="instalacionFaenasUf" name="instalacionFaenasUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
-              <small id="instalacion-faenas-estimate-note" class="field-note estimate-note">Usara historico: --</small>
-            </label>
-            <label>
-              Gastos generales UF
-              <input id="gastosGeneralesUf" name="gastosGeneralesUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
-              <small id="gastos-generales-estimate-note" class="field-note estimate-note">Usara historico: --</small>
-            </label>
-            <label>
-              Gastos financieros UF
-              <input id="gastosFinancierosUf" name="gastosFinancierosUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
-              <small id="gastos-financieros-estimate-note" class="field-note estimate-note">Usara historico: --</small>
-            </label>
-            <label>
-              Ajuste construccion %
-              <input id="ajusteHistoricoPct" name="ajusteHistoricoPct" type="number" min="0" step="0.1" value="1.5" />
-            </label>
-            <label>
-              Ajuste urbanizacion %
-              <input id="ajusteUrbanizacionPct" name="ajusteUrbanizacionPct" type="number" min="0" step="0.1" value="0" />
-            </label>
-            <label>
-              Ajuste complementarios %
-              <input id="ajusteComplementariosPct" name="ajusteComplementariosPct" type="number" min="0" step="0.1" value="0" />
-            </label>
-            <label id="maquinaria-equipos-field">
-              Maquinaria/equipos/implementos UF
-              <input id="maquinariaEquiposUf" name="maquinariaEquiposUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
-              <small id="maquinaria-equipos-estimate-note" class="field-note estimate-note">Usara historico: --</small>
-            </label>
-            <label id="imp-seguridad-field" class="hidden">
-              Imp. seguridad/herramientas UF
-              <input id="impSeguridadHerramientasUf" name="impSeguridadHerramientasUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
-              <small id="imp-seguridad-estimate-note" class="field-note estimate-note">Usara historico: --</small>
-            </label>
-            <label id="maquinaria-arriendo-field" class="hidden">
-              Maquinaria arriendo/compra UF
-              <input id="maquinariaArriendoCompraUf" name="maquinariaArriendoCompraUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
-              <small id="maquinaria-arriendo-estimate-note" class="field-note estimate-note">Usara historico: --</small>
-            </label>
-            <label>
-              Honorarios UF
-              <input id="honorariosUf" name="honorariosUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
-              <small id="honorarios-estimate-note" class="field-note estimate-note">Usara historico: --</small>
-            </label>
-            <label>
-              Derechos y permisos UF
-              <input id="derechosPermisosUf" name="derechosPermisosUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
-              <small id="derechos-permisos-estimate-note" class="field-note estimate-note">Usara historico: --</small>
-            </label>
-            <label>
-              Gastos legales UF
-              <input id="gastosLegalesUf" name="gastosLegalesUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
-              <small id="gastos-legales-estimate-note" class="field-note estimate-note">Usara historico: --</small>
-            </label>
-            <label>
-              Eventualidades UF
-              <input id="eventualidadesUf" name="eventualidadesUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
-            </label>
-            <label>
-              Descarga Cuenta U UF
-              <input id="descargaCuentaUUf" name="descargaCuentaUUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
-            </label>
-            <label>
-              Activaciones UF
-              <input id="activacionesUf" name="activacionesUf" type="number" min="0" step="1" placeholder="Ingrese valor UF" />
-            </label>
-            <label>
-              Imprevisto %
-              <input id="imprevistoPct" name="imprevistoPct" type="number" min="0" step="0.1" value="2" />
-              <small id="imprevisto-calculado-note" class="field-note">Automatico: --</small>
-            </label>
-            <label>
-              Imprevisto UF
-              <input id="imprevistoUf" name="imprevistoUf" type="number" min="0" step="1" placeholder="Automatico si queda vacio" />
-            </label>
-          </div>
-
-          <div id="typology-section">
+          <div id="typology-section" class="form-section typology-section-card">
             <div class="section-head compact">
               <h2>Tipologias y venta</h2>
               <button class="ghost-button" type="button" id="add-typology-button">Agregar</button>
@@ -424,7 +428,7 @@
       window.readImportedHistoricalProjects = window.readImportedHistoricalProjects || (() => []);
       window.refreshHistoricalStatus = window.refreshHistoricalStatus || (() => {});
     </script>
-    <script src="data/data.js?v=20260819-13"></script>
-    <script src="app.js?v=20260819-13"></script>
+    <script src="data/data.js?v=20260819-14"></script>
+    <script src="app.js?v=20260819-14"></script>
   </body>
 </html>
