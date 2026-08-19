@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Evaluación económica Preliminar</title>
-    <link rel="stylesheet" href="styles.css?v=20260819-10" />
+    <link rel="stylesheet" href="styles.css?v=20260819-11" />
   </head>
   <body>
     <main class="app-shell">
@@ -170,10 +170,20 @@
               Ajuste complementarios %
               <input id="ajusteComplementariosPct" name="ajusteComplementariosPct" type="number" min="0" step="0.1" value="0" />
             </label>
-            <label>
+            <label id="maquinaria-equipos-field">
               Maquinaria/equipos/implementos UF
               <input id="maquinariaEquiposUf" name="maquinariaEquiposUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
               <small id="maquinaria-equipos-estimate-note" class="field-note estimate-note">Usara historico: --</small>
+            </label>
+            <label id="imp-seguridad-field" class="hidden">
+              Imp. seguridad/herramientas UF
+              <input id="impSeguridadHerramientasUf" name="impSeguridadHerramientasUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+              <small id="imp-seguridad-estimate-note" class="field-note estimate-note">Usara historico: --</small>
+            </label>
+            <label id="maquinaria-arriendo-field" class="hidden">
+              Maquinaria arriendo/compra UF
+              <input id="maquinariaArriendoCompraUf" name="maquinariaArriendoCompraUf" type="number" min="0" step="1" placeholder="Historico si queda vacio" />
+              <small id="maquinaria-arriendo-estimate-note" class="field-note estimate-note">Usara historico: --</small>
             </label>
             <label>
               Honorarios UF
@@ -414,7 +424,7 @@
       window.readImportedHistoricalProjects = window.readImportedHistoricalProjects || (() => []);
       window.refreshHistoricalStatus = window.refreshHistoricalStatus || (() => {});
     </script>
-    <script src="data/data.js?v=20260819-10"></script>
-    <script src="app.js?v=20260819-10"></script>
+    <script src="data/data.js?v=20260819-11"></script>
+    <script src="app.js?v=20260819-11"></script>
   </body>
 </html>

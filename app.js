@@ -28,6 +28,8 @@ const projectNumericFields = [
   "Gastos_Legales_UF",
   "Maquinaria_Equipos_Implementos_UF",
   "Maquinaria_Equipos_UF",
+  "Imp_Seguridad_Herramientas_UF",
+  "Maquinaria_Arriendo_Compra_UF",
   "Valor_Terreno_UF",
   "Terreno_m2",
   "Presupuesto_Financiado",
@@ -46,6 +48,8 @@ const projectNumericFields = [
   "Gastos_Legales_UF_por_viv",
   "Maquinaria_Equipos_Implementos_UF_por_viv",
   "Maquinaria_Equipos_UF_por_viv",
+  "Imp_Seguridad_Herramientas_UF_por_viv",
+  "Maquinaria_Arriendo_Compra_UF_por_viv",
   "Valor_Terreno_UF_por_viv",
   "Margen_UF_por_viv",
   "Ingresos_Total_UF_Estimado_por_viv",
@@ -65,6 +69,8 @@ const statKeys = [
   "Gastos_Legales_UF_por_viv",
   "Maquinaria_Equipos_Implementos_UF_por_viv",
   "Maquinaria_Equipos_UF_por_viv",
+  "Imp_Seguridad_Herramientas_UF_por_viv",
+  "Maquinaria_Arriendo_Compra_UF_por_viv",
   "Valor_Terreno_UF_por_viv",
   "Margen_UF_por_viv",
   "Ingresos_Total_UF_Estimado_por_viv",
@@ -106,6 +112,8 @@ const baseFields = [
   "imprevistoUf",
   "imprevistoPct",
   "maquinariaEquiposUf",
+  "impSeguridadHerramientasUf",
+  "maquinariaArriendoCompraUf",
   "gastosLegalesUf",
   "honorariosUf",
   "derechosPermisosUf",
@@ -232,6 +240,8 @@ function normalizeImportedProject(row, index = 0) {
     ["Derechos_Permisos_UF", ["Derechos_Permisos_UF", "Derechos y permisos UF", "Derechos_Permisos"]],
     ["Gastos_Legales_UF", ["Gastos_Legales_UF", "Gastos legales UF", "Gastos de ventas UF"]],
     ["Maquinaria_Equipos_Implementos_UF", ["Maquinaria_Equipos_Implementos_UF", "Maquinaria/equipos/implementos UF", "Maquinaria UF", "Maquinaria_Equipos_UF"]],
+    ["Imp_Seguridad_Herramientas_UF", ["Imp_Seguridad_Herramientas_UF", "Imp. seguridad/herramientas UF", "Implementos seguridad herramientas UF"]],
+    ["Maquinaria_Arriendo_Compra_UF", ["Maquinaria_Arriendo_Compra_UF", "Maquinaria arriendo/compra UF", "Arriendo compra maquinaria UF"]],
   ];
   optionalCostAliases.forEach(([field, aliases]) => {
     const imported = numberFromImport(getImportedValue(row, aliases));
@@ -253,6 +263,8 @@ function normalizeImportedProject(row, index = 0) {
     project.Maquinaria_Equipos_Implementos_UF,
     project.Maquinaria_Equipos_Implementos_UF_por_viv,
   );
+  project.Imp_Seguridad_Herramientas_UF_por_viv = safePerViv(project.Imp_Seguridad_Herramientas_UF, project.Imp_Seguridad_Herramientas_UF_por_viv);
+  project.Maquinaria_Arriendo_Compra_UF_por_viv = safePerViv(project.Maquinaria_Arriendo_Compra_UF, project.Maquinaria_Arriendo_Compra_UF_por_viv);
   if (!Number.isFinite(Number(project.Maquinaria_Equipos_UF)) && Number.isFinite(Number(project.Maquinaria_Equipos_Implementos_UF))) {
     project.Maquinaria_Equipos_UF = Number(project.Maquinaria_Equipos_Implementos_UF);
   }
@@ -391,6 +403,9 @@ function syncProjectTypeFields() {
   $("iva-debito-field").classList.toggle("hidden", !inmb);
   $("credito-65-field").classList.toggle("hidden", !inmb);
   $("typology-section").classList.toggle("hidden", ds49);
+  $("maquinaria-equipos-field").classList.toggle("hidden", ds49);
+  $("imp-seguridad-field").classList.toggle("hidden", !ds49);
+  $("maquinaria-arriendo-field").classList.toggle("hidden", !ds49);
   $("locales-comerciales-field").classList.toggle("hidden", !ds19);
   $("total-unidades-field").classList.toggle("hidden", !ds19);
   if (!ds19) $("localesComerciales").value = 0;
@@ -834,6 +849,8 @@ function readInput() {
     imprevistoUf: inputNum("imprevistoUf"),
     imprevistoPct: num(data.imprevistoPct),
     maquinariaEquiposUf: num(data.maquinariaEquiposUf),
+    impSeguridadHerramientasUf: num(data.impSeguridadHerramientasUf),
+    maquinariaArriendoCompraUf: num(data.maquinariaArriendoCompraUf),
     gastosLegalesUf: num(data.gastosLegalesUf),
     honorariosUf: num(data.honorariosUf),
     derechosPermisosUf: num(data.derechosPermisosUf),
@@ -979,6 +996,22 @@ function calculate() {
     complementaryHistoricalFactor,
     complementarySourceFactor,
   );
+  const safetyToolsHistorical = peerOptionalCost(
+    peerSet,
+    "Imp_Seguridad_Herramientas_UF",
+    "Imp_Seguridad_Herramientas_UF_por_viv",
+    input.totalViv,
+    complementaryHistoricalFactor,
+    complementarySourceFactor,
+  );
+  const machineryRentHistorical = peerOptionalCost(
+    peerSet,
+    "Maquinaria_Arriendo_Compra_UF",
+    "Maquinaria_Arriendo_Compra_UF_por_viv",
+    input.totalViv,
+    complementaryHistoricalFactor,
+    complementarySourceFactor,
+  );
   const feesHistorical = peerOptionalCost(peerSet, "Honorarios_UF", "Honorarios_UF_por_viv", input.totalViv, complementaryHistoricalFactor, complementarySourceFactor);
   const permitsHistorical = peerOptionalCost(
     peerSet,
@@ -1013,9 +1046,17 @@ function calculate() {
     value: input.gastosFinancierosUf ?? financeMedian.value * input.totalViv * coreHistoricalFactor,
     source: Number.isFinite(input.gastosFinancierosUf) ? "ingresado" : adjustedSource(financeMedian.source, historicalFactor),
   };
+  const safetyTools = {
+    value: input.tipoProyectoKey === "ds49" ? input.impSeguridadHerramientasUf ?? safetyToolsHistorical.value : null,
+    source: Number.isFinite(input.impSeguridadHerramientasUf) ? "ingresado" : safetyToolsHistorical.source,
+  };
+  const machineryRent = {
+    value: input.tipoProyectoKey === "ds49" ? input.maquinariaArriendoCompraUf ?? machineryRentHistorical.value : null,
+    source: Number.isFinite(input.maquinariaArriendoCompraUf) ? "ingresado" : machineryRentHistorical.source,
+  };
   const machinery = {
-    value: input.maquinariaEquiposUf ?? machineryHistorical.value,
-    source: Number.isFinite(input.maquinariaEquiposUf) ? "ingresado" : machineryHistorical.source,
+    value: input.tipoProyectoKey === "ds49" ? (safetyTools.value || 0) + (machineryRent.value || 0) : input.maquinariaEquiposUf ?? machineryHistorical.value,
+    source: input.tipoProyectoKey === "ds49" ? "partidas DS49 separadas" : Number.isFinite(input.maquinariaEquiposUf) ? "ingresado" : machineryHistorical.source,
   };
   const legal = {
     value: input.gastosLegalesUf ?? legalHistorical.value,
@@ -1161,6 +1202,8 @@ function calculate() {
     input.ajusteComplementariosPct,
     input.imprevistoUf,
     input.maquinariaEquiposUf,
+    input.impSeguridadHerramientasUf,
+    input.maquinariaArriendoCompraUf,
     input.gastosLegalesUf,
     input.honorariosUf,
     input.derechosPermisosUf,
@@ -1203,6 +1246,8 @@ function calculate() {
       gastosGenerales: gg,
       gastosFinancieros: finance,
       maquinariaEquipos: machinery,
+      impSeguridadHerramientas: safetyTools,
+      maquinariaArriendoCompra: machineryRent,
       honorarios: fees,
       derechosPermisos: permits,
       gastosLegales: legal,
@@ -1245,7 +1290,9 @@ function calculate() {
       ["Honorarios", fees.value],
       ["Derecho y permiso", permits.value],
       ["Gastos legales", legal.value],
-      ["Maquinaria/equipos/implementos", machinery.value],
+      ["Maquinaria/equipos/implementos", input.tipoProyectoKey === "ds49" ? null : machinery.value],
+      ["Imp. seguridad/herramientas", input.tipoProyectoKey === "ds49" ? safetyTools.value : null],
+      ["Maquinaria arriendo/compra", input.tipoProyectoKey === "ds49" ? machineryRent.value : null],
       ["Eventualidades", contingencies.value],
       ["Descarga Cuenta U", cuentaU.value],
       ["Terreno base", landBaseUf],
@@ -1263,6 +1310,9 @@ function calculate() {
       assumption("GG UF", gg.value, gg.source),
       assumption("GF UF", finance.value, finance.source),
       assumption("Descarga Cuenta U UF", cuentaU.value, cuentaU.source),
+      assumption("Maquinaria/equipos/implementos UF", input.tipoProyectoKey === "ds49" ? null : machinery.value, machinery.source),
+      assumption("Imp. seguridad/herramientas UF", input.tipoProyectoKey === "ds49" ? safetyTools.value : null, safetyTools.source),
+      assumption("Maquinaria arriendo/compra UF", input.tipoProyectoKey === "ds49" ? machineryRent.value : null, machineryRent.source),
       assumption("Honorarios UF", fees.value, fees.source),
       assumption("Derechos y permisos UF", permits.value, permits.source),
       assumption("Gastos legales UF", legal.value, legal.source),
@@ -1388,6 +1438,8 @@ function renderEstimateNotes(result) {
   setEstimateNote("gastos-generales-estimate-note", notes.gastosGenerales);
   setEstimateNote("gastos-financieros-estimate-note", notes.gastosFinancieros);
   setEstimateNote("maquinaria-equipos-estimate-note", notes.maquinariaEquipos);
+  setEstimateNote("imp-seguridad-estimate-note", notes.impSeguridadHerramientas);
+  setEstimateNote("maquinaria-arriendo-estimate-note", notes.maquinariaArriendoCompra);
   setEstimateNote("honorarios-estimate-note", notes.honorarios);
   setEstimateNote("derechos-permisos-estimate-note", notes.derechosPermisos);
   setEstimateNote("gastos-legales-estimate-note", notes.gastosLegales);
@@ -1498,7 +1550,7 @@ function render(result) {
   $("confidence-label").textContent = `Confianza ${result.confidence}%`;
   $("confidence-detail").textContent = result.historicalSummary;
   $("assumptions").innerHTML = result.assumptions
-    .filter((item) => item.source !== "no aplica")
+    .filter((item) => item.source !== "no aplica" && Number.isFinite(item.value))
     .map(
       (item) => `
         <div class="assumption-item">
