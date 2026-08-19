@@ -927,17 +927,17 @@ function calculate() {
 
   const revenue = calculateRevenue(input, peerSet, revenueMedian);
   const construction = calculateConstruction(input, peerSet, constructionMedian, coreHistoricalFactor, historicalFactor);
-  const siteSetupHistorical = peerOptionalCost(peerSet, "Instalacion_Faenas_UF", "Instalacion_Faenas_UF_por_viv", input.totalViv, historicalFactor);
+  const siteSetupHistorical = peerOptionalCost(peerSet, "Instalacion_Faenas_UF", "Instalacion_Faenas_UF_por_viv", input.totalViv, coreHistoricalFactor);
   const machineryHistorical = peerOptionalCost(
     peerSet,
     "Maquinaria_Equipos_Implementos_UF",
     "Maquinaria_Equipos_Implementos_UF_por_viv",
     input.totalViv,
-    historicalFactor,
+    coreHistoricalFactor,
   );
-  const feesHistorical = peerOptionalCost(peerSet, "Honorarios_UF", "Honorarios_UF_por_viv", input.totalViv, historicalFactor);
-  const permitsHistorical = peerOptionalCost(peerSet, "Derechos_Permisos_UF", "Derechos_Permisos_UF_por_viv", input.totalViv, historicalFactor);
-  const legalHistorical = peerOptionalCost(peerSet, "Gastos_Legales_UF", "Gastos_Legales_UF_por_viv", input.totalViv, historicalFactor);
+  const feesHistorical = peerOptionalCost(peerSet, "Honorarios_UF", "Honorarios_UF_por_viv", input.totalViv, coreHistoricalFactor);
+  const permitsHistorical = peerOptionalCost(peerSet, "Derechos_Permisos_UF", "Derechos_Permisos_UF_por_viv", input.totalViv, coreHistoricalFactor);
+  const legalHistorical = peerOptionalCost(peerSet, "Gastos_Legales_UF", "Gastos_Legales_UF_por_viv", input.totalViv, coreHistoricalFactor);
   const siteSetup = {
     value: input.instalacionFaenasUf ?? siteSetupHistorical.value,
     source: Number.isFinite(input.instalacionFaenasUf) ? "ingresado" : siteSetupHistorical.source,
