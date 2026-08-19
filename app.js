@@ -99,6 +99,8 @@ const baseFields = [
   "gastosGeneralesUf",
   "gastosFinancierosUf",
   "ajusteHistoricoPct",
+  "ajusteUrbanizacionPct",
+  "ajusteComplementariosPct",
   "imprevistoUf",
   "imprevistoPct",
   "maquinariaEquiposUf",
@@ -700,18 +702,18 @@ function peerCostMedian(peers, key) {
   return { value: Number(fallback || 0), source: `historico global (${fallbackValues.length})`, count: 0 };
 }
 
-function peerOptionalCost(peers, key, perVivKey, totalViv, historicalFactor = 1) {
+function peerOptionalCost(peers, key, perVivKey, totalViv, historicalFactor = 1, sourceFactor = historicalFactor) {
   const perViv = median(peers.map(({ project }) => Number(project[perVivKey])).filter((value) => value > 0));
   if (Number.isFinite(perViv)) {
-    return { value: perViv * totalViv * historicalFactor, source: adjustedSource("similares", historicalFactor) };
+    return { value: perViv * totalViv * historicalFactor, source: adjustedSource("similares", sourceFactor) };
   }
   const total = median(peers.map(({ project }) => Number(project[key])).filter((value) => value > 0));
   if (Number.isFinite(total)) {
-    return { value: total * historicalFactor, source: adjustedSource("similares", historicalFactor) };
+    return { value: total * historicalFactor, source: adjustedSource("similares", sourceFactor) };
   }
   const globalPerViv = Number(db.stats.global?.[perVivKey]?.median || 0);
   if (globalPerViv > 0) {
-    return { value: globalPerViv * totalViv * historicalFactor, source: adjustedSource("historico global", historicalFactor) };
+    return { value: globalPerViv * totalViv * historicalFactor, source: adjustedSource("historico global", sourceFactor) };
   }
   return { value: 0, source: "no ingresado" };
 }
@@ -825,6 +827,8 @@ function readInput() {
     gastosGeneralesUf: num(data.gastosGeneralesUf),
     gastosFinancierosUf: num(data.gastosFinancierosUf),
     ajusteHistoricoPct: num(data.ajusteHistoricoPct),
+    ajusteUrbanizacionPct: num(data.ajusteUrbanizacionPct),
+    ajusteComplementariosPct: num(data.ajusteComplementariosPct),
     imprevistoUf: inputNum("imprevistoUf"),
     imprevistoPct: num(data.imprevistoPct),
     maquinariaEquiposUf: num(data.maquinariaEquiposUf),
@@ -944,28 +948,49 @@ function calculate() {
   const financeMedian = peerCostMedian(peerSet, "Gastos_Financieros_UF_por_viv");
   const landUfM2Median = peerCostMedian(peerSet, "Valor_Terreno_UF_m2");
   const historicalFactor = 1 + Math.max(0, Number.isFinite(input.ajusteHistoricoPct) ? input.ajusteHistoricoPct : 1.5) / 100;
+  const urbanizationFactor = 1 + Math.max(0, Number.isFinite(input.ajusteUrbanizacionPct) ? input.ajusteUrbanizacionPct : 0) / 100;
+  const complementaryFactor = 1 + Math.max(0, Number.isFinite(input.ajusteComplementariosPct) ? input.ajusteComplementariosPct : 0) / 100;
   const coreHistoricalFactor = BASE_CORE_HISTORICAL_FACTOR * historicalFactor;
+  const urbanHistoricalFactor = coreHistoricalFactor * urbanizationFactor;
+  const complementaryHistoricalFactor = coreHistoricalFactor * complementaryFactor;
+  const urbanSourceFactor = historicalFactor * urbanizationFactor;
+  const complementarySourceFactor = historicalFactor * complementaryFactor;
 
   const revenue = calculateRevenue(input, peerSet, revenueMedian);
   const construction = calculateConstruction(input, peerSet, constructionMedian, coreHistoricalFactor, historicalFactor);
-  const siteSetupHistorical = peerOptionalCost(peerSet, "Instalacion_Faenas_UF", "Instalacion_Faenas_UF_por_viv", input.totalViv, coreHistoricalFactor);
+  const siteSetupHistorical = peerOptionalCost(
+    peerSet,
+    "Instalacion_Faenas_UF",
+    "Instalacion_Faenas_UF_por_viv",
+    input.totalViv,
+    complementaryHistoricalFactor,
+    complementarySourceFactor,
+  );
   const machineryHistorical = peerOptionalCost(
     peerSet,
     "Maquinaria_Equipos_Implementos_UF",
     "Maquinaria_Equipos_Implementos_UF_por_viv",
     input.totalViv,
-    coreHistoricalFactor,
+    complementaryHistoricalFactor,
+    complementarySourceFactor,
   );
-  const feesHistorical = peerOptionalCost(peerSet, "Honorarios_UF", "Honorarios_UF_por_viv", input.totalViv, coreHistoricalFactor);
-  const permitsHistorical = peerOptionalCost(peerSet, "Derechos_Permisos_UF", "Derechos_Permisos_UF_por_viv", input.totalViv, coreHistoricalFactor);
-  const legalHistorical = peerOptionalCost(peerSet, "Gastos_Legales_UF", "Gastos_Legales_UF_por_viv", input.totalViv, coreHistoricalFactor);
+  const feesHistorical = peerOptionalCost(peerSet, "Honorarios_UF", "Honorarios_UF_por_viv", input.totalViv, complementaryHistoricalFactor, complementarySourceFactor);
+  const permitsHistorical = peerOptionalCost(
+    peerSet,
+    "Derechos_Permisos_UF",
+    "Derechos_Permisos_UF_por_viv",
+    input.totalViv,
+    complementaryHistoricalFactor,
+    complementarySourceFactor,
+  );
+  const legalHistorical = peerOptionalCost(peerSet, "Gastos_Legales_UF", "Gastos_Legales_UF_por_viv", input.totalViv, complementaryHistoricalFactor, complementarySourceFactor);
   const siteSetup = {
     value: input.instalacionFaenasUf ?? siteSetupHistorical.value,
     source: Number.isFinite(input.instalacionFaenasUf) ? "ingresado" : siteSetupHistorical.source,
   };
   const urban = {
-    value: input.urbanizacionUf ?? urbanMedian.value * input.totalViv * coreHistoricalFactor,
-    source: Number.isFinite(input.urbanizacionUf) ? "ingresado" : adjustedSource(urbanMedian.source, historicalFactor),
+    value: input.urbanizacionUf ?? urbanMedian.value * input.totalViv * urbanHistoricalFactor,
+    source: Number.isFinite(input.urbanizacionUf) ? "ingresado" : adjustedSource(urbanMedian.source, urbanSourceFactor),
   };
   const activations = {
     value: input.activacionesUf ?? 0,
@@ -1127,6 +1152,8 @@ function calculate() {
     input.gastosGeneralesUf,
     input.gastosFinancierosUf,
     input.ajusteHistoricoPct,
+    input.ajusteUrbanizacionPct,
+    input.ajusteComplementariosPct,
     input.imprevistoUf,
     input.maquinariaEquiposUf,
     input.gastosLegalesUf,
@@ -1804,6 +1831,8 @@ async function init() {
     $("departamentos").value = 50;
     $("terrenoM2").value = 30000;
     $("ajusteHistoricoPct").value = 1.5;
+    $("ajusteUrbanizacionPct").value = 0;
+    $("ajusteComplementariosPct").value = 0;
     $("imprevistoUf").dataset.auto = "true";
     $("ivaConstruccionUf").dataset.auto = "true";
     $("ivaDebitoFiscalUf").dataset.auto = "true";
