@@ -5,9 +5,7 @@ const PCT = new Intl.NumberFormat("es-CL", { minimumFractionDigits: 1, maximumFr
 const SIMULATIONS_KEY = "estimadorMcSimulaciones";
 const MIN_TYPOLOGY_COST_UF_VIV = 100;
 const LOCAL_COMERCIAL_LABEL = "Local comercial";
-const LOCAL_COMERCIAL_MIN_UF = 653;
-const LOCAL_COMERCIAL_MAX_UF = 653;
-const LOCAL_COMERCIAL_MEDIAN_UF = (LOCAL_COMERCIAL_MIN_UF + LOCAL_COMERCIAL_MAX_UF) / 2;
+const LOCAL_COMERCIAL_COST_UF = 653;
 const BASE_CORE_HISTORICAL_FACTOR = 1.04;
 
 const projectNumericFields = [
@@ -876,11 +874,11 @@ function calculateRevenue(input, peers, revenueMedian) {
   const housingRows = input.typologies.length ? input.typologies : [{ cantidad: expectedQuantity, precio: null, tipologia: "" }];
   const byTypology = housingRows.map((row) => {
     const localComercial = row.tipologiaKey === slug(LOCAL_COMERCIAL_LABEL);
-    const price = row.precio ?? (localComercial ? LOCAL_COMERCIAL_MEDIAN_UF : revenueMedian.value);
+    const price = row.precio ?? (localComercial ? 0 : revenueMedian.value);
     const source = Number.isFinite(row.precio)
       ? "ingresado"
       : localComercial
-        ? "653 UF/local"
+        ? "sin precio venta local"
         : revenueMedian.source;
     return { ...row, price, revenue: price * row.cantidad, source };
   });
@@ -1009,9 +1007,13 @@ function calculate() {
     value: input.descargaCuentaUUf ?? 0,
     source: Number.isFinite(input.descargaCuentaUUf) ? "ingresado" : "no ingresado",
   };
+  const localCommercialCost = {
+    value: input.tipoProyectoKey === "ds19" ? input.localesComerciales * LOCAL_COMERCIAL_COST_UF : 0,
+    source: input.tipoProyectoKey === "ds19" && input.localesComerciales > 0 ? `${LOCAL_COMERCIAL_COST_UF} UF/local` : "no aplica",
+  };
   const imprevistoPct = Number.isFinite(input.imprevistoPct) ? input.imprevistoPct / 100 : 0.02;
   const imprevistoBase =
-    construction.value + siteSetup.value + urbanNet.value + gg.value + machinery.value + cuentaU.value;
+    construction.value + siteSetup.value + urbanNet.value + gg.value + machinery.value + cuentaU.value + localCommercialCost.value;
   const imprevisto = {
     value: input.imprevistoUf ?? imprevistoBase * imprevistoPct,
     source: Number.isFinite(input.imprevistoUf) ? "ingresado" : `${(imprevistoPct * 100).toFixed(1)}% automatico`,
@@ -1042,6 +1044,7 @@ function calculate() {
       urbanNet.value +
       gg.value +
       machinery.value +
+      localCommercialCost.value +
       imprevisto.value +
       cuentaU.value;
   const autoConstructionVat = ivaBase * 0.19;
@@ -1095,6 +1098,7 @@ function calculate() {
     constructionVatCost +
     imprevisto.value +
     machinery.value +
+    localCommercialCost.value +
     legal.value +
     fees.value +
     permits.value +
@@ -1201,6 +1205,7 @@ function calculate() {
     ],
     printCostsOrdered: [
       ["Costo de construccion", construction.value],
+      ["Costo locales comerciales", localCommercialCost.value],
       ["Urbanizacion", urbanNet.value],
       ["Instalacion de faena", siteSetup.value],
       ["Gastos generales", gg.value],
@@ -1220,6 +1225,7 @@ function calculate() {
     printIncomeRows: revenue.rows,
     assumptions: [
       assumption("Construccion UF", construction.value, construction.source),
+      assumption("Costo locales comerciales UF", localCommercialCost.value, localCommercialCost.source),
       assumption("Urbanizacion UF neta", urbanNet.value, urbanNet.source),
       assumption("Instalacion faenas UF", siteSetup.value, siteSetup.source),
       assumption("GG UF", gg.value, gg.source),
