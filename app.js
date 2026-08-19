@@ -7,6 +7,7 @@ const MIN_TYPOLOGY_COST_UF_VIV = 100;
 const LOCAL_COMERCIAL_LABEL = "Local comercial";
 const LOCAL_COMERCIAL_COST_UF = 653;
 const BASE_CORE_HISTORICAL_FACTOR = 1.04;
+const DS49_CONSTRUCTION_HISTORICAL_FACTOR = 1.06;
 
 const projectNumericFields = [
   "ID_Proyecto",
@@ -951,13 +952,15 @@ function calculate() {
   const urbanizationFactor = 1 + Math.max(0, Number.isFinite(input.ajusteUrbanizacionPct) ? input.ajusteUrbanizacionPct : 0) / 100;
   const complementaryFactor = 1 + Math.max(0, Number.isFinite(input.ajusteComplementariosPct) ? input.ajusteComplementariosPct : 0) / 100;
   const coreHistoricalFactor = BASE_CORE_HISTORICAL_FACTOR * historicalFactor;
+  const constructionBaseFactor = input.tipoProyectoKey === "ds49" ? DS49_CONSTRUCTION_HISTORICAL_FACTOR : BASE_CORE_HISTORICAL_FACTOR;
+  const constructionHistoricalFactor = constructionBaseFactor * historicalFactor;
   const urbanHistoricalFactor = coreHistoricalFactor * urbanizationFactor;
   const complementaryHistoricalFactor = coreHistoricalFactor * complementaryFactor;
   const urbanSourceFactor = historicalFactor * urbanizationFactor;
   const complementarySourceFactor = historicalFactor * complementaryFactor;
 
   const revenue = calculateRevenue(input, peerSet, revenueMedian);
-  const construction = calculateConstruction(input, peerSet, constructionMedian, coreHistoricalFactor, historicalFactor);
+  const construction = calculateConstruction(input, peerSet, constructionMedian, constructionHistoricalFactor, historicalFactor);
   const siteSetupHistorical = peerOptionalCost(
     peerSet,
     "Instalacion_Faenas_UF",
