@@ -973,9 +973,9 @@ function calculate() {
   const financeMedian = peerCostMedian(peerSet, "Gastos_Financieros_UF_por_viv");
   const landUfM2Median = peerCostMedian(peerSet, "Valor_Terreno_UF_m2");
   const constructionAdjustmentFactor =
-    1 + Math.max(0, Number.isFinite(input.ajusteHistoricoPct) ? input.ajusteHistoricoPct : 1.5) / 100;
-  const urbanizationFactor = 1 + Math.max(0, Number.isFinite(input.ajusteUrbanizacionPct) ? input.ajusteUrbanizacionPct : 0) / 100;
-  const complementaryFactor = 1 + Math.max(0, Number.isFinite(input.ajusteComplementariosPct) ? input.ajusteComplementariosPct : 0) / 100;
+    1 + Math.max(0, Number.isFinite(input.ajusteHistoricoPct) ? input.ajusteHistoricoPct : 3) / 100;
+  const urbanizationFactor = 1 + Math.max(0, Number.isFinite(input.ajusteUrbanizacionPct) ? input.ajusteUrbanizacionPct : 10) / 100;
+  const complementaryFactor = 1 + Math.max(0, Number.isFinite(input.ajusteComplementariosPct) ? input.ajusteComplementariosPct : 5) / 100;
   const coreHistoricalFactor = BASE_CORE_HISTORICAL_FACTOR;
   const constructionBaseFactor =
     input.tipoProyectoKey === "ds49" || input.tipoProyectoKey === "ds19"
@@ -1298,7 +1298,7 @@ function calculate() {
     ],
     printCostsOrdered: [
       ["Costo de construccion", construction.value],
-      ["Costo locales comerciales", input.tipoProyectoKey === "ds19" ? localCommercialCost.value : null],
+      ["Costo locales comerciales", null],
       ["Urbanizacion", urbanNet.value],
       ["Instalacion de faena", siteSetup.value],
       ["Gastos generales", gg.value],
@@ -1903,9 +1903,9 @@ async function init() {
     $("casas").value = 50;
     $("departamentos").value = 50;
     $("terrenoM2").value = 30000;
-    $("ajusteHistoricoPct").value = 1.5;
-    $("ajusteUrbanizacionPct").value = 0;
-    $("ajusteComplementariosPct").value = 0;
+    $("ajusteHistoricoPct").value = 3;
+    $("ajusteUrbanizacionPct").value = 10;
+    $("ajusteComplementariosPct").value = 5;
     $("imprevistoUf").dataset.auto = "true";
     $("ivaConstruccionUf").dataset.auto = "true";
     $("ivaDebitoFiscalUf").dataset.auto = "true";
