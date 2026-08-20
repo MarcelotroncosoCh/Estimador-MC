@@ -3084,6 +3084,156 @@ window.PROJECT_DATA = {
       "Derechos_Permisos_UF_por_viv": 19.2308,
       "Gastos_Legales_UF": 1500,
       "Gastos_Legales_UF_por_viv": 14.4231
+    },
+    {
+      "ID_Proyecto": 62,
+      "Proyecto": "Altos del Maiten IX",
+      "Año": 2026,
+      "Region": "Region Metropolitana",
+      "Comuna": "Melipilla",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 107,
+      "Departamentos": 0,
+      "Total_Viv": 107,
+      "Tipo_Viv": "Casa",
+      "Costo_Construccion_UF": 95304,
+      "Urbanizacion_UF": 25523,
+      "Gastos_Generales_UF": 23300,
+      "Costo_Total_UF": 243255.117763,
+      "Gastos_Financieros_UF": 19630,
+      "Valor_Terreno_UF": 22808,
+      "Terreno_m2": 31453,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 62265,
+      "Margen_Porc": 20.38,
+      "Margen_UF_VIV": 581.9159,
+      "Ingresos_Total_UF_Estimado": 305520.117763,
+      "Costo_Construccion_UF_por_viv": 890.6916,
+      "Urbanizacion_UF_por_viv": 238.5327,
+      "Gastos_Generales_UF_por_viv": 217.757,
+      "Costo_Total_UF_por_viv": 2273.4123,
+      "Gastos_Financieros_UF_por_viv": 183.4579,
+      "Valor_Terreno_UF_por_viv": 213.1589,
+      "Margen_UF_por_viv": 581.9159,
+      "Ingresos_Total_UF_Estimado_por_viv": 2855.3282,
+      "Terreno_m2_por_viv": 293.9533,
+      "Valor_Terreno_UF_m2": 0.725145,
+      "_region_key": "region metropolitana",
+      "_comuna_key": "melipilla",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "casa",
+      "Instalacion_Faenas_UF": 4500,
+      "Instalacion_Faenas_UF_por_viv": 42.0561,
+      "Maquinaria_Equipos_Implementos_UF": 16315,
+      "Maquinaria_Equipos_Implementos_UF_por_viv": 152.4766,
+      "Maquinaria_Equipos_UF": 16315,
+      "Maquinaria_Equipos_UF_por_viv": 152.4766,
+      "Honorarios_UF": 3100,
+      "Honorarios_UF_por_viv": 28.972,
+      "Derechos_Permisos_UF": 3900,
+      "Derechos_Permisos_UF_por_viv": 36.4486,
+      "Gastos_Legales_UF": 5100,
+      "Gastos_Legales_UF_por_viv": 47.6636
+    },
+    {
+      "ID_Proyecto": 63,
+      "Proyecto": "Puerta Norte II - Saldo",
+      "Año": 2026,
+      "Region": "Maule",
+      "Comuna": "Curico",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 0,
+      "Departamentos": 64,
+      "Total_Viv": 64,
+      "Tipo_Viv": "Depto",
+      "Costo_Construccion_UF": 44023,
+      "Urbanizacion_UF": 6334,
+      "Gastos_Generales_UF": 18874,
+      "Costo_Total_UF": 109457.844103,
+      "Gastos_Financieros_UF": 11961,
+      "Valor_Terreno_UF": 5035,
+      "Terreno_m2": 9356,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 31107,
+      "Margen_Porc": 22.13,
+      "Margen_UF_VIV": 486.0469,
+      "Ingresos_Total_UF_Estimado": 140564.844103,
+      "Costo_Construccion_UF_por_viv": 687.8594,
+      "Urbanizacion_UF_por_viv": 98.9688,
+      "Gastos_Generales_UF_por_viv": 294.9062,
+      "Costo_Total_UF_por_viv": 1710.2788,
+      "Gastos_Financieros_UF_por_viv": 186.8906,
+      "Valor_Terreno_UF_por_viv": 78.6719,
+      "Margen_UF_por_viv": 486.0469,
+      "Ingresos_Total_UF_Estimado_por_viv": 2196.3257,
+      "Terreno_m2_por_viv": 146.1875,
+      "Valor_Terreno_UF_m2": 0.538157,
+      "_region_key": "maule",
+      "_comuna_key": "curico",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "depto",
+      "Instalacion_Faenas_UF": 3124,
+      "Instalacion_Faenas_UF_por_viv": 48.8125,
+      "Maquinaria_Equipos_Implementos_UF": 13265,
+      "Maquinaria_Equipos_Implementos_UF_por_viv": 207.2656,
+      "Maquinaria_Equipos_UF": 13265,
+      "Maquinaria_Equipos_UF_por_viv": 207.2656,
+      "Honorarios_UF": 2000,
+      "Honorarios_UF_por_viv": 31.25,
+      "Derechos_Permisos_UF": 3000,
+      "Derechos_Permisos_UF_por_viv": 46.875,
+      "Gastos_Legales_UF": 4877,
+      "Gastos_Legales_UF_por_viv": 76.2031
+    },
+    {
+      "ID_Proyecto": 64,
+      "Proyecto": "Alto Neyen Et. II",
+      "Año": 2026,
+      "Region": "Maule",
+      "Comuna": "Talca",
+      "Tipo_Proyecto": "INMB",
+      "Casas": 0,
+      "Departamentos": 120,
+      "Total_Viv": 120,
+      "Tipo_Viv": "Depto",
+      "Costo_Construccion_UF": 87131,
+      "Urbanizacion_UF": 29358,
+      "Gastos_Generales_UF": 23494,
+      "Costo_Total_UF": 194850.693182,
+      "Gastos_Financieros_UF": 18377,
+      "Valor_Terreno_UF": 13463,
+      "Terreno_m2": 12800,
+      "Presupuesto_Financiado": 0,
+      "Margen_UF": 76378,
+      "Margen_Porc": 28.16,
+      "Margen_UF_VIV": 636.4833,
+      "Ingresos_Total_UF_Estimado": 271228.693182,
+      "Costo_Construccion_UF_por_viv": 726.0917,
+      "Urbanizacion_UF_por_viv": 244.65,
+      "Gastos_Generales_UF_por_viv": 195.7833,
+      "Costo_Total_UF_por_viv": 1623.7558,
+      "Gastos_Financieros_UF_por_viv": 153.1417,
+      "Valor_Terreno_UF_por_viv": 112.1917,
+      "Margen_UF_por_viv": 636.4833,
+      "Ingresos_Total_UF_Estimado_por_viv": 2260.2391,
+      "Terreno_m2_por_viv": 106.6667,
+      "Valor_Terreno_UF_m2": 1.051797,
+      "_region_key": "maule",
+      "_comuna_key": "talca",
+      "_tipo_proyecto_key": "inmb",
+      "_tipo_viv_key": "depto",
+      "Instalacion_Faenas_UF": 3671,
+      "Instalacion_Faenas_UF_por_viv": 30.5917,
+      "Maquinaria_Equipos_Implementos_UF": 16438,
+      "Maquinaria_Equipos_Implementos_UF_por_viv": 136.9833,
+      "Maquinaria_Equipos_UF": 16438,
+      "Maquinaria_Equipos_UF_por_viv": 136.9833,
+      "Honorarios_UF": 3350,
+      "Honorarios_UF_por_viv": 27.9167,
+      "Derechos_Permisos_UF": 2241,
+      "Derechos_Permisos_UF_por_viv": 18.675,
+      "Gastos_Legales_UF": 5879,
+      "Gastos_Legales_UF_por_viv": 48.9917
     }
   ],
   "typologies": [
@@ -4554,43 +4704,43 @@ window.PROJECT_DATA = {
   "stats": {
     "global": {
       "Costo_Construccion_UF_por_viv": {
-        "median": 685.8716
+        "median": 686.88695
       },
       "Urbanizacion_UF_por_viv": {
-        "median": 172.2157
+        "median": 173.22875
       },
       "Gastos_Generales_UF_por_viv": {
-        "median": 168.7097
+        "median": 176.3607
       },
       "Costo_Total_UF_por_viv": {
-        "median": 1548.2894
+        "median": 1555.19295
       },
       "Gastos_Financieros_UF_por_viv": {
-        "median": 96.9265
+        "median": 98.27945
       },
       "Valor_Terreno_UF_por_viv": {
-        "median": 206.4058
+        "median": 205.1355
       },
       "Margen_UF_por_viv": {
-        "median": 430.8289
+        "median": 437.14595
       },
       "Ingresos_Total_UF_Estimado_por_viv": {
-        "median": 1861.0187
+        "median": 1961.89905
       },
       "Terreno_m2_por_viv": {
-        "median": 267.2069
+        "median": 266.7859
       },
       "Valor_Terreno_UF_m2": {
-        "median": 0.787903
+        "median": 0.772208
       },
       "Instalacion_Faenas_UF_por_viv": {
-        "median": 27.4224
+        "median": 27.97615
       },
       "Maquinaria_Equipos_Implementos_UF_por_viv": {
-        "median": 67.9595
+        "median": 69.2458
       },
       "Maquinaria_Equipos_UF_por_viv": {
-        "median": 67.9595
+        "median": 69.2458
       },
       "Imp_Seguridad_Herramientas_UF_por_viv": {
         "median": 8.2187
@@ -4599,13 +4749,13 @@ window.PROJECT_DATA = {
         "median": 51.1736
       },
       "Honorarios_UF_por_viv": {
-        "median": 19.9057
+        "median": 20.98
       },
       "Derechos_Permisos_UF_por_viv": {
-        "median": 13.8627
+        "median": 14.52405
       },
       "Gastos_Legales_UF_por_viv": {
-        "median": 32.9785
+        "median": 33.7602
       }
     },
     "byTipoProyecto": {
