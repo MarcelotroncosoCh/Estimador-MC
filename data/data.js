@@ -3030,6 +3030,60 @@ window.PROJECT_DATA = {
       "Derechos_Permisos_UF_por_viv": 8.75,
       "Gastos_Legales_UF": 3210.0,
       "Gastos_Legales_UF_por_viv": 50.1562
+    },
+    {
+      "ID_Proyecto": 61,
+      "Proyecto": "Villa Maria",
+      "Año": 2024,
+      "Region": "Region de Ohiggins",
+      "Comuna": "Rengo",
+      "Tipo_Proyecto": "DS49",
+      "Casas": 0,
+      "Departamentos": 0,
+      "Total_Viv": 104,
+      "Tipo_Viv": "Mixto",
+      "Costo_Construccion_UF": 55720,
+      "Urbanizacion_UF": 23830,
+      "Gastos_Generales_UF": 23100,
+      "Costo_Total_UF": 141405,
+      "Gastos_Financieros_UF": 5000,
+      "Valor_Terreno_UF": 20500,
+      "Terreno_m2": 15222,
+      "Presupuesto_Financiado": 192917,
+      "Margen_UF": 51512,
+      "Margen_Porc": 25.15,
+      "Margen_UF_VIV": 495.3077,
+      "Ingresos_Total_UF_Estimado": 192917,
+      "Costo_Construccion_UF_por_viv": 535.7692,
+      "Urbanizacion_UF_por_viv": 229.1346,
+      "Gastos_Generales_UF_por_viv": 222.1154,
+      "Costo_Total_UF_por_viv": 1359.6635,
+      "Gastos_Financieros_UF_por_viv": 48.0769,
+      "Valor_Terreno_UF_por_viv": 197.1154,
+      "Margen_UF_por_viv": 495.3077,
+      "Ingresos_Total_UF_Estimado_por_viv": 1854.9712,
+      "Terreno_m2_por_viv": 146.3654,
+      "Valor_Terreno_UF_m2": 1.346735,
+      "_region_key": "region de ohiggins",
+      "_comuna_key": "rengo",
+      "_tipo_proyecto_key": "ds49",
+      "_tipo_viv_key": "mixto",
+      "Instalacion_Faenas_UF": 3700,
+      "Instalacion_Faenas_UF_por_viv": 35.5769,
+      "Maquinaria_Equipos_Implementos_UF": 14900,
+      "Maquinaria_Equipos_Implementos_UF_por_viv": 143.2692,
+      "Maquinaria_Equipos_UF": 14900,
+      "Maquinaria_Equipos_UF_por_viv": 143.2692,
+      "Imp_Seguridad_Herramientas_UF": 2500,
+      "Imp_Seguridad_Herramientas_UF_por_viv": 24.0385,
+      "Maquinaria_Arriendo_Compra_UF": 12400,
+      "Maquinaria_Arriendo_Compra_UF_por_viv": 119.2308,
+      "Honorarios_UF": 2800,
+      "Honorarios_UF_por_viv": 26.9231,
+      "Derechos_Permisos_UF": 2000,
+      "Derechos_Permisos_UF_por_viv": 19.2308,
+      "Gastos_Legales_UF": 1500,
+      "Gastos_Legales_UF_por_viv": 14.4231
     }
   ],
   "typologies": [
@@ -4500,59 +4554,58 @@ window.PROJECT_DATA = {
   "stats": {
     "global": {
       "Costo_Construccion_UF_por_viv": {
-        "median": 685.893,
-        "p25": 600.8757,
-        "p75": 818.557
+        "median": 685.8716
       },
       "Urbanizacion_UF_por_viv": {
-        "median": 169.9797,
-        "p25": 125.0326,
-        "p75": 205.982
+        "median": 172.2157
       },
       "Gastos_Generales_UF_por_viv": {
-        "median": 167.722,
-        "p25": 139.6618,
-        "p75": 217.5421
+        "median": 168.7097
       },
       "Costo_Total_UF_por_viv": {
-        "median": 1549.8873,
-        "p25": 1368.3146,
-        "p75": 1836.3125
+        "median": 1548.2894
       },
       "Gastos_Financieros_UF_por_viv": {
-        "median": 97.2527,
-        "p25": 69.7976,
-        "p75": 138.7157
+        "median": 96.9265
       },
       "Valor_Terreno_UF_por_viv": {
-        "median": 206.4058,
-        "p25": 144.6689,
-        "p75": 255.7308
+        "median": 206.4058
       },
       "Margen_UF_por_viv": {
-        "median": 430.3905,
-        "p25": 370.9434,
-        "p75": 533.2368
+        "median": 430.8289
       },
       "Ingresos_Total_UF_Estimado_por_viv": {
-        "median": 1906.0784,
-        "p25": 1661.1739,
-        "p75": 2235.0082
+        "median": 1861.0187
       },
       "Terreno_m2_por_viv": {
-        "median": 268.0121,
-        "p25": 234.831,
-        "p75": 304.5965
+        "median": 267.2069
       },
       "Valor_Terreno_UF_m2": {
-        "median": 0.763,
-        "p25": 0.5644,
-        "p75": 0.9765
+        "median": 0.787903
       },
-      "Margen_Porc": {
-        "median": 21.845,
-        "p25": 20.5,
-        "p75": 24.34
+      "Instalacion_Faenas_UF_por_viv": {
+        "median": 27.4224
+      },
+      "Maquinaria_Equipos_Implementos_UF_por_viv": {
+        "median": 67.9595
+      },
+      "Maquinaria_Equipos_UF_por_viv": {
+        "median": 67.9595
+      },
+      "Imp_Seguridad_Herramientas_UF_por_viv": {
+        "median": 8.2187
+      },
+      "Maquinaria_Arriendo_Compra_UF_por_viv": {
+        "median": 51.1736
+      },
+      "Honorarios_UF_por_viv": {
+        "median": 19.9057
+      },
+      "Derechos_Permisos_UF_por_viv": {
+        "median": 13.8627
+      },
+      "Gastos_Legales_UF_por_viv": {
+        "median": 32.9785
       }
     },
     "byTipoProyecto": {
