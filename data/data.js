@@ -152,8 +152,8 @@ window.PROJECT_DATA = {
       "Maquinaria_Equipos_UF_por_viv": 38.0465,
       "Honorarios_UF": 3852.0,
       "Honorarios_UF_por_viv": 17.9163,
-      "Derechos_Permisos_UF": 1926.0,
-      "Derechos_Permisos_UF_por_viv": 8.9581,
+      "Derechos_Permisos_UF": 2000,
+      "Derechos_Permisos_UF_por_viv": 9.3023,
       "Gastos_Legales_UF": 6165.0,
       "Gastos_Legales_UF_por_viv": 28.6744
     },
@@ -356,8 +356,8 @@ window.PROJECT_DATA = {
       "Maquinaria_Equipos_UF_por_viv": 88.7368,
       "Honorarios_UF": 2833.0,
       "Honorarios_UF_por_viv": 16.5673,
-      "Derechos_Permisos_UF": 1627.0,
-      "Derechos_Permisos_UF_por_viv": 9.5146,
+      "Derechos_Permisos_UF": 2000,
+      "Derechos_Permisos_UF_por_viv": 11.6959,
       "Gastos_Legales_UF": 4789.0,
       "Gastos_Legales_UF_por_viv": 28.0058
     },
@@ -456,8 +456,8 @@ window.PROJECT_DATA = {
       "Maquinaria_Equipos_UF_por_viv": 65.5528,
       "Honorarios_UF": 3929.0,
       "Honorarios_UF_por_viv": 19.7437,
-      "Derechos_Permisos_UF": 1393.0,
-      "Derechos_Permisos_UF_por_viv": 7.0,
+      "Derechos_Permisos_UF": 2000,
+      "Derechos_Permisos_UF_por_viv": 10.0503,
       "Gastos_Legales_UF": 4977.0,
       "Gastos_Legales_UF_por_viv": 25.0101
     },
@@ -606,8 +606,8 @@ window.PROJECT_DATA = {
       "Maquinaria_Equipos_UF_por_viv": 57.0876,
       "Honorarios_UF": 3148.0,
       "Honorarios_UF_por_viv": 16.2268,
-      "Derechos_Permisos_UF": 1386.0,
-      "Derechos_Permisos_UF_por_viv": 7.1443,
+      "Derechos_Permisos_UF": 2000,
+      "Derechos_Permisos_UF_por_viv": 10.3093,
       "Gastos_Legales_UF": 5240.0,
       "Gastos_Legales_UF_por_viv": 27.0103
     },
@@ -656,8 +656,8 @@ window.PROJECT_DATA = {
       "Maquinaria_Equipos_UF_por_viv": 70.3487,
       "Honorarios_UF": 2362.0,
       "Honorarios_UF_por_viv": 15.5395,
-      "Derechos_Permisos_UF": 1137.0,
-      "Derechos_Permisos_UF_por_viv": 7.4803,
+      "Derechos_Permisos_UF": 1800,
+      "Derechos_Permisos_UF_por_viv": 11.8421,
       "Gastos_Legales_UF": 4975.0,
       "Gastos_Legales_UF_por_viv": 32.7303
     },
@@ -706,8 +706,8 @@ window.PROJECT_DATA = {
       "Maquinaria_Equipos_UF_por_viv": 76.5449,
       "Honorarios_UF": 3285.0,
       "Honorarios_UF_por_viv": 19.6707,
-      "Derechos_Permisos_UF": 1372.0,
-      "Derechos_Permisos_UF_por_viv": 8.2156,
+      "Derechos_Permisos_UF": 1800,
+      "Derechos_Permisos_UF_por_viv": 10.7784,
       "Gastos_Legales_UF": 5296.0,
       "Gastos_Legales_UF_por_viv": 31.7126
     },
@@ -1222,8 +1222,8 @@ window.PROJECT_DATA = {
       "Maquinaria_Equipos_UF_por_viv": 67.9595,
       "Honorarios_UF": 3459.0,
       "Honorarios_UF_por_viv": 23.3716,
-      "Derechos_Permisos_UF": 1260.0,
-      "Derechos_Permisos_UF_por_viv": 8.5135,
+      "Derechos_Permisos_UF": 1800,
+      "Derechos_Permisos_UF_por_viv": 12.1622,
       "Gastos_Legales_UF": 5323.0,
       "Gastos_Legales_UF_por_viv": 35.9662
     },
@@ -1272,8 +1272,8 @@ window.PROJECT_DATA = {
       "Maquinaria_Equipos_UF_por_viv": 64.4947,
       "Honorarios_UF": 1589.0,
       "Honorarios_UF_por_viv": 16.7263,
-      "Derechos_Permisos_UF": 975.0,
-      "Derechos_Permisos_UF_por_viv": 10.2632,
+      "Derechos_Permisos_UF": 1500,
+      "Derechos_Permisos_UF_por_viv": 15.7895,
       "Gastos_Legales_UF": 2953.0,
       "Gastos_Legales_UF_por_viv": 31.0842
     },
@@ -1772,8 +1772,8 @@ window.PROJECT_DATA = {
       "Maquinaria_Equipos_UF_por_viv": 93.9804,
       "Honorarios_UF": 2167.0,
       "Honorarios_UF_por_viv": 21.2451,
-      "Derechos_Permisos_UF": 1414.0,
-      "Derechos_Permisos_UF_por_viv": 13.8627,
+      "Derechos_Permisos_UF": 1500,
+      "Derechos_Permisos_UF_por_viv": 14.7059,
       "Gastos_Legales_UF": 3270.0,
       "Gastos_Legales_UF_por_viv": 32.0588
     },
@@ -2876,8 +2876,8 @@ window.PROJECT_DATA = {
       "Maquinaria_Equipos_UF_por_viv": 142.7937,
       "Honorarios_UF": 3328.0,
       "Honorarios_UF_por_viv": 20.8,
-      "Derechos_Permisos_UF": 1169.0,
-      "Derechos_Permisos_UF_por_viv": 7.3063,
+      "Derechos_Permisos_UF": 1800,
+      "Derechos_Permisos_UF_por_viv": 11.25,
       "Gastos_Legales_UF": 4049.0,
       "Gastos_Legales_UF_por_viv": 25.3062
     },
@@ -4752,7 +4752,7 @@ window.PROJECT_DATA = {
         "median": 20.98
       },
       "Derechos_Permisos_UF_por_viv": {
-        "median": 14.52405
+        "median": 14.6903
       },
       "Gastos_Legales_UF_por_viv": {
         "median": 33.7602
