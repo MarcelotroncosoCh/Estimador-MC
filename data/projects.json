@@ -92,10 +92,10 @@
       "_tipo_viv_key": "casa",
       "Instalacion_Faenas_UF": 4681.0,
       "Instalacion_Faenas_UF_por_viv": 15.6555,
-      "Maquinaria_Equipos_Implementos_UF": 9491.0,
-      "Maquinaria_Equipos_Implementos_UF_por_viv": 31.7425,
-      "Maquinaria_Equipos_UF": 9491.0,
-      "Maquinaria_Equipos_UF_por_viv": 31.7425,
+      "Maquinaria_Equipos_Implementos_UF": 19835,
+      "Maquinaria_Equipos_Implementos_UF_por_viv": 66.3378,
+      "Maquinaria_Equipos_UF": 19835,
+      "Maquinaria_Equipos_UF_por_viv": 66.3378,
       "Honorarios_UF": 5214.0,
       "Honorarios_UF_por_viv": 17.4381,
       "Derechos_Permisos_UF": 3400,
@@ -104,8 +104,8 @@
       "Gastos_Legales_UF_por_viv": 7.6789,
       "Imp_Seguridad_Herramientas_UF": 1835.0,
       "Imp_Seguridad_Herramientas_UF_por_viv": 6.1371,
-      "Maquinaria_Arriendo_Compra_UF": 7656.0,
-      "Maquinaria_Arriendo_Compra_UF_por_viv": 25.6054
+      "Maquinaria_Arriendo_Compra_UF": 18000,
+      "Maquinaria_Arriendo_Compra_UF_por_viv": 60.2007
     },
     {
       "ID_Proyecto": 2,
@@ -750,10 +750,10 @@
       "_tipo_viv_key": "casa",
       "Instalacion_Faenas_UF": 4215.0,
       "Instalacion_Faenas_UF_por_viv": 24.3642,
-      "Maquinaria_Equipos_Implementos_UF": 9491.0,
-      "Maquinaria_Equipos_Implementos_UF_por_viv": 54.8613,
-      "Maquinaria_Equipos_UF": 9491.0,
-      "Maquinaria_Equipos_UF_por_viv": 54.8613,
+      "Maquinaria_Equipos_Implementos_UF": 14835,
+      "Maquinaria_Equipos_Implementos_UF_por_viv": 85.7514,
+      "Maquinaria_Equipos_UF": 14835,
+      "Maquinaria_Equipos_UF_por_viv": 85.7514,
       "Honorarios_UF": 3420.0,
       "Honorarios_UF_por_viv": 19.7688,
       "Derechos_Permisos_UF": 3000,
@@ -762,8 +762,8 @@
       "Gastos_Legales_UF_por_viv": 7.5145,
       "Imp_Seguridad_Herramientas_UF": 1835.0,
       "Imp_Seguridad_Herramientas_UF_por_viv": 10.6069,
-      "Maquinaria_Arriendo_Compra_UF": 7656.0,
-      "Maquinaria_Arriendo_Compra_UF_por_viv": 44.2543
+      "Maquinaria_Arriendo_Compra_UF": 13000,
+      "Maquinaria_Arriendo_Compra_UF_por_viv": 75.1445
     },
     {
       "ID_Proyecto": 6,
@@ -804,10 +804,10 @@
       "_tipo_viv_key": "casa",
       "Instalacion_Faenas_UF": 4832.0,
       "Instalacion_Faenas_UF_por_viv": 23.1196,
-      "Maquinaria_Equipos_Implementos_UF": 12418.0,
-      "Maquinaria_Equipos_Implementos_UF_por_viv": 59.4163,
-      "Maquinaria_Equipos_UF": 12418.0,
-      "Maquinaria_Equipos_UF_por_viv": 59.4163,
+      "Maquinaria_Equipos_Implementos_UF": 14754,
+      "Maquinaria_Equipos_Implementos_UF_por_viv": 70.5933,
+      "Maquinaria_Equipos_UF": 14754,
+      "Maquinaria_Equipos_UF_por_viv": 70.5933,
       "Honorarios_UF": 3587.0,
       "Honorarios_UF_por_viv": 17.1627,
       "Derechos_Permisos_UF": 3200,
@@ -816,8 +816,8 @@
       "Gastos_Legales_UF_por_viv": 6.2201,
       "Imp_Seguridad_Herramientas_UF": 1754.0,
       "Imp_Seguridad_Herramientas_UF_por_viv": 8.3923,
-      "Maquinaria_Arriendo_Compra_UF": 10664.0,
-      "Maquinaria_Arriendo_Compra_UF_por_viv": 51.0239
+      "Maquinaria_Arriendo_Compra_UF": 13000,
+      "Maquinaria_Arriendo_Compra_UF_por_viv": 62.201
     },
     {
       "ID_Proyecto": 4,
@@ -858,10 +858,10 @@
       "_tipo_viv_key": "casa",
       "Instalacion_Faenas_UF": 3097.0,
       "Instalacion_Faenas_UF_por_viv": 12.5385,
-      "Maquinaria_Equipos_Implementos_UF": 8011.0,
-      "Maquinaria_Equipos_Implementos_UF_por_viv": 32.4332,
-      "Maquinaria_Equipos_UF": 8011.0,
-      "Maquinaria_Equipos_UF_por_viv": 32.4332,
+      "Maquinaria_Equipos_Implementos_UF": 17851,
+      "Maquinaria_Equipos_Implementos_UF_por_viv": 72.2713,
+      "Maquinaria_Equipos_UF": 17851,
+      "Maquinaria_Equipos_UF_por_viv": 72.2713,
       "Honorarios_UF": 2973.0,
       "Honorarios_UF_por_viv": 12.0364,
       "Derechos_Permisos_UF": 3200,
@@ -870,8 +870,8 @@
       "Gastos_Legales_UF_por_viv": 6.0729,
       "Imp_Seguridad_Herramientas_UF": 1851.0,
       "Imp_Seguridad_Herramientas_UF_por_viv": 7.4939,
-      "Maquinaria_Arriendo_Compra_UF": 6160.0,
-      "Maquinaria_Arriendo_Compra_UF_por_viv": 24.9393
+      "Maquinaria_Arriendo_Compra_UF": 16000,
+      "Maquinaria_Arriendo_Compra_UF_por_viv": 64.7773
     },
     {
       "ID_Proyecto": 49,
@@ -2116,10 +2116,10 @@
       "_tipo_viv_key": "casa",
       "Instalacion_Faenas_UF": 2005.0,
       "Instalacion_Faenas_UF_por_viv": 15.0752,
-      "Maquinaria_Equipos_Implementos_UF": 7896.0,
-      "Maquinaria_Equipos_Implementos_UF_por_viv": 59.3684,
-      "Maquinaria_Equipos_UF": 7896.0,
-      "Maquinaria_Equipos_UF_por_viv": 59.3684,
+      "Maquinaria_Equipos_Implementos_UF": 11070,
+      "Maquinaria_Equipos_Implementos_UF_por_viv": 83.2331,
+      "Maquinaria_Equipos_UF": 11070,
+      "Maquinaria_Equipos_UF_por_viv": 83.2331,
       "Honorarios_UF": 1785.0,
       "Honorarios_UF_por_viv": 13.4211,
       "Derechos_Permisos_UF": 3000,
@@ -2128,8 +2128,8 @@
       "Gastos_Legales_UF_por_viv": 9.0226,
       "Imp_Seguridad_Herramientas_UF": 1070.0,
       "Imp_Seguridad_Herramientas_UF_por_viv": 8.0451,
-      "Maquinaria_Arriendo_Compra_UF": 6826.0,
-      "Maquinaria_Arriendo_Compra_UF_por_viv": 51.3233
+      "Maquinaria_Arriendo_Compra_UF": 10000,
+      "Maquinaria_Arriendo_Compra_UF_por_viv": 75.188
     },
     {
       "ID_Proyecto": 57,
@@ -4737,16 +4737,16 @@
         "median": 27.97615
       },
       "Maquinaria_Equipos_Implementos_UF_por_viv": {
-        "median": 69.2458
+        "median": 74.5458
       },
       "Maquinaria_Equipos_UF_por_viv": {
-        "median": 69.2458
+        "median": 74.5458
       },
       "Imp_Seguridad_Herramientas_UF_por_viv": {
         "median": 8.2187
       },
       "Maquinaria_Arriendo_Compra_UF_por_viv": {
-        "median": 51.1736
+        "median": 66.87175
       },
       "Honorarios_UF_por_viv": {
         "median": 20.98
