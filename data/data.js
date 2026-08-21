@@ -724,7 +724,7 @@ window.PROJECT_DATA = {
       "Tipo_Viv": "Casa",
       "Costo_Construccion_UF": 67154,
       "Urbanizacion_UF": 41057,
-      "Gastos_Generales_UF": 229689,
+      "Gastos_Generales_UF": 22968,
       "Costo_Total_UF": 160380,
       "Gastos_Financieros_UF": 3383,
       "Valor_Terreno_UF": 6304,
@@ -736,7 +736,7 @@ window.PROJECT_DATA = {
       "Ingresos_Total_UF_Estimado": 191614.82,
       "Costo_Construccion_UF_por_viv": 388.1734,
       "Urbanizacion_UF_por_viv": 237.3237,
-      "Gastos_Generales_UF_por_viv": 1327.6821,
+      "Gastos_Generales_UF_por_viv": 132.763,
       "Costo_Total_UF_por_viv": 927.052,
       "Gastos_Financieros_UF_por_viv": 19.5549,
       "Valor_Terreno_UF_por_viv": 36.4393,
@@ -4710,7 +4710,7 @@ window.PROJECT_DATA = {
         "median": 173.22875
       },
       "Gastos_Generales_UF_por_viv": {
-        "median": 176.3607
+        "median": 171.14055
       },
       "Costo_Total_UF_por_viv": {
         "median": 1555.19295
