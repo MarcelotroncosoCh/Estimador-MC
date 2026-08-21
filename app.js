@@ -10,9 +10,22 @@ const BASE_CORE_HISTORICAL_FACTOR = 1.04;
 const SOCIAL_CONSTRUCTION_HISTORICAL_FACTOR = 1.12;
 const DS49_DEPARTMENT_CONSTRUCTION_ADJUSTMENT_UF = 25300;
 const PERMITS_HISTORICAL_FACTOR = 1.06;
-const HISTORICAL_COST_EXCLUSIONS = {
-  Gastos_Generales_UF_por_viv: new Set([1]),
-};
+const VILLA_ESPERANZA_ID = 1;
+const HISTORICAL_COST_EXCLUDED_IDS = new Set([VILLA_ESPERANZA_ID]);
+const HISTORICAL_COST_EXCLUDED_FIELDS = new Set([
+  "Costo_Construccion_UF_por_viv",
+  "Urbanizacion_UF_por_viv",
+  "Gastos_Generales_UF_por_viv",
+  "Gastos_Financieros_UF_por_viv",
+  "Instalacion_Faenas_UF_por_viv",
+  "Honorarios_UF_por_viv",
+  "Derechos_Permisos_UF_por_viv",
+  "Gastos_Legales_UF_por_viv",
+  "Maquinaria_Equipos_Implementos_UF_por_viv",
+  "Maquinaria_Equipos_UF_por_viv",
+  "Imp_Seguridad_Herramientas_UF_por_viv",
+  "Maquinaria_Arriendo_Compra_UF_por_viv",
+]);
 
 const projectNumericFields = [
   "ID_Proyecto",
@@ -713,17 +726,21 @@ function peerMedian(peers, key) {
   return { value: Number(fallback || 0), source: "historico global" };
 }
 
+function isHistoricalCostEligible(project, key) {
+  if (!HISTORICAL_COST_EXCLUDED_FIELDS.has(key)) return true;
+  return !HISTORICAL_COST_EXCLUDED_IDS.has(Number(project.ID_Proyecto));
+}
+
 function peerCostMedian(peers, key) {
-  const excludedIds = HISTORICAL_COST_EXCLUSIONS[key] || new Set();
   const eligibleProjects = peers
     .map(({ project }) => project)
-    .filter((project) => !excludedIds.has(Number(project.ID_Proyecto)));
+    .filter((project) => isHistoricalCostEligible(project, key));
   const values = eligibleProjects.map((project) => Number(project[key])).filter((value) => Number.isFinite(value) && value > 0);
   const peerValue = median(values);
   if (Number.isFinite(peerValue)) return { value: peerValue, source: `similares (${values.length})`, count: values.length };
 
   const fallbackValues = db.projects
-    .filter((project) => !excludedIds.has(Number(project.ID_Proyecto)))
+    .filter((project) => isHistoricalCostEligible(project, key))
     .map((project) => Number(project[key]))
     .filter((value) => Number.isFinite(value) && value > 0);
   const fallback = median(fallbackValues);
@@ -731,15 +748,21 @@ function peerCostMedian(peers, key) {
 }
 
 function peerOptionalCost(peers, key, perVivKey, totalViv, historicalFactor = 1, sourceFactor = historicalFactor) {
-  const perViv = median(peers.map(({ project }) => Number(project[perVivKey])).filter((value) => value > 0));
+  const peerProjects = peers.map(({ project }) => project).filter((project) => isHistoricalCostEligible(project, perVivKey));
+  const perViv = median(peerProjects.map((project) => Number(project[perVivKey])).filter((value) => value > 0));
   if (Number.isFinite(perViv)) {
     return { value: perViv * totalViv * historicalFactor, source: adjustedSource("similares", sourceFactor) };
   }
-  const total = median(peers.map(({ project }) => Number(project[key])).filter((value) => value > 0));
+  const total = median(peerProjects.map((project) => Number(project[key])).filter((value) => value > 0));
   if (Number.isFinite(total)) {
     return { value: total * historicalFactor, source: adjustedSource("similares", sourceFactor) };
   }
-  const globalPerViv = Number(db.stats.global?.[perVivKey]?.median || 0);
+  const globalPerViv = median(
+    db.projects
+      .filter((project) => isHistoricalCostEligible(project, perVivKey))
+      .map((project) => Number(project[perVivKey]))
+      .filter((value) => value > 0),
+  );
   if (globalPerViv > 0) {
     return { value: globalPerViv * totalViv * historicalFactor, source: adjustedSource("historico global", sourceFactor) };
   }
@@ -778,7 +801,12 @@ function typologyCostPerViv(row) {
 
 function peerTypologyCostPerViv(row, peers) {
   if (!row.tipologiaKey || !Array.isArray(db.typologies)) return null;
-  const peerIds = new Set(peers.map(({ project }) => String(project.ID_Proyecto ?? project.Proyecto)));
+  const peerIds = new Set(
+    peers
+      .map(({ project }) => project)
+      .filter((project) => isHistoricalCostEligible(project, "Costo_Construccion_UF_por_viv"))
+      .map((project) => String(project.ID_Proyecto ?? project.Proyecto)),
+  );
   const costs = db.typologies
     .filter((item) => peerIds.has(String(item.ID_Proyecto)) && slug(normalizeTypologyLabel(item.Tipologia)) === row.tipologiaKey)
     .map((item) => Number(item.Costo_UF_Viv))
@@ -798,7 +826,9 @@ function typologyCostInfo(row, peers) {
 
 function peerWeightedTypologyCostPerViv(peers, filter = () => true) {
   if (!Array.isArray(db.typologies)) return null;
-  const peerProjects = peers.filter(({ project }) => filter(project));
+  const peerProjects = peers.filter(
+    ({ project }) => filter(project) && isHistoricalCostEligible(project, "Costo_Construccion_UF_por_viv"),
+  );
   const peerIds = new Set(peerProjects.map(({ project }) => String(project.ID_Proyecto ?? project.Proyecto)));
   const byProject = new Map();
 
