@@ -9,7 +9,7 @@ const LOCAL_COMERCIAL_COST_UF = 653;
 const BASE_CORE_HISTORICAL_FACTOR = 1.04;
 const SOCIAL_CONSTRUCTION_HISTORICAL_FACTOR = 1.12;
 const DS49_DEPARTMENT_CONSTRUCTION_ADJUSTMENT_UF = 25300;
-const PERMITS_HISTORICAL_FACTOR = 1;
+const PERMITS_HISTORICAL_FACTOR = 1.06;
 const VILLA_ESPERANZA_ID = 1;
 const HISTORICAL_COST_EXCLUDED_IDS = new Set([VILLA_ESPERANZA_ID]);
 const HISTORICAL_COST_EXCLUDED_FIELDS = new Set([
@@ -1035,7 +1035,8 @@ function calculate() {
   const constructionHistoricalFactor = constructionBaseFactor * constructionAdjustmentFactor;
   const urbanHistoricalFactor = coreHistoricalFactor * urbanizationFactor;
   const complementaryHistoricalFactor = coreHistoricalFactor * complementaryFactor;
-  const permitsHistoricalFactor = PERMITS_HISTORICAL_FACTOR * complementaryFactor;
+  const permitsBaseFactor = input.tipoProyectoKey === "ds49" ? 1 : PERMITS_HISTORICAL_FACTOR;
+  const permitsHistoricalFactor = permitsBaseFactor * complementaryFactor;
   const urbanSourceFactor = urbanizationFactor;
   const complementarySourceFactor = complementaryFactor;
 
