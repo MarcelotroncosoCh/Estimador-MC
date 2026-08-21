@@ -8,6 +8,7 @@ const LOCAL_COMERCIAL_LABEL = "Local comercial";
 const LOCAL_COMERCIAL_COST_UF = 653;
 const BASE_CORE_HISTORICAL_FACTOR = 1.04;
 const SOCIAL_CONSTRUCTION_HISTORICAL_FACTOR = 1.12;
+const DS49_DEPARTMENT_CONSTRUCTION_ADJUSTMENT_UF = 25300;
 const PERMITS_HISTORICAL_FACTOR = 1.06;
 
 const projectNumericFields = [
@@ -927,13 +928,23 @@ function calculateConstruction(
     return { value: input.costoConstruccionUf, source: "ingresado" };
   }
 
+  const applyDepartmentAdjustment = (result) => {
+    const needsDepartmentAdjustment =
+      input.tipoProyectoKey === "ds49" && (input.tipoVivKey === "depto" || input.tipoVivKey === "mixto");
+    if (!needsDepartmentAdjustment) return result;
+    return {
+      value: result.value + DS49_DEPARTMENT_CONSTRUCTION_ADJUSTMENT_UF,
+      source: `${result.source} + ajuste depto DS49 ${CLP.format(DS49_DEPARTMENT_CONSTRUCTION_ADJUSTMENT_UF)} UF`,
+    };
+  };
+
   if (input.tipoProyectoKey === "ds49" && !input.typologies.some((row) => row.cantidad > 0)) {
     const peerCost = peerWeightedTypologyCostPerViv(peers, (project) => project._tipo_proyecto_key === "ds49");
     if (peerCost) {
-      return {
+      return applyDepartmentAdjustment({
         value: peerCost.value * input.totalViv * historicalFactor,
         source: adjustedSource(peerCost.source, sourceFactor, "ajuste construccion"),
-      };
+      });
     }
   }
 
@@ -948,16 +959,16 @@ function calculateConstruction(
     const source = rowsWithCost.some((row) => row.source.startsWith("tipologias similares"))
       ? "tipologias de proyectos similares"
       : "tipologias historicas generales";
-    return {
+    return applyDepartmentAdjustment({
       value: rowsWithCost.reduce((sum, row) => sum + row.value, 0) * historicalFactor,
       source: adjustedSource(source, sourceFactor, "ajuste construccion"),
-    };
+    });
   }
 
-  return {
+  return applyDepartmentAdjustment({
     value: constructionMedian.value * input.totalViv * historicalFactor,
     source: adjustedSource(constructionMedian.source, sourceFactor, "ajuste construccion"),
-  };
+  });
 }
 
 function calculate() {
