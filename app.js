@@ -10,6 +10,9 @@ const BASE_CORE_HISTORICAL_FACTOR = 1.04;
 const SOCIAL_CONSTRUCTION_HISTORICAL_FACTOR = 1.12;
 const DS49_DEPARTMENT_CONSTRUCTION_ADJUSTMENT_UF = 25300;
 const PERMITS_HISTORICAL_FACTOR = 1.06;
+const HISTORICAL_COST_EXCLUSIONS = {
+  Gastos_Generales_UF_por_viv: new Set([1]),
+};
 
 const projectNumericFields = [
   "ID_Proyecto",
@@ -711,11 +714,18 @@ function peerMedian(peers, key) {
 }
 
 function peerCostMedian(peers, key) {
-  const values = peers.map(({ project }) => Number(project[key])).filter((value) => Number.isFinite(value) && value > 0);
+  const excludedIds = HISTORICAL_COST_EXCLUSIONS[key] || new Set();
+  const eligibleProjects = peers
+    .map(({ project }) => project)
+    .filter((project) => !excludedIds.has(Number(project.ID_Proyecto)));
+  const values = eligibleProjects.map((project) => Number(project[key])).filter((value) => Number.isFinite(value) && value > 0);
   const peerValue = median(values);
   if (Number.isFinite(peerValue)) return { value: peerValue, source: `similares (${values.length})`, count: values.length };
 
-  const fallbackValues = db.projects.map((project) => Number(project[key])).filter((value) => Number.isFinite(value) && value > 0);
+  const fallbackValues = db.projects
+    .filter((project) => !excludedIds.has(Number(project.ID_Proyecto)))
+    .map((project) => Number(project[key]))
+    .filter((value) => Number.isFinite(value) && value > 0);
   const fallback = median(fallbackValues);
   return { value: Number(fallback || 0), source: `historico global (${fallbackValues.length})`, count: 0 };
 }
