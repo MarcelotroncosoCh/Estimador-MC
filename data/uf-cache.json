@@ -1,7 +1,6 @@
 {
-  "value": 41141.53,
-  "date": "2026-10-11T03:00:00.000Z",
-  "source": "mindicador-diario",
-  "updatedAt": "2026-10-14T15:09:21.835Z",
-  "updateError": "This operation was aborted"
+  "value": 41162.73,
+  "date": "2026-10-15T03:00:00.000Z",
+  "source": "mindicador-uf",
+  "updatedAt": "2026-10-15T15:01:29.995Z"
 }
