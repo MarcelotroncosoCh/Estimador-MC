@@ -1,7 +1,6 @@
 {
-  "value": 41221.08,
-  "date": "2026-10-26T03:00:00.000Z",
-  "source": "mindicador-uf",
-  "updatedAt": "2026-10-27T15:53:07.145Z",
-  "updateError": "fetch failed"
+  "value": 41231.7,
+  "date": "2026-10-28T03:00:00.000Z",
+  "source": "mindicador-diario",
+  "updatedAt": "2026-10-28T16:37:32.090Z"
 }
