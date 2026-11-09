@@ -2,5 +2,6 @@
   "value": 41290.15,
   "date": "2026-11-08T03:00:00.000Z",
   "source": "mindicador-diario",
-  "updatedAt": "2026-11-08T16:40:07.200Z"
+  "updatedAt": "2026-11-09T20:43:38.422Z",
+  "updateError": "fetch failed"
 }
